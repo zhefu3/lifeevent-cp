@@ -1,0 +1,216 @@
+{
+ "n": 30,
+ "identified_rate": 0.3333333333333333,
+ "rows": [
+  {
+   "question_id": "Q441178_1961_P108",
+   "person_label": "Raymond Smullyan",
+   "guess": "Raymond Smullyan",
+   "confidence": 0.4,
+   "hit": true
+  },
+  {
+   "question_id": "Q2093915_2010_P166",
+   "person_label": "Pierre Rosanvallon",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q5548717_1978_P39",
+   "person_label": "Ger Connolly",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q1333582_1987_P166",
+   "person_label": "Richard Wilbur",
+   "guess": "Richard Wilbur",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q1251707_1975_P39",
+   "person_label": "Doug Bereuter",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q1687846_1975_P39",
+   "person_label": "Jerry Kleczka",
+   "guess": "Gerald Kleczka",
+   "confidence": 0.55,
+   "hit": false
+  },
+  {
+   "question_id": "Q234909_1961_P166",
+   "person_label": "Cecilia Helena Payne Gaposchkin",
+   "guess": "Cecilia Payne-Gaposchkin",
+   "confidence": 0.85,
+   "hit": false
+  },
+  {
+   "question_id": "Q70377150_1998_P108",
+   "person_label": "Lynn Morris",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q7789484_2007_P108",
+   "person_label": "Thomas F Krauss",
+   "guess": "Thomas Krauss",
+   "confidence": 0.45,
+   "hit": false
+  },
+  {
+   "question_id": "Q119796829_2011_P166",
+   "person_label": "Silviu-Iulian Niculescu",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q61095374_1987_P108",
+   "person_label": "Cliona O'Farrelly",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q2685_2023_P166",
+   "person_label": "Arnold Schwarzenegger",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q1722334_1980_P166",
+   "person_label": "Paul Doughty Bartlett",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q1004154_1983_P108",
+   "person_label": "Frédéric Barbier",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q115913982_2013_P108",
+   "person_label": "Ihsane El Kadi",
+   "guess": "Ihsane El Kadi",
+   "confidence": 0.7,
+   "hit": true
+  },
+  {
+   "question_id": "Q76357_1997_P166",
+   "person_label": "Jürgen Habermas",
+   "guess": "Jürgen Habermas",
+   "confidence": 0.6,
+   "hit": true
+  },
+  {
+   "question_id": "Q17714_1981_P166",
+   "person_label": "Stephen Hawking",
+   "guess": "Stephen Hawking",
+   "confidence": 0.97,
+   "hit": true
+  },
+  {
+   "question_id": "Q47755_2006_P166",
+   "person_label": "Imre Kertész",
+   "guess": "Ruth Klüger",
+   "confidence": 0.35,
+   "hit": false
+  },
+  {
+   "question_id": "Q468049_2022_P166",
+   "person_label": "Claire Voisin",
+   "guess": "Claire Voisin",
+   "confidence": 0.55,
+   "hit": true
+  },
+  {
+   "question_id": "Q8743_1973_P166",
+   "person_label": "Thomas Edison",
+   "guess": "Thomas Edison",
+   "confidence": 0.85,
+   "hit": true
+  },
+  {
+   "question_id": "Q34004355_1997_P108",
+   "person_label": "Tessa Holyoake",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q65199_1929_P69",
+   "person_label": "Erich Kähler",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q91636_1960_P108",
+   "person_label": "Rudolf Haag",
+   "guess": "Rudolf Haag",
+   "confidence": 0.6,
+   "hit": true
+  },
+  {
+   "question_id": "Q894948_2011_P166",
+   "person_label": "Boualem Sansal",
+   "guess": "Boualem Sansal",
+   "confidence": 0.55,
+   "hit": true
+  },
+  {
+   "question_id": "Q91635_1921_P69",
+   "person_label": "Wilhelm Cauer",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q1285801_1982_P166",
+   "person_label": "Edmone Roffael",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q6247957_2019_P39",
+   "person_label": "Niklas Wykman",
+   "guess": "Niklas Wykman",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q4394078_1999_P166",
+   "person_label": "Vasily Reshetnikov",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q17008733_1937_P69",
+   "person_label": "Hsien Chung Wang",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q22276965_2014_P166",
+   "person_label": "Manuel Barcia",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+# LifeEvent-CP v0 configuration. All randomness flows from random_seed.
+random_seed: 42
+
+sparql_endpoint: "https://query.wikidata.org/sparql"
+user_agent: "LifeEventCP/0.1 (research prototype; contact: zhefu2@outlook.com)"
+
+http:
+  timeout_s: 65
+  max_retries: 5
+  backoff_base_s: 2.0
+  politeness_delay_s: 1.0
+
+paths:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  splits_dir: data/splits
+  outputs_dir: outputs
+
+# Event type registry. residence kept in code but disabled by default (locked decision).
+event_types:
+  education:  {property: P69,  template: "began studying at {target}",  time_pref: [P580, P585], enabled: true}
+  employment: {property: P108, template: "began working for {target}",  time_pref: [P580, P585], enabled: true}
+  position:   {property: P39,  template: "began serving as {target}",   time_pref: [P580, P585], enabled: true}
+  award:      {property: P166, template: "received {target}",           time_pref: [P585, P580], enabled: true}
+  residence:  {property: P551, template: "began residing in {target}",  time_pref: [P580, P585], enabled: false}
+
+year_min: 1850
+year_max: 2026
+
+discovery:
+  initial_slice_years: 8
+  row_cap: 15000
+
+phase2:
+  batch_size: 40
+
+person_filters:
+  min_distinct_years: 5
+
+question:
+  context_before: 2
+  context_after: 2
+  near_year_windows: [3, 5, 7, 10]
+  era_band_random: 60   # same_type_random distractors stay within +/-60y of missing_year
+
+split:
+  train: 0.6
+  calibration: 0.2
+  test: 0.2
+
+alphas: [0.20, 0.10, 0.05]
+
+model:
+  tfidf: {ngram_min: 1, ngram_max: 2, min_df: 2, max_features: 50000, sublinear_tf: true}
+  logreg: {class_weight: balanced, max_iter: 2000, random_state: 42}
+
+profiles:
+  dry:
+    discovery_year_min: 1990
+    discovery_year_max: 2020
+    max_phase2_persons: 400
+    question_targets: {train: 30, calibration: 10, test: 10}
+    max_questions_per_person: 1
+  full:
+    discovery_year_min: 1850
+    discovery_year_max: 2026
+    max_phase2_persons: 4500
+    question_targets: {train: 300, calibration: 100, test: 100}
+    max_questions_per_person: 2

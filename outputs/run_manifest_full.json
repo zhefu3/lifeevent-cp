@@ -1,0 +1,75 @@
+{
+ "profile": "full",
+ "questions_per_split": {
+  "train": 300,
+  "calibration": 100,
+  "test": 100
+ },
+ "eligible_persons": 4036,
+ "distractor_type_counts": {
+  "same_type_random": 500,
+  "same_type_near_year": 1028,
+  "same_person_wrong_time": 472,
+  "label_similar_same_type": 500,
+  "correct": 500
+ },
+ "person_split_disjoint": true,
+ "summary": {
+  "n_test": 100,
+  "point_accuracy": 0.14,
+  "top2_accuracy": 0.34,
+  "error_chosen_distractor_types": {
+   "same_type_random": 21,
+   "label_similar_same_type": 12,
+   "same_type_near_year": 29,
+   "same_person_wrong_time": 24
+  },
+  "coverage_overall": [
+   {
+    "coverage_target": "0.80",
+    "group": "overall",
+    "value": "all",
+    "n": 100,
+    "empirical_coverage": 0.83,
+    "coverage_gap": 0.03,
+    "wilson_lo": 0.7445,
+    "wilson_hi": 0.8911,
+    "avg_set_size": 4.42,
+    "median_set_size": 4.0,
+    "singleton_rate": 0.0,
+    "empty_set_rate": 0.0,
+    "full_set_rate": 0.12
+   },
+   {
+    "coverage_target": "0.90",
+    "group": "overall",
+    "value": "all",
+    "n": 100,
+    "empirical_coverage": 0.91,
+    "coverage_gap": 0.01,
+    "wilson_lo": 0.8377,
+    "wilson_hi": 0.9519,
+    "avg_set_size": 4.86,
+    "median_set_size": 5.0,
+    "singleton_rate": 0.0,
+    "empty_set_rate": 0.0,
+    "full_set_rate": 0.26
+   },
+   {
+    "coverage_target": "0.95",
+    "group": "overall",
+    "value": "all",
+    "n": 100,
+    "empirical_coverage": 0.97,
+    "coverage_gap": 0.02,
+    "wilson_lo": 0.9155,
+    "wilson_hi": 0.9897,
+    "avg_set_size": 5.53,
+    "median_set_size": 6.0,
+    "singleton_rate": 0.0,
+    "empty_set_rate": 0.0,
+    "full_set_rate": 0.61
+   }
+  ]
+ }
+}
