@@ -1,6 +1,6 @@
 {
- "n": 30,
- "identified_rate": 0.3333333333333333,
+ "n": 100,
+ "identified_rate": 0.31,
  "rows": [
   {
    "question_id": "Q441178_1961_P108",
@@ -42,14 +42,14 @@
    "person_label": "Jerry Kleczka",
    "guess": "Gerald Kleczka",
    "confidence": 0.55,
-   "hit": false
+   "hit": true
   },
   {
    "question_id": "Q234909_1961_P166",
    "person_label": "Cecilia Helena Payne Gaposchkin",
    "guess": "Cecilia Payne-Gaposchkin",
    "confidence": 0.85,
-   "hit": false
+   "hit": true
   },
   {
    "question_id": "Q70377150_1998_P108",
@@ -63,7 +63,7 @@
    "person_label": "Thomas F Krauss",
    "guess": "Thomas Krauss",
    "confidence": 0.45,
-   "hit": false
+   "hit": true
   },
   {
    "question_id": "Q119796829_2011_P166",
@@ -210,6 +210,496 @@
    "person_label": "Manuel Barcia",
    "guess": null,
    "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q983528_1972_P39",
+   "person_label": "Louis Stokes",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q1679925_1915_P69",
+   "person_label": "James Emman Kwegyir Aggrey",
+   "guess": "Kwegyir Aggrey",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q3772_1996_P166",
+   "person_label": "Quentin Tarantino",
+   "guess": "Quentin Tarantino",
+   "confidence": 0.9,
+   "hit": true
+  },
+  {
+   "question_id": "Q333841_2003_P39",
+   "person_label": "Dafydd Elis-Thomas",
+   "guess": "Dafydd Elis-Thomas",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q19848_2016_P166",
+   "person_label": "Lady Gaga",
+   "guess": "Lady Gaga",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q981132_1970_P166",
+   "person_label": "Nikolai Tikhonov",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q9391_1908_P69",
+   "person_label": "Ludwig Wittgenstein",
+   "guess": "Ludwig Wittgenstein",
+   "confidence": 0.85,
+   "hit": true
+  },
+  {
+   "question_id": "Q4402585_1970_P166",
+   "person_label": "Aleksey Konstantinovich Ryazanov",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q21264546_2010_P166",
+   "person_label": "Rebecca Kilner",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q1387262_1947_P39",
+   "person_label": "Joseph William Martin Jr.",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q1229886_1869_P39",
+   "person_label": "José de Posada Herrera",
+   "guess": "Francisco de Cárdenas y Espejo",
+   "confidence": 0.35,
+   "hit": false
+  },
+  {
+   "question_id": "Q1392426_1998_P166",
+   "person_label": "Philaret",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q2704774_1967_P166",
+   "person_label": "Borys Paton",
+   "guess": "Boris Paton",
+   "confidence": 0.3,
+   "hit": true
+  },
+  {
+   "question_id": "Q59709352_2011_P69",
+   "person_label": "Paule Valery Joseph",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q103917_1990_P166",
+   "person_label": "Steven Soderbergh",
+   "guess": "Steven Soderbergh",
+   "confidence": 0.85,
+   "hit": true
+  },
+  {
+   "question_id": "Q18242588_2010_P69",
+   "person_label": "Annika Hirvonen",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q93570553_2005_P108",
+   "person_label": "Sarah Feinberg",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q3888783_2003_P108",
+   "person_label": "José-Apeles Santolaria de Puey y Cruells",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q2392075_1971_P166",
+   "person_label": "Oleksiy Fedorov",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q56603914_2007_P108",
+   "person_label": "Farah Alibay",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q548112_2008_P166",
+   "person_label": "Christiane Hörbiger",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q16012884_2008_P108",
+   "person_label": "Jin-Ho Choy",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q6875247_1953_P108",
+   "person_label": "Mischa Cotlar",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q24579049_1919_P108",
+   "person_label": "David Kennedy Fraser",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q105005_1922_P108",
+   "person_label": "Arthur Rosenthal",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q103198_1982_P166",
+   "person_label": "Ernst Peschl",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q116966_1954_P166",
+   "person_label": "Georges de Rham",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q329295_2006_P166",
+   "person_label": "Peter Fonagy",
+   "guess": "Peter Fonagy",
+   "confidence": 0.55,
+   "hit": true
+  },
+  {
+   "question_id": "Q117074156_2002_P69",
+   "person_label": "Kevin A. Morrison",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q3916703_2013_P166",
+   "person_label": "Riley Reid",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q42411151_2009_P166",
+   "person_label": "Tarek Sobh",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q72334_1982_P166",
+   "person_label": "Toni Morrison",
+   "guess": "Toni Morrison",
+   "confidence": 0.55,
+   "hit": true
+  },
+  {
+   "question_id": "Q1399304_1993_P39",
+   "person_label": "Michael O'Kennedy",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q27583547_1989_P69",
+   "person_label": "Heinz Wiendl",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q16641955_2013_P108",
+   "person_label": "Toñi Moreno",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q153454_1992_P39",
+   "person_label": "Diane Abbott",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q2032993_1936_P39",
+   "person_label": "Oscar Traynor",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q320624_2003_P166",
+   "person_label": "Adi Shamir",
+   "guess": "Ronald Rivest",
+   "confidence": 0.8,
+   "hit": false
+  },
+  {
+   "question_id": "Q313399_2008_P166",
+   "person_label": "Vladimir Shatalov",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q27863139_2017_P108",
+   "person_label": "Jordan Randall Smith",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q3017264_2018_P166",
+   "person_label": "Dave Stewart",
+   "guess": "Jordie Bellaire",
+   "confidence": 0.45,
+   "hit": false
+  },
+  {
+   "question_id": "Q3002796_1967_P108",
+   "person_label": "Crispin Nash-Williams",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q126107514_2016_P108",
+   "person_label": "Omkhar Arasaratnam",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q87502770_2005_P108",
+   "person_label": "Scott A. Summers",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q1785_2003_P166",
+   "person_label": "Charles Aznavour",
+   "guess": "Charles Aznavour",
+   "confidence": 0.9,
+   "hit": true
+  },
+  {
+   "question_id": "Q2252186_1975_P108",
+   "person_label": "John Birks",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q28007338_1998_P108",
+   "person_label": "Rena R. Wing",
+   "guess": "Karen A. Matthews",
+   "confidence": 0.35,
+   "hit": false
+  },
+  {
+   "question_id": "Q350843_1996_P39",
+   "person_label": "Adam Schiff",
+   "guess": "Adam Schiff",
+   "confidence": 0.7,
+   "hit": true
+  },
+  {
+   "question_id": "Q367825_2005_P39",
+   "person_label": "Salman bin Abdulaziz Al Saud",
+   "guess": "Salman bin Abdulaziz Al Saud",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q164396_1965_P166",
+   "person_label": "Victor Ambartsumian",
+   "guess": "Viktor Ambartsumian",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q6272711_1998_P108",
+   "person_label": "Jonathan Carapetis",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q670030_1961_P166",
+   "person_label": "Issa Pliyev",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q132899_1953_P39",
+   "person_label": "Vyacheslav Molotov",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q16180049_2009_P39",
+   "person_label": "Benny Kabur Harman",
+   "guess": null,
+   "confidence": 0.05,
+   "hit": false
+  },
+  {
+   "question_id": "Q500546_1984_P166",
+   "person_label": "Gonzalo Torrente Ballester",
+   "guess": "Gonzalo Torrente Ballester",
+   "confidence": 0.9,
+   "hit": true
+  },
+  {
+   "question_id": "Q543603_1978_P166",
+   "person_label": "Núria Espert",
+   "guess": null,
+   "confidence": 0.15,
+   "hit": false
+  },
+  {
+   "question_id": "Q48048_1973_P166",
+   "person_label": "Ivan Yakubovsky",
+   "guess": "Yumjaagiin Tsedenbal",
+   "confidence": 0.55,
+   "hit": false
+  },
+  {
+   "question_id": "Q3069915_1970_P39",
+   "person_label": "Paul Channon, Baron Kelvedon",
+   "guess": "Stan Newens",
+   "confidence": 0.55,
+   "hit": false
+  },
+  {
+   "question_id": "Q57287_1964_P166",
+   "person_label": "Harald V of Norway",
+   "guess": "Harald V of Norway",
+   "confidence": 0.7,
+   "hit": true
+  },
+  {
+   "question_id": "Q2722860_1956_P166",
+   "person_label": "Frans Otten",
+   "guess": "Prince Bernhard of the Netherlands",
+   "confidence": 0.45,
+   "hit": false
+  },
+  {
+   "question_id": "Q49823_1992_P108",
+   "person_label": "Dana Scott",
+   "guess": "Robin Milner",
+   "confidence": 0.35,
+   "hit": false
+  },
+  {
+   "question_id": "Q98980_1985_P108",
+   "person_label": "Horst Stöcker",
+   "guess": "Horst Stöcker",
+   "confidence": 0.6,
+   "hit": true
+  },
+  {
+   "question_id": "Q164346_1963_P39",
+   "person_label": "Einar Gerhardsen",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q1810264_2006_P166",
+   "person_label": "Ellen Datlow",
+   "guess": "Ellen Datlow",
+   "confidence": 0.65,
+   "hit": true
+  },
+  {
+   "question_id": "Q467215_1989_P166",
+   "person_label": "Kiran Mazumdar-Shaw",
+   "guess": "Kiran Mazumdar-Shaw",
+   "confidence": 0.75,
+   "hit": true
+  },
+  {
+   "question_id": "Q58040159_2015_P108",
+   "person_label": "Cathryn Tonne",
+   "guess": null,
+   "confidence": 0.1,
+   "hit": false
+  },
+  {
+   "question_id": "Q5508587_1982_P108",
+   "person_label": "Fumio Hayashi",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q18687923_2018_P166",
+   "person_label": "Ingrid Scheffer",
+   "guess": "Anthony Jorm",
+   "confidence": 0.35,
+   "hit": false
+  },
+  {
+   "question_id": "Q6709382_1997_P69",
+   "person_label": "Lynne M. Thomas",
+   "guess": null,
+   "confidence": 0.0,
+   "hit": false
+  },
+  {
+   "question_id": "Q160717_2000_P166",
+   "person_label": "Tom Lantos",
+   "guess": null,
+   "confidence": 0.0,
    "hit": false
   }
  ]

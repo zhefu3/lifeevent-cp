@@ -150,12 +150,28 @@ def probe_question(question: dict[str, Any], model: str, timeout_s: int) -> dict
             guess = obj.get("name")
             conf = obj.get("confidence")
     truth = question["person_label"]
+    return {"question_id": question["question_id"], "person_label": truth,
+            "guess": guess, "confidence": conf, "hit": _name_hit(guess, truth)}
+
+
+def _name_hit(guess: Any, truth: str) -> bool:
+    """Alias-tolerant match (A6 v1.0 finding: plain substring missed Gerald/Jerry-style
+    variants). Same surname + fuzzy full-name, or high overall fuzzy ratio."""
+    import difflib
+    if not guess or not isinstance(guess, str) or guess.strip().lower() in ("null", "none", "unknown", ""):
+        return False
     def _norm(s: str) -> str:
         return re.sub(r"[^a-z ]", "", s.lower()).strip()
-    hit = bool(guess) and isinstance(guess, str) and guess.lower() != "null" and (
-        _norm(guess) == _norm(truth) or _norm(guess) in _norm(truth) or _norm(truth) in _norm(guess))
-    return {"question_id": question["question_id"], "person_label": truth,
-            "guess": guess, "confidence": conf, "hit": hit}
+    g, t = _norm(guess), _norm(truth)
+    if not g:
+        return False
+    if g == t or g in t or t in g:
+        return True
+    gt, tt = g.split(), t.split()
+    ratio = difflib.SequenceMatcher(None, g, t).ratio()
+    if gt and tt and gt[-1] == tt[-1]:  # same surname -> tolerate nickname first names
+        return ratio >= 0.55
+    return ratio >= 0.85
 
 
 def main() -> None:
@@ -175,7 +191,8 @@ def main() -> None:
 
     if args.probe:
         test_qs = list(read_jsonl(splits_dir / "test.jsonl"))[: args.n]
-        rows = [probe_question(q, args.model, args.timeout) for q in test_qs]
+        with ThreadPoolExecutor(max_workers=args.workers) as ex:
+            rows = list(ex.map(lambda q: probe_question(q, args.model, args.timeout), test_qs))
         rate = sum(r["hit"] for r in rows) / len(rows)
         write_json(outdir / "contamination_probe.json",
                    {"n": len(rows), "identified_rate": rate, "rows": rows})
