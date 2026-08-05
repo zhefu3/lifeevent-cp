@@ -8,8 +8,8 @@
  "eligible_persons": 4036,
  "distractor_type_counts": {
   "same_type_random": 500,
-  "same_type_near_year": 1028,
-  "same_person_wrong_time": 472,
+  "same_type_near_year": 1021,
+  "same_person_wrong_time": 479,
   "label_similar_same_type": 500,
   "correct": 500
  },
@@ -17,53 +17,53 @@
  "summary": {
   "n_test": 100,
   "point_accuracy": 0.14,
-  "top2_accuracy": 0.34,
+  "top2_accuracy": 0.38,
   "error_chosen_distractor_types": {
-   "same_type_random": 21,
-   "label_similar_same_type": 12,
-   "same_type_near_year": 29,
-   "same_person_wrong_time": 24
+   "same_type_near_year": 30,
+   "same_person_wrong_time": 22,
+   "same_type_random": 22,
+   "label_similar_same_type": 12
   },
   "ssc_0.80": 0.0,
   "sscv_0.80": 0.8,
   "ssc_0.90": 0.0,
   "sscv_0.90": 0.9,
-  "ssc_0.95": 0.875,
-  "sscv_0.95": 0.075,
+  "ssc_0.95": 0.5,
+  "sscv_0.95": 0.45,
   "coverage_overall": [
    {
     "coverage_target": "0.80",
     "group": "overall",
     "value": "all",
     "n": 100,
-    "singleton_hit_rate": null,
-    "empirical_coverage": 0.83,
-    "coverage_gap": 0.03,
-    "wilson_lo": 0.7445,
-    "wilson_hi": 0.8911,
-    "avg_set_size": 4.42,
+    "singleton_hit_rate": 0.0,
+    "empirical_coverage": 0.72,
+    "coverage_gap": -0.08,
+    "wilson_lo": 0.6251,
+    "wilson_hi": 0.7986,
+    "avg_set_size": 3.8,
     "median_set_size": 4.0,
-    "singleton_rate": 0.0,
+    "singleton_rate": 0.03,
     "empty_set_rate": 0.0,
-    "full_set_rate": 0.12,
-    "uacc": 0.0776
+    "full_set_rate": 0.04,
+    "uacc": 0.0902
    },
    {
     "coverage_target": "0.90",
     "group": "overall",
     "value": "all",
     "n": 100,
-    "singleton_hit_rate": null,
-    "empirical_coverage": 0.91,
-    "coverage_gap": 0.01,
-    "wilson_lo": 0.8377,
-    "wilson_hi": 0.9519,
-    "avg_set_size": 4.86,
+    "singleton_hit_rate": 0.0,
+    "empirical_coverage": 0.87,
+    "coverage_gap": -0.03,
+    "wilson_lo": 0.7902,
+    "wilson_hi": 0.9224,
+    "avg_set_size": 4.87,
     "median_set_size": 5.0,
-    "singleton_rate": 0.0,
+    "singleton_rate": 0.02,
     "empty_set_rate": 0.0,
-    "full_set_rate": 0.26,
-    "uacc": 0.0706
+    "full_set_rate": 0.25,
+    "uacc": 0.0704
    },
    {
     "coverage_target": "0.95",
@@ -71,16 +71,16 @@
     "value": "all",
     "n": 100,
     "singleton_hit_rate": null,
-    "empirical_coverage": 0.97,
-    "coverage_gap": 0.02,
-    "wilson_lo": 0.9155,
-    "wilson_hi": 0.9897,
-    "avg_set_size": 5.53,
+    "empirical_coverage": 0.98,
+    "coverage_gap": 0.03,
+    "wilson_lo": 0.93,
+    "wilson_hi": 0.9945,
+    "avg_set_size": 5.54,
     "median_set_size": 6.0,
     "singleton_rate": 0.0,
     "empty_set_rate": 0.0,
-    "full_set_rate": 0.61,
-    "uacc": 0.062
+    "full_set_rate": 0.62,
+    "uacc": 0.0619
    }
   ]
  }

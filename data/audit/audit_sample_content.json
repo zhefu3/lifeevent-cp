@@ -146,9 +146,9 @@
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q185493",
-    "target_label": "Order of Lenin",
-    "text": "received Order of Lenin",
+    "target_id": "Q728960",
+    "target_label": "Order of the October Revolution",
+    "text": "received Order of the October Revolution",
     "distractor_type": "same_person_wrong_time"
    },
    {
@@ -539,198 +539,191 @@
   "split": "train"
  },
  {
-  "question_id": "Q725806_1918_P69",
+  "question_id": "Q725806_1965_P166",
   "person_id": "Q725806",
   "person_label": "Otakar Borůvka",
   "observed_events": [
-   {
-    "year": 1916,
-    "event_type": "education",
-    "target_id": "Q11925749",
-    "target_label": "Hranice Military Academy",
-    "text": "1916: began studying at Hranice Military Academy"
-   },
-   {
-    "year": 1917,
-    "event_type": "education",
-    "target_id": "Q1718293",
-    "target_label": "Imperial and Royal Technical Military Academy",
-    "text": "1917: began studying at Imperial and Royal Technical Military Academy"
-   },
-   {
-    "year": 1921,
-    "event_type": "education",
-    "target_id": "Q763586",
-    "target_label": "Masaryk University",
-    "text": "1921: began studying at Masaryk University"
-   },
    {
     "year": 1923,
     "event_type": "employment",
     "target_id": "Q763586",
     "target_label": "Masaryk University",
     "text": "1923: began working for Masaryk University"
+   },
+   {
+    "year": 1959,
+    "event_type": "award",
+    "target_id": "Q12056818",
+    "target_label": "Klement Gottwald State Prize",
+    "text": "1959: received Klement Gottwald State Prize"
+   },
+   {
+    "year": 1969,
+    "event_type": "employment",
+    "target_id": "Q21490607",
+    "target_label": "Institute of Mathematics of the Czech Academy of Sciences",
+    "text": "1969: began working for Institute of Mathematics of the Czech Academy of Sciences"
+   },
+   {
+    "year": 1969,
+    "event_type": "award",
+    "target_id": "Q88466601",
+    "target_label": "honorary doctor of Comenius University",
+    "text": "1969: received honorary doctor of Comenius University"
    }
   ],
-  "missing_year": 1918,
+  "missing_year": 1965,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "education",
-    "target_id": "Q3151770",
-    "target_label": "D. Mendeleev University of Chemical Technology of Russia",
-    "text": "began studying at D. Mendeleev University of Chemical Technology of Russia",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "education",
-    "target_id": "Q503424",
-    "target_label": "University of Leeds",
-    "text": "began studying at University of Leeds",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "education",
-    "target_id": "Q2164222",
-    "target_label": "Rollins College",
-    "text": "began studying at Rollins College",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "education",
-    "target_id": "Q1122171",
-    "target_label": "Brno University of Technology",
-    "text": "began studying at Brno University of Technology",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "education",
-    "target_id": "Q12018652",
-    "target_label": "Gymnázium Uherské Hradiště",
-    "text": "began studying at Gymnázium Uherské Hradiště",
+    "target_id": "Q1718293",
+    "target_label": "Imperial and Royal Technical Military Academy",
+    "text": "began studying at Imperial and Royal Technical Military Academy",
     "distractor_type": "same_person_wrong_time"
    },
    {
+    "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q2830603",
+    "target_label": "Order of Labour (Czechoslovakia)",
+    "text": "received Order of Labour (Czechoslovakia)",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q20859490",
+    "target_label": "Grand Cross of the Order of Prince Henry",
+    "text": "received Grand Cross of the Order of Prince Henry",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "award",
+    "target_id": "Q108678349",
+    "target_label": "Harvey Award for Best Letterer",
+    "text": "received Harvey Award for Best Letterer",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "award",
+    "target_id": "Q700368",
+    "target_label": "Wilhelm Exner Medal",
+    "text": "received Wilhelm Exner Medal",
+    "distractor_type": "same_type_near_year"
+   },
+   {
     "candidate_id": "F",
-    "event_type": "education",
-    "target_id": "Q3875219",
-    "target_label": "Tabriz University of Technology",
-    "text": "began studying at Tabriz University of Technology",
+    "event_type": "award",
+    "target_id": "Q633799",
+    "target_label": "Hero of Socialist Labour of Czechoslovakia",
+    "text": "received Hero of Socialist Labour of Czechoslovakia",
     "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "D",
-  "hidden_event_type": "education",
-  "hidden_target_id": "Q1122171",
+  "correct_candidate_id": "B",
+  "hidden_event_type": "award",
+  "hidden_target_id": "Q2830603",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q455293_1949_P39",
+  "question_id": "Q455293_1984_P39",
   "person_id": "Q455293",
   "person_label": "Georgios Mavros",
   "observed_events": [
    {
-    "year": 1946,
+    "year": 1974,
     "event_type": "position",
-    "target_id": "Q19858443",
-    "target_label": "Minister of National Education and Religious Affairs of Greece",
-    "text": "1946: began serving as Minister of National Education and Religious Affairs of Greece"
+    "target_id": "Q6508538",
+    "target_label": "Leader of the Opposition",
+    "text": "1974: began serving as Leader of the Opposition"
    },
    {
-    "year": 1946,
+    "year": 1981,
     "event_type": "position",
-    "target_id": "Q19860560",
-    "target_label": "Minister of Justice of Greece",
-    "text": "1946: began serving as Minister of Justice of Greece"
+    "target_id": "Q18915989",
+    "target_label": "member of the Hellenic Parliament",
+    "text": "1981: began serving as member of the Hellenic Parliament"
    },
    {
-    "year": 1951,
-    "event_type": "position",
-    "target_id": "Q19752714",
-    "target_label": "Minister of Finance of Greece",
-    "text": "1951: began serving as Minister of Finance of Greece"
-   },
-   {
-    "year": 1951,
-    "event_type": "position",
-    "target_id": "Q19860560",
-    "target_label": "Minister of Justice of Greece",
-    "text": "1951: began serving as Minister of Justice of Greece"
+    "year": 1994,
+    "event_type": "award",
+    "target_id": "Q112197",
+    "target_label": "Righteous Among the Nations",
+    "text": "1994: received Righteous Among the Nations"
    }
   ],
-  "missing_year": 1949,
+  "missing_year": 1984,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "position",
-    "target_id": "Q108913876",
-    "target_label": "Leas-Chathaoirleach",
-    "text": "began serving as Leas-Chathaoirleach",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q27169",
+    "target_label": "Member of the European Parliament",
+    "text": "began serving as Member of the European Parliament",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "B",
     "event_type": "position",
-    "target_id": "Q6508538",
-    "target_label": "Leader of the Opposition",
-    "text": "began serving as Leader of the Opposition",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q97670360",
+    "target_label": "member of the Committee on Taxation",
+    "text": "began serving as member of the Committee on Taxation",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
     "event_type": "position",
-    "target_id": "Q92361540",
-    "target_label": "Minister of the National Economy",
-    "text": "began serving as Minister of the National Economy",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q111851429",
+    "target_label": "Minister of Education of Thailand",
+    "text": "began serving as Minister of Education of Thailand",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "D",
     "event_type": "position",
-    "target_id": "Q20602711",
-    "target_label": "President of the Society for Classical Studies",
-    "text": "began serving as President of the Society for Classical Studies",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q19904335",
+    "target_label": "Minister of Coordination of Greece",
+    "text": "began serving as Minister of Coordination of Greece",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "E",
     "event_type": "position",
-    "target_id": "Q19904305",
-    "target_label": "Minister of the National Economy of Greece",
-    "text": "began serving as Minister of the National Economy of Greece",
-    "distractor_type": "correct"
+    "target_id": "Q43575168",
+    "target_label": "Justice of the Federal Constitutional Court",
+    "text": "began serving as Justice of the Federal Constitutional Court",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
     "event_type": "position",
-    "target_id": "Q11781521",
-    "target_label": "Minister for Posts and Telegraphs",
-    "text": "began serving as Minister for Posts and Telegraphs",
-    "distractor_type": "same_type_random"
+    "target_id": "Q740126",
+    "target_label": "President of the European Parliament",
+    "text": "began serving as President of the European Parliament",
+    "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "E",
+  "correct_candidate_id": "A",
   "hidden_event_type": "position",
-  "hidden_target_id": "Q19904305",
+  "hidden_target_id": "Q27169",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q656642_1912_P69",
+  "question_id": "Q656642_1907_P69",
   "person_id": "Q656642",
   "person_label": "Stefan Mazurkiewicz",
   "observed_events": [
    {
-    "year": 1907,
+    "year": 1906,
     "event_type": "education",
-    "target_id": "Q55044",
-    "target_label": "Ludwig-Maximilians-Universität München",
-    "text": "1907: began studying at Ludwig-Maximilians-Universität München"
+    "target_id": "Q189441",
+    "target_label": "Jagiellonian University",
+    "text": "1906: began studying at Jagiellonian University"
    },
    {
     "year": 1910,
@@ -740,67 +733,67 @@
     "text": "1910: began studying at University of Göttingen"
    },
    {
-    "year": 1915,
-    "event_type": "employment",
-    "target_id": "Q144488",
-    "target_label": "University of Warsaw",
-    "text": "1915: began working for University of Warsaw"
+    "year": 1912,
+    "event_type": "education",
+    "target_id": "Q80207",
+    "target_label": "Lviv University",
+    "text": "1912: began studying at Lviv University"
    }
   ],
-  "missing_year": 1912,
+  "missing_year": 1907,
   "candidates": [
    {
     "candidate_id": "A",
-    "event_type": "education",
-    "target_id": "Q15925616",
-    "target_label": "Taiwan Governor's Office Japanese School",
-    "text": "began studying at Taiwan Governor's Office Japanese School",
-    "distractor_type": "same_type_near_year"
+    "event_type": "employment",
+    "target_id": "Q144488",
+    "target_label": "University of Warsaw",
+    "text": "began working for University of Warsaw",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "B",
     "event_type": "education",
-    "target_id": "Q319239",
-    "target_label": "Tel Aviv University",
-    "text": "began studying at Tel Aviv University",
+    "target_id": "Q101268750",
+    "target_label": "Julius-Maximilians-Universität Würzburg Medizinische Fakultät",
+    "text": "began studying at Julius-Maximilians-Universität Würzburg Medizinische Fakultät",
     "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "C",
     "event_type": "education",
-    "target_id": "Q270222",
-    "target_label": "Michigan State University",
-    "text": "began studying at Michigan State University",
-    "distractor_type": "same_type_random"
+    "target_id": "Q332342",
+    "target_label": "Trinity College",
+    "text": "began studying at Trinity College",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
     "event_type": "education",
-    "target_id": "Q189441",
-    "target_label": "Jagiellonian University",
-    "text": "began studying at Jagiellonian University",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q49112",
+    "target_label": "Yale University",
+    "text": "began studying at Yale University",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "education",
-    "target_id": "Q80207",
-    "target_label": "Lviv University",
-    "text": "began studying at Lviv University",
-    "distractor_type": "correct"
+    "target_id": "Q835960",
+    "target_label": "University of São Paulo",
+    "text": "began studying at University of São Paulo",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "F",
     "event_type": "education",
-    "target_id": "Q49210",
-    "target_label": "New York University",
-    "text": "began studying at New York University",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q55044",
+    "target_label": "Ludwig-Maximilians-Universität München",
+    "text": "began studying at Ludwig-Maximilians-Universität München",
+    "distractor_type": "correct"
    }
   ],
-  "correct_candidate_id": "E",
+  "correct_candidate_id": "F",
   "hidden_event_type": "education",
-  "hidden_target_id": "Q80207",
+  "hidden_target_id": "Q55044",
   "source": "wikidata",
   "split": "train"
  },
@@ -836,37 +829,21 @@
    {
     "candidate_id": "A",
     "event_type": "position",
-    "target_id": "Q4416090",
-    "target_label": "United States senator",
-    "text": "began serving as United States senator",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q1749063",
+    "target_label": "Minister for Foreign Affairs of Sweden",
+    "text": "began serving as Minister for Foreign Affairs of Sweden",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "position",
-    "target_id": "Q18526160",
-    "target_label": "member of the Wisconsin State Assembly",
-    "text": "began serving as member of the Wisconsin State Assembly",
-    "distractor_type": "correct"
+    "target_id": "Q26268330",
+    "target_label": "mayor of Zaragoza",
+    "text": "began serving as mayor of Zaragoza",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
-    "event_type": "position",
-    "target_id": "Q18675883",
-    "target_label": "member of the State Senate of Michigan",
-    "text": "began serving as member of the State Senate of Michigan",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "position",
-    "target_id": "Q4182948",
-    "target_label": "head of department",
-    "text": "began serving as head of department",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "E",
     "event_type": "position",
     "target_id": "Q18180908",
     "target_label": "member of the California State Assembly",
@@ -874,15 +851,31 @@
     "distractor_type": "label_similar_same_type"
    },
    {
+    "candidate_id": "D",
+    "event_type": "position",
+    "target_id": "Q18526160",
+    "target_label": "member of the Wisconsin State Assembly",
+    "text": "began serving as member of the Wisconsin State Assembly",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "position",
+    "target_id": "Q4416090",
+    "target_label": "United States senator",
+    "text": "began serving as United States senator",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
     "candidate_id": "F",
     "event_type": "position",
-    "target_id": "Q97670380",
-    "target_label": "Member of the Committee on Education",
-    "text": "began serving as Member of the Committee on Education",
+    "target_id": "Q3615378",
+    "target_label": "Leader of the Labour Party",
+    "text": "began serving as Leader of the Labour Party",
     "distractor_type": "same_type_random"
    }
   ],
-  "correct_candidate_id": "B",
+  "correct_candidate_id": "D",
   "hidden_event_type": "position",
   "hidden_target_id": "Q18526160",
   "source": "wikidata",
@@ -920,29 +913,37 @@
    {
     "candidate_id": "A",
     "event_type": "position",
+    "target_id": "Q3397406",
+    "target_label": "Secretary of State for Health and Social Care",
+    "text": "began serving as Secretary of State for Health and Social Care",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "position",
     "target_id": "Q41582621",
     "target_label": "member of the 49th Parliament of the United Kingdom",
     "text": "began serving as member of the 49th Parliament of the United Kingdom",
     "distractor_type": "correct"
    },
    {
-    "candidate_id": "B",
-    "event_type": "position",
-    "target_id": "Q5287861",
-    "target_label": "chief technology officer",
-    "text": "began serving as chief technology officer",
-    "distractor_type": "same_type_random"
-   },
-   {
     "candidate_id": "C",
     "event_type": "position",
-    "target_id": "Q18242897",
-    "target_label": "Minister of Immigration",
-    "text": "began serving as Minister of Immigration",
+    "target_id": "Q3259412",
+    "target_label": "Lord Commissioner of the Treasury",
+    "text": "began serving as Lord Commissioner of the Treasury",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
+    "event_type": "position",
+    "target_id": "Q49256298",
+    "target_label": "Member of Taipei City Council",
+    "text": "began serving as Member of Taipei City Council",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "E",
     "event_type": "position",
     "target_id": "Q41582559",
     "target_label": "member of the 19th Parliament of the United Kingdom",
@@ -950,23 +951,15 @@
     "distractor_type": "label_similar_same_type"
    },
    {
-    "candidate_id": "E",
-    "event_type": "position",
-    "target_id": "Q41582604",
-    "target_label": "member of the 41st Parliament of the United Kingdom",
-    "text": "began serving as member of the 41st Parliament of the United Kingdom",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
     "candidate_id": "F",
     "event_type": "position",
-    "target_id": "Q128212331",
-    "target_label": "member of the International Olympic Committee",
-    "text": "began serving as member of the International Olympic Committee",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q41582615",
+    "target_label": "member of the 46th Parliament of the United Kingdom",
+    "text": "began serving as member of the 46th Parliament of the United Kingdom",
+    "distractor_type": "same_person_wrong_time"
    }
   ],
-  "correct_candidate_id": "A",
+  "correct_candidate_id": "B",
   "hidden_event_type": "position",
   "hidden_target_id": "Q41582621",
   "source": "wikidata",
@@ -1004,77 +997,63 @@
    {
     "candidate_id": "A",
     "event_type": "award",
-    "target_id": "Q4650547",
-    "target_label": "ACC Athlete of the Year",
-    "text": "received ACC Athlete of the Year",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q97924555",
+    "target_label": "Honorary doctorate from university of Florence",
+    "text": "received Honorary doctorate from university of Florence",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q25324505",
-    "target_label": "William H. Nichols Medal",
-    "text": "received William H. Nichols Medal",
+    "target_id": "Q1377755",
+    "target_label": "European Film Award for Best Director",
+    "text": "received European Film Award for Best Director",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q59781781",
-    "target_label": "Bachelor's Degree Extraordinary Award",
-    "text": "received Bachelor's Degree Extraordinary Award",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q4896724",
-    "target_label": "Best Male Athlete ESPY Award",
-    "text": "received Best Male Athlete ESPY Award",
+    "target_id": "Q1517750",
+    "target_label": "Medal \"For Strengthening of Brotherhood in Arms\"",
+    "text": "received Medal \"For Strengthening of Brotherhood in Arms\"",
     "distractor_type": "same_type_random"
    },
    {
-    "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q1061233",
-    "target_label": "L'Équipe Champion of Champions",
-    "text": "received L'Équipe Champion of Champions",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "F",
+    "candidate_id": "D",
     "event_type": "award",
     "target_id": "Q743122",
     "target_label": "Associated Press Athlete of the Year",
     "text": "received Associated Press Athlete of the Year",
     "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "award",
+    "target_id": "Q5020532",
+    "target_label": "California Hall of Fame",
+    "text": "received California Hall of Fame",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q4650547",
+    "target_label": "ACC Athlete of the Year",
+    "text": "received ACC Athlete of the Year",
+    "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "F",
+  "correct_candidate_id": "D",
   "hidden_event_type": "award",
   "hidden_target_id": "Q743122",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q46025807_1980_P69",
+  "question_id": "Q46025807_1986_P69",
   "person_id": "Q46025807",
   "person_label": "Denise R. Aberle",
   "observed_events": [
-   {
-    "year": 1976,
-    "event_type": "education",
-    "target_id": "Q33526980",
-    "target_label": "University of Kansas Medical Center",
-    "text": "1976: began studying at University of Kansas Medical Center"
-   },
-   {
-    "year": 1979,
-    "event_type": "education",
-    "target_id": "Q33526980",
-    "target_label": "University of Kansas Medical Center",
-    "text": "1979: began studying at University of Kansas Medical Center"
-   },
    {
     "year": 1982,
     "event_type": "education",
@@ -1088,84 +1067,77 @@
     "target_id": "Q174710",
     "target_label": "University of California, Los Angeles",
     "text": "1985: began studying at University of California, Los Angeles"
+   },
+   {
+    "year": 1987,
+    "event_type": "employment",
+    "target_id": "Q842165",
+    "target_label": "UCLA David Geffen School of Medicine",
+    "text": "1987: began working for UCLA David Geffen School of Medicine"
    }
   ],
-  "missing_year": 1980,
+  "missing_year": 1986,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "education",
-    "target_id": "Q1061104",
-    "target_label": "University of California, San Francisco",
-    "text": "began studying at University of California, San Francisco",
+    "target_id": "Q33526980",
+    "target_label": "University of Kansas Medical Center",
+    "text": "began studying at University of Kansas Medical Center",
     "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "B",
     "event_type": "education",
-    "target_id": "Q655810",
-    "target_label": "Alliance française",
-    "text": "began studying at Alliance française",
+    "target_id": "Q777403",
+    "target_label": "Washington University in St. Louis",
+    "text": "began studying at Washington University in St. Louis",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
     "event_type": "education",
-    "target_id": "Q4948182",
-    "target_label": "Boston University Medical Campus",
-    "text": "began studying at Boston University Medical Campus",
-    "distractor_type": "correct"
+    "target_id": "Q34433",
+    "target_label": "University of Oxford",
+    "text": "began studying at University of Oxford",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "D",
     "event_type": "education",
-    "target_id": "Q3064264",
-    "target_label": "Boston University School of Law",
-    "text": "began studying at Boston University School of Law",
+    "target_id": "Q622664",
+    "target_label": "University of California, San Diego",
+    "text": "began studying at University of California, San Diego",
     "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "E",
     "event_type": "education",
-    "target_id": "Q34433",
-    "target_label": "University of Oxford",
-    "text": "began studying at University of Oxford",
+    "target_id": "Q125754064",
+    "target_label": "Humanities and Social Sciences III, the University of Tokyo",
+    "text": "began studying at Humanities and Social Sciences III, the University of Tokyo",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
     "event_type": "education",
-    "target_id": "Q86026697",
-    "target_label": "Queen's University Belfast Queen's University Management School",
-    "text": "began studying at Queen's University Belfast Queen's University Management School",
-    "distractor_type": "same_type_random"
+    "target_id": "Q1061104",
+    "target_label": "University of California, San Francisco",
+    "text": "began studying at University of California, San Francisco",
+    "distractor_type": "correct"
    }
   ],
-  "correct_candidate_id": "C",
+  "correct_candidate_id": "F",
   "hidden_event_type": "education",
-  "hidden_target_id": "Q4948182",
+  "hidden_target_id": "Q1061104",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q159681_1989_P166",
+  "question_id": "Q159681_2009_P166",
   "person_id": "Q159681",
   "person_label": "Valery Bykovsky",
   "observed_events": [
-   {
-    "year": 1978,
-    "event_type": "award",
-    "target_id": "Q571726",
-    "target_label": "Gold medal with hero rank of GDR",
-    "text": "1978: received Gold medal with hero rank of GDR"
-   },
-   {
-    "year": 1978,
-    "event_type": "award",
-    "target_id": "Q694401",
-    "target_label": "Order of Karl Marx",
-    "text": "1978: received Order of Karl Marx"
-   },
    {
     "year": 2003,
     "event_type": "award",
@@ -1179,62 +1151,69 @@
     "target_id": "Q4375455",
     "target_label": "Russian Federation Government Certificate of Honour",
     "text": "2008: received Russian Federation Government Certificate of Honour"
+   },
+   {
+    "year": 2011,
+    "event_type": "award",
+    "target_id": "Q791135",
+    "target_label": "Order of Friendship",
+    "text": "2011: received Order of Friendship"
    }
   ],
-  "missing_year": 1989,
+  "missing_year": 2009,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "award",
-    "target_id": "Q758861",
-    "target_label": "USSR State Prize",
-    "text": "received USSR State Prize",
-    "distractor_type": "correct"
+    "target_id": "Q22893893",
+    "target_label": "Commander of the Order of Vasa",
+    "text": "received Commander of the Order of Vasa",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q1185606",
-    "target_label": "Demidov Prize",
-    "text": "received Demidov Prize",
-    "distractor_type": "same_type_random"
+    "target_id": "Q571726",
+    "target_label": "Gold medal with hero rank of GDR",
+    "text": "received Gold medal with hero rank of GDR",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q27087824",
-    "target_label": "Armenian SSR State Prize",
-    "text": "received Armenian SSR State Prize",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q16900574",
+    "target_label": "NAACP Image Award for Outstanding Literary Work, Nonfiction",
+    "text": "received NAACP Image Award for Outstanding Literary Work, Nonfiction",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q2340171",
-    "target_label": "Star of the Republic of Indonesia",
-    "text": "received Star of the Republic of Indonesia",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q30120085",
+    "target_label": "King Faisal International Prize in Science",
+    "text": "received King Faisal International Prize in Science",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q78621336",
-    "target_label": "Locus Award for Best Anthology",
-    "text": "received Locus Award for Best Anthology",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q116764353",
+    "target_label": "Commendation of the Government of Russia",
+    "text": "received Commendation of the Government of Russia",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q14539884",
-    "target_label": "Grand Officer of the Order of Merit of the Italian Republic",
-    "text": "received Grand Officer of the Order of Merit of the Italian Republic",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q51067",
+    "target_label": "Lenin Prize",
+    "text": "received Lenin Prize",
+    "distractor_type": "same_type_random"
    }
   ],
-  "correct_candidate_id": "A",
+  "correct_candidate_id": "E",
   "hidden_event_type": "award",
-  "hidden_target_id": "Q758861",
+  "hidden_target_id": "Q116764353",
   "source": "wikidata",
   "split": "train"
  },
@@ -1285,42 +1264,42 @@
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q81180",
-    "target_label": "Grammy Hall of Fame",
-    "text": "received Grammy Hall of Fame",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "award",
     "target_id": "Q12201434",
     "target_label": "Dame Commander of the Order of the British Empire",
     "text": "received Dame Commander of the Order of the British Empire",
     "distractor_type": "label_similar_same_type"
    },
    {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q25929491",
+    "target_label": "Grand Cross, Special Class of the Order of the Sun of Peru",
+    "text": "received Grand Cross, Special Class of the Order of the Sun of Peru",
+    "distractor_type": "same_type_near_year"
+   },
+   {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q7243516",
-    "target_label": "Primetime Emmy Award for Outstanding Variety, Music, or Comedy Special",
-    "text": "received Primetime Emmy Award for Outstanding Variety, Music, or Comedy Special",
-    "distractor_type": "same_type_random"
+    "target_id": "Q922348",
+    "target_label": "Broadcast Film Critics Association Award for Best Supporting Actor",
+    "text": "received Broadcast Film Critics Association Award for Best Supporting Actor",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q6084741",
-    "target_label": "José Fuentes Mares National Prize for Literature",
-    "text": "received José Fuentes Mares National Prize for Literature",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q4313414",
+    "target_label": "People's Artist of the Russian Federation",
+    "text": "received People's Artist of the Russian Federation",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q593098",
-    "target_label": "Golden Globe Award for Best Actor – Motion Picture Drama",
-    "text": "received Golden Globe Award for Best Actor – Motion Picture Drama",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q11789143",
+    "target_label": "Sphinx Award",
+    "text": "received Sphinx Award",
+    "distractor_type": "same_type_near_year"
    }
   ],
   "correct_candidate_id": "A",
@@ -1330,7 +1309,7 @@
   "split": "train"
  },
  {
-  "question_id": "Q34060_1970_P166",
+  "question_id": "Q34060_1968_P39",
   "person_id": "Q34060",
   "person_label": "Yizhak Rabin",
   "observed_events": [
@@ -1342,11 +1321,11 @@
     "text": "1964: began serving as Chief of the General Staff"
    },
    {
-    "year": 1968,
-    "event_type": "position",
-    "target_id": "Q60484312",
-    "target_label": "Ambassador of Israel to the United States",
-    "text": "1968: began serving as Ambassador of Israel to the United States"
+    "year": 1970,
+    "event_type": "award",
+    "target_id": "Q110471679",
+    "target_label": "honorary doctor of the University of Miami",
+    "text": "1970: received honorary doctor of the University of Miami"
    },
    {
     "year": 1974,
@@ -1354,77 +1333,84 @@
     "target_id": "Q20021270",
     "target_label": "Minister of Communications",
     "text": "1974: began serving as Minister of Communications"
-   },
-   {
-    "year": 1974,
-    "event_type": "position",
-    "target_id": "Q208487",
-    "target_label": "Prime Minister of Israel",
-    "text": "1974: began serving as Prime Minister of Israel"
    }
   ],
-  "missing_year": 1970,
+  "missing_year": 1968,
   "candidates": [
    {
     "candidate_id": "A",
-    "event_type": "award",
-    "target_id": "Q1435635",
-    "target_label": "National Film Award for Best Direction",
-    "text": "received National Film Award for Best Direction",
+    "event_type": "position",
+    "target_id": "Q1846384",
+    "target_label": "Secretary of State for Wales",
+    "text": "began serving as Secretary of State for Wales",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q833154",
-    "target_label": "Edgar Awards",
-    "text": "received Edgar Awards",
-    "distractor_type": "same_type_near_year"
+    "event_type": "position",
+    "target_id": "Q60484312",
+    "target_label": "Ambassador of Israel to the United States",
+    "text": "began serving as Ambassador of Israel to the United States",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "C",
     "event_type": "position",
-    "target_id": "Q15722942",
-    "target_label": "Minister of Health",
-    "text": "began serving as Minister of Health",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q15705021",
+    "target_label": "member of the Chamber of Representatives of Belgium",
+    "text": "began serving as member of the Chamber of Representatives of Belgium",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q110471679",
-    "target_label": "honorary doctor of the University of Miami",
-    "text": "received honorary doctor of the University of Miami",
-    "distractor_type": "correct"
+    "target_id": "Q35637",
+    "target_label": "Nobel Peace Prize",
+    "text": "received Nobel Peace Prize",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q114390316",
-    "target_label": "honorary doctor of the University of Pavia",
-    "text": "received honorary doctor of the University of Pavia",
-    "distractor_type": "label_similar_same_type"
+    "event_type": "position",
+    "target_id": "Q19157155",
+    "target_label": "President of the Parliament of Norway",
+    "text": "began serving as President of the Parliament of Norway",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q14900501",
-    "target_label": "Grand Cordon of the Order of Leopold",
-    "text": "received Grand Cordon of the Order of Leopold",
-    "distractor_type": "same_type_random"
+    "event_type": "position",
+    "target_id": "Q25293432",
+    "target_label": "ambassador of France to the United States",
+    "text": "began serving as ambassador of France to the United States",
+    "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "D",
-  "hidden_event_type": "award",
-  "hidden_target_id": "Q110471679",
+  "correct_candidate_id": "B",
+  "hidden_event_type": "position",
+  "hidden_target_id": "Q60484312",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q21063295_2017_P108",
+  "question_id": "Q21063295_2002_P108",
   "person_id": "Q21063295",
   "person_label": "Christobel Saunders",
   "observed_events": [
+   {
+    "year": 1998,
+    "event_type": "education",
+    "target_id": "Q1584160",
+    "target_label": "Royal College of Surgeons of England",
+    "text": "1998: began studying at Royal College of Surgeons of England"
+   },
+   {
+    "year": 2000,
+    "event_type": "employment",
+    "target_id": "Q19872844",
+    "target_label": "Department of Health",
+    "text": "2000: began working for Department of Health"
+   },
    {
     "year": 2003,
     "event_type": "education",
@@ -1438,69 +1424,62 @@
     "target_id": "Q19872844",
     "target_label": "Department of Health",
     "text": "2015: began working for Department of Health"
-   },
-   {
-    "year": 2018,
-    "event_type": "award",
-    "target_id": "Q9684829",
-    "target_label": "Officer of the Order of Australia",
-    "text": "2018: received Officer of the Order of Australia"
    }
   ],
-  "missing_year": 2017,
+  "missing_year": 2002,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "employment",
-    "target_id": "Q2093139",
-    "target_label": "University of Eastern Finland",
-    "text": "began working for University of Eastern Finland",
+    "target_id": "Q1020699",
+    "target_label": "Savannah College of Art and Design",
+    "text": "began working for Savannah College of Art and Design",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "employment",
-    "target_id": "Q5546038",
-    "target_label": "Milken Institute School of Public Health",
-    "text": "began working for Milken Institute School of Public Health",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q5331041",
+    "target_label": "East–West Center",
+    "text": "began working for East–West Center",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "C",
     "event_type": "employment",
-    "target_id": "Q1517021",
-    "target_label": "University of Western Australia",
-    "text": "began working for University of Western Australia",
+    "target_id": "Q108737100",
+    "target_label": "BreastScreen WA",
+    "text": "began working for BreastScreen WA",
     "distractor_type": "correct"
    },
    {
     "candidate_id": "D",
     "event_type": "employment",
-    "target_id": "Q101011745",
-    "target_label": "Newcastle University Faculty of Medical Sciences",
-    "text": "began working for Newcastle University Faculty of Medical Sciences",
+    "target_id": "Q1464114",
+    "target_label": "University of Skövde",
+    "text": "began working for University of Skövde",
     "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "E",
-    "event_type": "education",
-    "target_id": "Q1584160",
-    "target_label": "Royal College of Surgeons of England",
-    "text": "began studying at Royal College of Surgeons of England",
-    "distractor_type": "same_person_wrong_time"
+    "event_type": "employment",
+    "target_id": "Q186285",
+    "target_label": "University of Copenhagen",
+    "text": "began working for University of Copenhagen",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
     "event_type": "employment",
-    "target_id": "Q15576",
-    "target_label": "University of South Australia",
-    "text": "began working for University of South Australia",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q1517021",
+    "target_label": "University of Western Australia",
+    "text": "began working for University of Western Australia",
+    "distractor_type": "same_person_wrong_time"
    }
   ],
   "correct_candidate_id": "C",
   "hidden_event_type": "employment",
-  "hidden_target_id": "Q1517021",
+  "hidden_target_id": "Q108737100",
   "source": "wikidata",
   "split": "train"
  },
@@ -1535,54 +1514,54 @@
   "candidates": [
    {
     "candidate_id": "A",
-    "event_type": "position",
-    "target_id": "Q81531912",
-    "target_label": "member of the Second Chamber",
-    "text": "began serving as member of the Second Chamber",
-    "distractor_type": "same_person_wrong_time"
+    "event_type": "award",
+    "target_id": "Q17008985",
+    "target_label": "Locus Award for Best Short Story",
+    "text": "received Locus Award for Best Short Story",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q1065982",
-    "target_label": "Charles S. Mott Prize",
-    "text": "received Charles S. Mott Prize",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q100377523",
+    "target_label": "Vanderbilt Prize in Biomedical Science",
+    "text": "received Vanderbilt Prize in Biomedical Science",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q1351845",
-    "target_label": "Erich-Kästner award",
-    "text": "received Erich-Kästner award",
+    "target_id": "Q136701044",
+    "target_label": "Marcel Pagnol Award",
+    "text": "received Marcel Pagnol Award",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q980337",
-    "target_label": "Genetics Society of America Medal",
-    "text": "received Genetics Society of America Medal",
-    "distractor_type": "same_type_random"
+    "event_type": "position",
+    "target_id": "Q121594",
+    "target_label": "professor",
+    "text": "began serving as professor",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q20853537",
-    "target_label": "Honorary doctor of the Catholic University of Louvain",
-    "text": "received Honorary doctor of the Catholic University of Louvain",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "F",
     "event_type": "award",
     "target_id": "Q99976322",
     "target_label": "honorary doctor of the Catholic University of Paris",
     "text": "received honorary doctor of the Catholic University of Paris",
     "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q20853537",
+    "target_label": "Honorary doctor of the Catholic University of Louvain",
+    "text": "received Honorary doctor of the Catholic University of Louvain",
+    "distractor_type": "correct"
    }
   ],
-  "correct_candidate_id": "E",
+  "correct_candidate_id": "F",
   "hidden_event_type": "award",
   "hidden_target_id": "Q20853537",
   "source": "wikidata",
@@ -1627,37 +1606,13 @@
    {
     "candidate_id": "A",
     "event_type": "employment",
-    "target_id": "Q10279390",
-    "target_label": "Faculty of Sciences of the University of Porto",
-    "text": "began working for Faculty of Sciences of the University of Porto",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "employment",
-    "target_id": "Q3527695",
-    "target_label": "Teatr Komedia",
-    "text": "began working for Teatr Komedia",
+    "target_id": "Q113685800",
+    "target_label": "Ankler Media",
+    "text": "began working for Ankler Media",
     "distractor_type": "label_similar_same_type"
    },
    {
-    "candidate_id": "C",
-    "event_type": "employment",
-    "target_id": "Q690639",
-    "target_label": "University of Klagenfurt",
-    "text": "began working for University of Klagenfurt",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "employment",
-    "target_id": "Q1755255",
-    "target_label": "Smithsonian Astrophysical Observatory",
-    "text": "began working for Smithsonian Astrophysical Observatory",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "E",
+    "candidate_id": "B",
     "event_type": "employment",
     "target_id": "Q2638120",
     "target_label": "Mediaset España",
@@ -1665,25 +1620,56 @@
     "distractor_type": "same_person_wrong_time"
    },
    {
-    "candidate_id": "F",
+    "candidate_id": "C",
     "event_type": "employment",
     "target_id": "Q3118227",
     "target_label": "Atresmedia",
     "text": "began working for Atresmedia",
     "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "employment",
+    "target_id": "Q689617",
+    "target_label": "Università della Svizzera italiana",
+    "text": "began working for Università della Svizzera italiana",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "employment",
+    "target_id": "Q3070474",
+    "target_label": "Gordon and Betty Moore Foundation",
+    "text": "began working for Gordon and Betty Moore Foundation",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "employment",
+    "target_id": "Q165980",
+    "target_label": "University of Vienna",
+    "text": "began working for University of Vienna",
+    "distractor_type": "same_type_near_year"
    }
   ],
-  "correct_candidate_id": "F",
+  "correct_candidate_id": "C",
   "hidden_event_type": "employment",
   "hidden_target_id": "Q3118227",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q311793_1987_P166",
+  "question_id": "Q311793_1977_P166",
   "person_id": "Q311793",
   "person_label": "Aga Khan IV",
   "observed_events": [
+   {
+    "year": 1957,
+    "event_type": "position",
+    "target_id": "Q38998920",
+    "target_label": "Ismaili imam",
+    "text": "1957: began serving as Ismaili imam"
+   },
    {
     "year": 1983,
     "event_type": "award",
@@ -1697,81 +1683,67 @@
     "target_id": "Q55381813",
     "target_label": "Grand Cordon of the Order of the Throne",
     "text": "1986: received Grand Cordon of the Order of the Throne"
-   },
-   {
-    "year": 1989,
-    "event_type": "award",
-    "target_id": "Q629291",
-    "target_label": "Order of Merit for Labour",
-    "text": "1989: received Order of Merit for Labour"
-   },
-   {
-    "year": 1996,
-    "event_type": "award",
-    "target_id": "Q41795411",
-    "target_label": "honorary doctorate from Brown University",
-    "text": "1996: received honorary doctorate from Brown University"
    }
   ],
-  "missing_year": 1987,
+  "missing_year": 1977,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "award",
-    "target_id": "Q3827469",
-    "target_label": "Latin Grammy Award for Record of the Year",
-    "text": "received Latin Grammy Award for Record of the Year",
-    "distractor_type": "same_type_random"
+    "target_id": "Q15096222",
+    "target_label": "Förderpreis zum Literaturpreis der Stadt Bremen",
+    "text": "received Förderpreis zum Literaturpreis der Stadt Bremen",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q1868950",
-    "target_label": "London Film Critics Circle Award for Actor of the Year",
-    "text": "received London Film Critics Circle Award for Actor of the Year",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q14539974",
+    "target_label": "Knight Grand Cross of the Order of Merit of the Italian Republic",
+    "text": "received Knight Grand Cross of the Order of Merit of the Italian Republic",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q63057295",
-    "target_label": "honorary doctorate from McMaster University",
-    "text": "received honorary doctorate from McMaster University",
-    "distractor_type": "correct"
+    "target_id": "Q12201445",
+    "target_label": "Knight Commander of the Order of the British Empire",
+    "text": "received Knight Commander of the Order of the British Empire",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q17008964",
-    "target_label": "Locus Award for Best Novelette",
-    "text": "received Locus Award for Best Novelette",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q12192290",
+    "target_label": "Knight Grand Cross of the Royal Victorian Order",
+    "text": "received Knight Grand Cross of the Royal Victorian Order",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q28798222",
-    "target_label": "honorary doctorate of Lancaster University",
-    "text": "received honorary doctorate of Lancaster University",
+    "target_id": "Q14539990",
+    "target_label": "Knight Grand Cross with Collar of the Order of Merit of the Italian Republic",
+    "text": "received Knight Grand Cross with Collar of the Order of Merit of the Italian Republic",
     "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q10855226",
-    "target_label": "Grand Cross of the Legion of Honour",
-    "text": "received Grand Cross of the Legion of Honour",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q1109489",
+    "target_label": "Collier Trophy",
+    "text": "received Collier Trophy",
+    "distractor_type": "same_type_near_year"
    }
   ],
-  "correct_candidate_id": "C",
+  "correct_candidate_id": "B",
   "hidden_event_type": "award",
-  "hidden_target_id": "Q63057295",
+  "hidden_target_id": "Q14539974",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q615077_2001_P39",
+  "question_id": "Q615077_2002_P39",
   "person_id": "Q615077",
   "person_label": "John Healey",
   "observed_events": [
@@ -1783,11 +1755,11 @@
     "text": "1997: began serving as member of the 52nd Parliament of the United Kingdom"
    },
    {
-    "year": 2002,
+    "year": 2001,
     "event_type": "position",
-    "target_id": "Q5333410",
-    "target_label": "Economic Secretary to the Treasury",
-    "text": "2002: began serving as Economic Secretary to the Treasury"
+    "target_id": "Q35921591",
+    "target_label": "member of the 53rd Parliament of the United Kingdom",
+    "text": "2001: began serving as member of the 53rd Parliament of the United Kingdom"
    },
    {
     "year": 2005,
@@ -1795,62 +1767,69 @@
     "target_id": "Q35647955",
     "target_label": "member of the 54th Parliament of the United Kingdom",
     "text": "2005: began serving as member of the 54th Parliament of the United Kingdom"
+   },
+   {
+    "year": 2005,
+    "event_type": "position",
+    "target_id": "Q5449647",
+    "target_label": "Financial Secretary to the Treasury",
+    "text": "2005: began serving as Financial Secretary to the Treasury"
    }
   ],
-  "missing_year": 2001,
+  "missing_year": 2002,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "position",
-    "target_id": "Q41582568",
-    "target_label": "member of the 23rd Parliament of the United Kingdom",
-    "text": "began serving as member of the 23rd Parliament of the United Kingdom",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q106963615",
+    "target_label": "Children’s Commissioner",
+    "text": "began serving as Children’s Commissioner",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "position",
-    "target_id": "Q30645478",
-    "target_label": "Shadow Secretary of State for Housing",
-    "text": "began serving as Shadow Secretary of State for Housing",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q1300660",
+    "target_label": "honorary chairperson",
+    "text": "began serving as honorary chairperson",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "C",
     "event_type": "position",
-    "target_id": "Q35921591",
-    "target_label": "member of the 53rd Parliament of the United Kingdom",
-    "text": "began serving as member of the 53rd Parliament of the United Kingdom",
-    "distractor_type": "correct"
+    "target_id": "Q23649291",
+    "target_label": "Shadow Secretary of State for Housing, Communities and Local Government",
+    "text": "began serving as Shadow Secretary of State for Housing, Communities and Local Government",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
     "event_type": "position",
-    "target_id": "Q20105736",
-    "target_label": "president of the Russian Academy of Sciences",
-    "text": "began serving as president of the Russian Academy of Sciences",
-    "distractor_type": "same_type_random"
+    "target_id": "Q5096927",
+    "target_label": "Chief Secretary to the Treasury",
+    "text": "began serving as Chief Secretary to the Treasury",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "E",
     "event_type": "position",
-    "target_id": "Q162754",
-    "target_label": "Chancellor of the Duchy of Lancaster",
-    "text": "began serving as Chancellor of the Duchy of Lancaster",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q5333410",
+    "target_label": "Economic Secretary to the Treasury",
+    "text": "began serving as Economic Secretary to the Treasury",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "F",
     "event_type": "position",
-    "target_id": "Q110609931",
-    "target_label": "Apostolic Nuncio to Trinidad and Tobago",
-    "text": "began serving as Apostolic Nuncio to Trinidad and Tobago",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q6866346",
+    "target_label": "Minister of State for Communities and Local Government",
+    "text": "began serving as Minister of State for Communities and Local Government",
+    "distractor_type": "same_person_wrong_time"
    }
   ],
-  "correct_candidate_id": "C",
+  "correct_candidate_id": "E",
   "hidden_event_type": "position",
-  "hidden_target_id": "Q35921591",
+  "hidden_target_id": "Q5333410",
   "source": "wikidata",
   "split": "train"
  },
@@ -1893,21 +1872,13 @@
    {
     "candidate_id": "A",
     "event_type": "education",
-    "target_id": "Q1784861",
-    "target_label": "United World College of South East Asia",
-    "text": "began studying at United World College of South East Asia",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "education",
     "target_id": "Q156725",
     "target_label": "University of Hamburg",
     "text": "began studying at University of Hamburg",
     "distractor_type": "label_similar_same_type"
    },
    {
-    "candidate_id": "C",
+    "candidate_id": "B",
     "event_type": "education",
     "target_id": "Q35794",
     "target_label": "University of Cambridge",
@@ -1915,19 +1886,27 @@
     "distractor_type": "correct"
    },
    {
+    "candidate_id": "C",
+    "event_type": "education",
+    "target_id": "Q245247",
+    "target_label": "King's College London",
+    "text": "began studying at King's College London",
+    "distractor_type": "same_type_random"
+   },
+   {
     "candidate_id": "D",
     "event_type": "education",
-    "target_id": "Q391028",
-    "target_label": "University of British Columbia",
-    "text": "began studying at University of British Columbia",
-    "distractor_type": "same_type_random"
+    "target_id": "Q375606",
+    "target_label": "Birkbeck, University of London",
+    "text": "began studying at Birkbeck, University of London",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "education",
-    "target_id": "Q19940613",
-    "target_label": "Yong-in Daeil Elementary School",
-    "text": "began studying at Yong-in Daeil Elementary School",
+    "target_id": "Q633561",
+    "target_label": "University of Zaragoza",
+    "text": "began studying at University of Zaragoza",
     "distractor_type": "same_type_near_year"
    },
    {
@@ -1939,7 +1918,7 @@
     "distractor_type": "same_person_wrong_time"
    }
   ],
-  "correct_candidate_id": "C",
+  "correct_candidate_id": "B",
   "hidden_event_type": "education",
   "hidden_target_id": "Q35794",
   "source": "wikidata",
@@ -1984,21 +1963,29 @@
    {
     "candidate_id": "A",
     "event_type": "position",
-    "target_id": "Q26248695",
-    "target_label": "minister of Foreign Affairs of the Kingdom of Italy",
-    "text": "began serving as minister of Foreign Affairs of the Kingdom of Italy",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "position",
     "target_id": "Q16147853",
     "target_label": "President pro tempore of the Connecticut Senate",
     "text": "began serving as President pro tempore of the Connecticut Senate",
     "distractor_type": "label_similar_same_type"
    },
    {
+    "candidate_id": "B",
+    "event_type": "position",
+    "target_id": "Q18810377",
+    "target_label": "Member of the New South Wales Legislative Council",
+    "text": "began serving as Member of the New South Wales Legislative Council",
+    "distractor_type": "same_type_random"
+   },
+   {
     "candidate_id": "C",
+    "event_type": "position",
+    "target_id": "Q45213921",
+    "target_label": "President of the Congress of Deputies",
+    "text": "began serving as President of the Congress of Deputies",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "D",
     "event_type": "position",
     "target_id": "Q1140848",
     "target_label": "President pro tempore of the United States Senate",
@@ -2006,124 +1993,116 @@
     "distractor_type": "correct"
    },
    {
-    "candidate_id": "D",
-    "event_type": "position",
-    "target_id": "Q13218630",
-    "target_label": "United States representative",
-    "text": "began serving as United States representative",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
     "candidate_id": "E",
     "event_type": "position",
-    "target_id": "Q26877864",
-    "target_label": "minister of the Navy of the Kingdom of Italy",
-    "text": "began serving as minister of the Navy of the Kingdom of Italy",
+    "target_id": "Q59384510",
+    "target_label": "Bahia senator",
+    "text": "began serving as Bahia senator",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
     "event_type": "position",
-    "target_id": "Q16871885",
-    "target_label": "Minister of Development of Spain",
-    "text": "began serving as Minister of Development of Spain",
-    "distractor_type": "same_type_random"
+    "target_id": "Q13218630",
+    "target_label": "United States representative",
+    "text": "began serving as United States representative",
+    "distractor_type": "same_person_wrong_time"
    }
   ],
-  "correct_candidate_id": "C",
+  "correct_candidate_id": "D",
   "hidden_event_type": "position",
   "hidden_target_id": "Q1140848",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q69430_2006_P166",
+  "question_id": "Q69430_1965_P166",
   "person_id": "Q69430",
   "person_label": "Peter Scholl-Latour",
   "observed_events": [
    {
-    "year": 2005,
-    "event_type": "award",
-    "target_id": "Q10855271",
-    "target_label": "Knight of the Legion of Honour",
-    "text": "2005: received Knight of the Legion of Honour"
+    "year": 1956,
+    "event_type": "education",
+    "target_id": "Q1430954",
+    "target_label": "Saint Joseph University of Beirut",
+    "text": "1956: began studying at Saint Joseph University of Beirut"
    },
    {
-    "year": 2005,
-    "event_type": "award",
-    "target_id": "Q1605666",
-    "target_label": "Henri Nannen Award",
-    "text": "2005: received Henri Nannen Award"
+    "year": 1960,
+    "event_type": "position",
+    "target_id": "Q1155838",
+    "target_label": "correspondent",
+    "text": "1960: began serving as correspondent"
    },
    {
-    "year": 2007,
-    "event_type": "award",
-    "target_id": "Q821717",
-    "target_label": "Steiger Award",
-    "text": "2007: received Steiger Award"
+    "year": 1969,
+    "event_type": "employment",
+    "target_id": "Q203453",
+    "target_label": "Westdeutscher Rundfunk",
+    "text": "1969: began working for Westdeutscher Rundfunk"
    },
    {
-    "year": 2008,
+    "year": 1969,
     "event_type": "award",
-    "target_id": "Q1511195",
-    "target_label": "Gerhard Löwenthal Prize",
-    "text": "2008: received Gerhard Löwenthal Prize"
+    "target_id": "Q538661",
+    "target_label": "Goldene Kamera",
+    "text": "1969: received Goldene Kamera"
    }
   ],
-  "missing_year": 2006,
+  "missing_year": 1965,
   "candidates": [
    {
     "candidate_id": "A",
-    "event_type": "employment",
-    "target_id": "Q158322",
-    "target_label": "Stern",
-    "text": "began working for Stern",
-    "distractor_type": "same_person_wrong_time"
+    "event_type": "award",
+    "target_id": "Q48800536",
+    "target_label": "American Music Award for Favorite Soul/R&B Song",
+    "text": "received American Music Award for Favorite Soul/R&B Song",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q929175",
-    "target_label": "The Ring magazine Fighter of the Year",
-    "text": "received The Ring magazine Fighter of the Year",
-    "distractor_type": "same_type_near_year"
+    "event_type": "education",
+    "target_id": "Q681917",
+    "target_label": "Collège Saint-Michel",
+    "text": "began studying at Collège Saint-Michel",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q10905276",
-    "target_label": "Commander's Cross of the Order of Merit of the Federal Republic of Germany",
-    "text": "received Commander's Cross of the Order of Merit of the Federal Republic of Germany",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q472379",
+    "target_label": "Grimme-Preis",
+    "text": "received Grimme-Preis",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q10905334",
-    "target_label": "Officer's Cross of the Order of Merit of the Federal Republic of Germany",
-    "text": "received Officer's Cross of the Order of Merit of the Federal Republic of Germany",
-    "distractor_type": "correct"
+    "target_id": "Q902788",
+    "target_label": "Willard Gibbs Award",
+    "text": "received Willard Gibbs Award",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q20035301",
-    "target_label": "Zbigniew Herbert International Literary Award",
-    "text": "received Zbigniew Herbert International Literary Award",
-    "distractor_type": "same_type_random"
+    "target_id": "Q64828820",
+    "target_label": "Order of Labor First Class",
+    "text": "received Order of Labor First Class",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q21588796",
-    "target_label": "Harvey Award for Best Writer",
-    "text": "received Harvey Award for Best Writer",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q1546873",
+    "target_label": "Grimmelshausen-Preis",
+    "text": "received Grimmelshausen-Preis",
+    "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "D",
+  "correct_candidate_id": "C",
   "hidden_event_type": "award",
-  "hidden_target_id": "Q10905334",
+  "hidden_target_id": "Q472379",
   "source": "wikidata",
   "split": "train"
  },
@@ -2166,13 +2145,29 @@
    {
     "candidate_id": "A",
     "event_type": "award",
-    "target_id": "Q99670094",
-    "target_label": "honorary doctor of Bowdoin College",
-    "text": "received honorary doctor of Bowdoin College",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q11789143",
+    "target_label": "Sphinx Award",
+    "text": "received Sphinx Award",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q1011547",
+    "target_label": "Golden Globe Awards",
+    "text": "received Golden Globe Awards",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q6084564",
+    "target_label": "Prix Laure Bataillon",
+    "text": "received Prix Laure Bataillon",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "D",
     "event_type": "award",
     "target_id": "Q6515765",
     "target_label": "Sproing Award",
@@ -2180,49 +2175,40 @@
     "distractor_type": "correct"
    },
    {
-    "candidate_id": "C",
-    "event_type": "award",
-    "target_id": "Q12201434",
-    "target_label": "Dame Commander of the Order of the British Empire",
-    "text": "received Dame Commander of the Order of the British Empire",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q93923",
-    "target_label": "Order of King Abdulaziz al Saud",
-    "text": "received Order of King Abdulaziz al Saud",
-    "distractor_type": "same_type_near_year"
-   },
-   {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q108677020",
-    "target_label": "Kirby Award for Best Writer",
-    "text": "received Kirby Award for Best Writer",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q694401",
+    "target_label": "Order of Karl Marx",
+    "text": "received Order of Karl Marx",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q11789143",
-    "target_label": "Sphinx Award",
-    "text": "received Sphinx Award",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q987080",
+    "target_label": "honorary citizenship",
+    "text": "received honorary citizenship",
+    "distractor_type": "same_type_near_year"
    }
   ],
-  "correct_candidate_id": "B",
+  "correct_candidate_id": "D",
   "hidden_event_type": "award",
   "hidden_target_id": "Q6515765",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q56570593_2014_P108",
+  "question_id": "Q56570593_1999_P108",
   "person_id": "Q56570593",
   "person_label": "Alessandro De Angelis",
   "observed_events": [
+   {
+    "year": 1993,
+    "event_type": "employment",
+    "target_id": "Q42944",
+    "target_label": "CERN",
+    "text": "1993: began working for CERN"
+   },
    {
     "year": 2010,
     "event_type": "employment",
@@ -2236,24 +2222,17 @@
     "target_id": "Q463326",
     "target_label": "Max Planck Institute for Physics",
     "text": "2012: began working for Max Planck Institute for Physics"
-   },
-   {
-    "year": 2017,
-    "event_type": "employment",
-    "target_id": "Q193510",
-    "target_label": "University of Padua",
-    "text": "2017: began working for University of Padua"
    }
   ],
-  "missing_year": 2014,
+  "missing_year": 1999,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "employment",
-    "target_id": "Q3152378",
-    "target_label": "Institut National d'Hygiène",
-    "text": "began working for Institut National d'Hygiène",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q2307935",
+    "target_label": "University of Udine",
+    "text": "began working for University of Udine",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "B",
@@ -2261,443 +2240,345 @@
     "target_id": "Q1674876",
     "target_label": "Istituto Nazionale di Fisica Nucleare",
     "text": "began working for Istituto Nazionale di Fisica Nucleare",
-    "distractor_type": "correct"
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "C",
     "event_type": "employment",
-    "target_id": "Q152838",
-    "target_label": "University of Göttingen",
-    "text": "began working for University of Göttingen",
-    "distractor_type": "same_type_random"
+    "target_id": "Q1307345",
+    "target_label": "University of Maine",
+    "text": "began working for University of Maine",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "D",
     "event_type": "employment",
-    "target_id": "Q189325",
-    "target_label": "Jet Propulsion Laboratory",
-    "text": "began working for Jet Propulsion Laboratory",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q5746475",
+    "target_label": "Canal 7 Televisión",
+    "text": "began working for Canal 7 Televisión",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "E",
     "event_type": "employment",
-    "target_id": "Q2307935",
-    "target_label": "University of Udine",
-    "text": "began working for University of Udine",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q623459",
+    "target_label": "Silicon Graphics",
+    "text": "began working for Silicon Graphics",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
     "event_type": "employment",
-    "target_id": "Q598841",
-    "target_label": "Monash University",
-    "text": "began working for Monash University",
+    "target_id": "Q333705",
+    "target_label": "Technion – Israel Institute of Technology",
+    "text": "began working for Technion – Israel Institute of Technology",
     "distractor_type": "same_type_near_year"
    }
   ],
-  "correct_candidate_id": "B",
+  "correct_candidate_id": "A",
   "hidden_event_type": "employment",
-  "hidden_target_id": "Q1674876",
+  "hidden_target_id": "Q2307935",
   "source": "wikidata",
   "split": "train"
  },
  {
-  "question_id": "Q14946814_1968_P166",
-  "person_id": "Q14946814",
-  "person_label": "John Aitchison",
+  "question_id": "Q3106470_1983_P108",
+  "person_id": "Q3106470",
+  "person_label": "Gilles Pélisson",
   "observed_events": [
    {
-    "year": 1964,
+    "year": 1981,
     "event_type": "employment",
-    "target_id": "Q192775",
-    "target_label": "University of Glasgow",
-    "text": "1964: began working for University of Glasgow"
+    "target_id": "Q270363",
+    "target_label": "Société Générale",
+    "text": "1981: began working for Société Générale"
    },
    {
-    "year": 1964,
-    "event_type": "employment",
-    "target_id": "Q499510",
-    "target_label": "University of Liverpool",
-    "text": "1964: began working for University of Liverpool"
+    "year": 1981,
+    "event_type": "education",
+    "target_id": "Q13371",
+    "target_label": "Harvard University",
+    "text": "1981: began studying at Harvard University"
    },
    {
-    "year": 1977,
+    "year": 1995,
     "event_type": "employment",
-    "target_id": "Q15568",
-    "target_label": "University of Hong Kong",
-    "text": "1977: began working for University of Hong Kong"
+    "target_id": "Q2340292",
+    "target_label": "Euro Disney S.C.A.",
+    "text": "1995: began working for Euro Disney S.C.A."
    },
    {
-    "year": 1988,
-    "event_type": "award",
-    "target_id": "Q63164861",
-    "target_label": "Guy Medal in Silver",
-    "text": "1988: received Guy Medal in Silver"
+    "year": 1997,
+    "event_type": "position",
+    "target_id": "Q428322",
+    "target_label": "président-directeur général",
+    "text": "1997: began serving as président-directeur général"
    }
   ],
-  "missing_year": 1968,
+  "missing_year": 1983,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "employment",
-    "target_id": "Q35794",
-    "target_label": "University of Cambridge",
-    "text": "began working for University of Cambridge",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q80061",
-    "target_label": "Nobel Prize in Physiology or Medicine",
-    "text": "received Nobel Prize in Physiology or Medicine",
+    "target_id": "Q661056",
+    "target_label": "University of Poitiers",
+    "text": "began working for University of Poitiers",
     "distractor_type": "same_type_random"
    },
    {
+    "candidate_id": "B",
+    "event_type": "education",
+    "target_id": "Q273642",
+    "target_label": "ESSEC Business School",
+    "text": "began studying at ESSEC Business School",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
     "candidate_id": "C",
-    "event_type": "award",
-    "target_id": "Q696972",
-    "target_label": "New York Film Critics Circle Award for Best Director",
-    "text": "received New York Film Critics Circle Award for Best Director",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q112107237",
-    "target_label": "Corresponding Fellow of the Royal Society of Edinburgh",
-    "text": "received Corresponding Fellow of the Royal Society of Edinburgh",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q5438598",
-    "target_label": "Fellow of the Royal Society of Edinburgh",
-    "text": "received Fellow of the Royal Society of Edinburgh",
+    "event_type": "employment",
+    "target_id": "Q212599",
+    "target_label": "Accor",
+    "text": "began working for Accor",
     "distractor_type": "correct"
    },
    {
-    "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q126416220",
-    "target_label": "honorary doctorate from the University of Nice-Sophia Antipolis",
-    "text": "received honorary doctorate from the University of Nice-Sophia Antipolis",
+    "candidate_id": "D",
+    "event_type": "employment",
+    "target_id": "Q51985",
+    "target_label": "Technische Universität Berlin",
+    "text": "began working for Technische Universität Berlin",
     "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "employment",
+    "target_id": "Q49108",
+    "target_label": "Massachusetts Institute of Technology",
+    "text": "began working for Massachusetts Institute of Technology",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "employment",
+    "target_id": "Q5172065",
+    "target_label": "Coro",
+    "text": "began working for Coro",
+    "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "E",
-  "hidden_event_type": "award",
-  "hidden_target_id": "Q5438598",
+  "correct_candidate_id": "C",
+  "hidden_event_type": "employment",
+  "hidden_target_id": "Q212599",
   "source": "wikidata",
   "split": "calibration"
  },
  {
-  "question_id": "Q57564181_2012_P108",
-  "person_id": "Q57564181",
-  "person_label": "Martin Steinegger",
+  "question_id": "Q16509177_1928_P69",
+  "person_id": "Q16509177",
+  "person_label": "George Cunliffe McVittie",
   "observed_events": [
    {
-    "year": 2008,
-    "event_type": "employment",
-    "target_id": "Q29123313",
-    "target_label": "Accenture (United States)",
-    "text": "2008: began working for Accenture (United States)"
+    "year": 1923,
+    "event_type": "education",
+    "target_id": "Q160302",
+    "target_label": "University of Edinburgh",
+    "text": "1923: began studying at University of Edinburgh"
    },
    {
-    "year": 2011,
+    "year": 1930,
     "event_type": "employment",
-    "target_id": "Q157808",
-    "target_label": "Technical University of Munich",
-    "text": "2011: began working for Technical University of Munich"
+    "target_id": "Q503424",
+    "target_label": "University of Leeds",
+    "text": "1930: began working for University of Leeds"
    },
    {
-    "year": 2013,
+    "year": 1933,
     "event_type": "employment",
-    "target_id": "Q1061104",
-    "target_label": "University of California, San Francisco",
-    "text": "2013: began working for University of California, San Francisco"
-   },
+    "target_id": "Q160302",
+    "target_label": "University of Edinburgh",
+    "text": "1933: began working for University of Edinburgh"
+   }
+  ],
+  "missing_year": 1928,
+  "candidates": [
    {
-    "year": 2013,
+    "candidate_id": "A",
     "event_type": "education",
     "target_id": "Q55044",
     "target_label": "Ludwig-Maximilians-Universität München",
-    "text": "2013: began studying at Ludwig-Maximilians-Universität München"
-   }
-  ],
-  "missing_year": 2012,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "employment",
-    "target_id": "Q2150914",
-    "target_label": "University of Hawaiʻi at Hilo",
-    "text": "began working for University of Hawaiʻi at Hilo",
+    "text": "began studying at Ludwig-Maximilians-Universität München",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "employment",
-    "target_id": "Q878218",
-    "target_label": "Max Planck Institute of Biochemistry",
-    "text": "began working for Max Planck Institute of Biochemistry",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "employment",
-    "target_id": "Q858729",
-    "target_label": "Johns Hopkins School of Medicine",
-    "text": "began working for Johns Hopkins School of Medicine",
+    "target_id": "Q457281",
+    "target_label": "University of Illinois Urbana-Champaign",
+    "text": "began working for University of Illinois Urbana-Champaign",
     "distractor_type": "same_person_wrong_time"
    },
    {
+    "candidate_id": "C",
+    "event_type": "education",
+    "target_id": "Q156725",
+    "target_label": "University of Hamburg",
+    "text": "began studying at University of Hamburg",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
     "candidate_id": "D",
-    "event_type": "employment",
-    "target_id": "Q7565733",
-    "target_label": "South African Medical Research Council",
-    "text": "began working for South African Medical Research Council",
-    "distractor_type": "same_type_near_year"
+    "event_type": "education",
+    "target_id": "Q651233",
+    "target_label": "University of Osaka",
+    "text": "began studying at University of Osaka",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "E",
-    "event_type": "employment",
-    "target_id": "Q836125",
-    "target_label": "Max Planck Institute for Biophysical Chemistry",
-    "text": "began working for Max Planck Institute for Biophysical Chemistry",
+    "event_type": "education",
+    "target_id": "Q35794",
+    "target_label": "University of Cambridge",
+    "text": "began studying at University of Cambridge",
     "distractor_type": "correct"
    },
    {
     "candidate_id": "F",
-    "event_type": "employment",
-    "target_id": "Q1427620",
-    "target_label": "State Space Agency of Ukraine",
-    "text": "began working for State Space Agency of Ukraine",
-    "distractor_type": "same_type_random"
+    "event_type": "education",
+    "target_id": "Q2328173",
+    "target_label": "Stadtteilschule Winterhude",
+    "text": "began studying at Stadtteilschule Winterhude",
+    "distractor_type": "same_type_near_year"
    }
   ],
   "correct_candidate_id": "E",
-  "hidden_event_type": "employment",
-  "hidden_target_id": "Q836125",
+  "hidden_event_type": "education",
+  "hidden_target_id": "Q35794",
   "source": "wikidata",
   "split": "calibration"
  },
  {
-  "question_id": "Q2876147_2015_P166",
-  "person_id": "Q2876147",
-  "person_label": "Joaquim Nadal i Farreras",
+  "question_id": "Q118773987_2015_P69",
+  "person_id": "Q118773987",
+  "person_label": "Flóra Anna Buda",
   "observed_events": [
    {
     "year": 2010,
-    "event_type": "position",
-    "target_id": "Q18714088",
-    "target_label": "Member of the Parliament of Catalonia",
-    "text": "2010: began serving as Member of the Parliament of Catalonia"
+    "event_type": "education",
+    "target_id": "Q718311",
+    "target_label": "Moholy-Nagy University of Art and Design",
+    "text": "2010: began studying at Moholy-Nagy University of Art and Design"
    },
    {
-    "year": 2010,
-    "event_type": "position",
-    "target_id": "Q2962016",
-    "target_label": "Leader of the Opposition in Catalonia",
-    "text": "2010: began serving as Leader of the Opposition in Catalonia"
+    "year": 2014,
+    "event_type": "education",
+    "target_id": "Q718311",
+    "target_label": "Moholy-Nagy University of Art and Design",
+    "text": "2014: began studying at Moholy-Nagy University of Art and Design"
    },
    {
     "year": 2019,
     "event_type": "award",
-    "target_id": "Q120120918",
-    "target_label": "honorary doctorate of University of Perpignan",
-    "text": "2019: received honorary doctorate of University of Perpignan"
+    "target_id": "Q182836",
+    "target_label": "Teddy Award",
+    "text": "2019: received Teddy Award"
    },
    {
-    "year": 2022,
-    "event_type": "position",
-    "target_id": "Q106968387",
-    "target_label": "Minister of Research and Universities of the Government of Catalonia",
-    "text": "2022: began serving as Minister of Research and Universities of the Government of Catalonia"
+    "year": 2023,
+    "event_type": "award",
+    "target_id": "Q1050687",
+    "target_label": "Short Film Palme d'Or",
+    "text": "2023: received Short Film Palme d'Or"
    }
   ],
   "missing_year": 2015,
   "candidates": [
    {
     "candidate_id": "A",
-    "event_type": "award",
-    "target_id": "Q906455",
-    "target_label": "Ditmar Award",
-    "text": "received Ditmar Award",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q98594563",
-    "target_label": "Canigó Award",
-    "text": "received Canigó Award",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "position",
-    "target_id": "Q44315059",
-    "target_label": "Minister of Territorial Policy and Public Works",
-    "text": "began serving as Minister of Territorial Policy and Public Works",
+    "event_type": "education",
+    "target_id": "Q1124144",
+    "target_label": "Secondary School of Visual Arts",
+    "text": "began studying at Secondary School of Visual Arts",
     "distractor_type": "same_person_wrong_time"
    },
    {
+    "candidate_id": "B",
+    "event_type": "education",
+    "target_id": "Q1795504",
+    "target_label": "Emlyon Business School",
+    "text": "began studying at Emlyon Business School",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "education",
+    "target_id": "Q273634",
+    "target_label": "École des beaux-arts de Marseille",
+    "text": "began studying at École des beaux-arts de Marseille",
+    "distractor_type": "correct"
+   },
+   {
     "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q5323706",
-    "target_label": "ENI award",
-    "text": "received ENI award",
-    "distractor_type": "label_similar_same_type"
+    "event_type": "education",
+    "target_id": "Q49108",
+    "target_label": "Massachusetts Institute of Technology",
+    "text": "began studying at Massachusetts Institute of Technology",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q21588788",
-    "target_label": "Harvey Award for Best Artist",
-    "text": "received Harvey Award for Best Artist",
+    "event_type": "education",
+    "target_id": "Q174570",
+    "target_label": "London School of Economics and Political Science",
+    "text": "began studying at London School of Economics and Political Science",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q23769799",
-    "target_label": "Grand Cross with Collar of the Order of the White Rose of Finland",
-    "text": "received Grand Cross with Collar of the Order of the White Rose of Finland",
-    "distractor_type": "same_type_random"
+    "event_type": "education",
+    "target_id": "Q1056289",
+    "target_label": "École des Beaux-Arts",
+    "text": "began studying at École des Beaux-Arts",
+    "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "B",
-  "hidden_event_type": "award",
-  "hidden_target_id": "Q98594563",
+  "correct_candidate_id": "C",
+  "hidden_event_type": "education",
+  "hidden_target_id": "Q273634",
   "source": "wikidata",
   "split": "calibration"
  },
  {
-  "question_id": "Q26006800_2005_P69",
-  "person_id": "Q26006800",
-  "person_label": "Eva Moreda",
+  "question_id": "Q12499407_2009_P39",
+  "person_id": "Q12499407",
+  "person_label": "Muhidin M. Said",
   "observed_events": [
    {
-    "year": 2002,
+    "year": 1964,
     "event_type": "education",
-    "target_id": "Q633561",
-    "target_label": "University of Zaragoza",
-    "text": "2002: began studying at University of Zaragoza"
+    "target_id": "Q19740102",
+    "target_label": "SMP Negeri 2 Palu",
+    "text": "1964: began studying at SMP Negeri 2 Palu"
    },
    {
-    "year": 2003,
+    "year": 1971,
     "event_type": "education",
-    "target_id": "Q1229996",
-    "target_label": "University of Seville",
-    "text": "2003: began studying at University of Seville"
+    "target_id": "Q12523473",
+    "target_label": "Tadulako University",
+    "text": "1971: began studying at Tadulako University"
    },
    {
-    "year": 2016,
-    "event_type": "education",
-    "target_id": "Q1232180",
-    "target_label": "University of Granada",
-    "text": "2016: began studying at University of Granada"
+    "year": 2014,
+    "event_type": "position",
+    "target_id": "Q21328632",
+    "target_label": "Member of the People's Representative Council of Indonesia",
+    "text": "2014: began serving as Member of the People's Representative Council of Indonesia"
    },
    {
     "year": 2019,
-    "event_type": "education",
-    "target_id": "Q6844859",
-    "target_label": "Universidad Europea Miguel de Cervantes",
-    "text": "2019: began studying at Universidad Europea Miguel de Cervantes"
-   }
-  ],
-  "missing_year": 2005,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "education",
-    "target_id": "Q7128273",
-    "target_label": "Palmer Theological Seminary",
-    "text": "began studying at Palmer Theological Seminary",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "education",
-    "target_id": "Q1811146",
-    "target_label": "University of the Balearic Islands",
-    "text": "began studying at University of the Balearic Islands",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "education",
-    "target_id": "Q860278",
-    "target_label": "University of the Sacred Heart",
-    "text": "began studying at University of the Sacred Heart",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "education",
-    "target_id": "Q6487738",
-    "target_label": "State University of New York at Fredonia",
-    "text": "began studying at State University of New York at Fredonia",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "education",
-    "target_id": "Q1236345",
-    "target_label": "University of Murcia",
-    "text": "began studying at University of Murcia",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "education",
-    "target_id": "Q738258",
-    "target_label": "University of Miami",
-    "text": "began studying at University of Miami",
-    "distractor_type": "label_similar_same_type"
-   }
-  ],
-  "correct_candidate_id": "E",
-  "hidden_event_type": "education",
-  "hidden_target_id": "Q1236345",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q47556_2009_P39",
-  "person_id": "Q47556",
-  "person_label": "Pier Luigi Bersani",
-  "observed_events": [
-   {
-    "year": 2006,
     "event_type": "position",
-    "target_id": "Q27991508",
-    "target_label": "Italian Minister of Economic Development",
-    "text": "2006: began serving as Italian Minister of Economic Development"
-   },
-   {
-    "year": 2008,
-    "event_type": "position",
-    "target_id": "Q18558478",
-    "target_label": "member of the Chamber of Deputies of the Italian Republic",
-    "text": "2008: began serving as member of the Chamber of Deputies of the Italian Republic"
-   },
-   {
-    "year": 2013,
-    "event_type": "position",
-    "target_id": "Q18558478",
-    "target_label": "member of the Chamber of Deputies of the Italian Republic",
-    "text": "2013: began serving as member of the Chamber of Deputies of the Italian Republic"
-   },
-   {
-    "year": 2017,
-    "event_type": "position",
-    "target_id": "Q18558478",
-    "target_label": "member of the Chamber of Deputies of the Italian Republic",
-    "text": "2017: began serving as member of the Chamber of Deputies of the Italian Republic"
+    "target_id": "Q21328632",
+    "target_label": "Member of the People's Representative Council of Indonesia",
+    "text": "2019: began serving as Member of the People's Representative Council of Indonesia"
    }
   ],
   "missing_year": 2009,
@@ -2705,1336 +2586,356 @@
    {
     "candidate_id": "A",
     "event_type": "position",
-    "target_id": "Q15309742",
-    "target_label": "Secretary of the Democratic Party",
-    "text": "began serving as Secretary of the Democratic Party",
+    "target_id": "Q61928772",
+    "target_label": "Member of Regional Representative Council",
+    "text": "began serving as Member of Regional Representative Council",
     "distractor_type": "correct"
    },
    {
     "candidate_id": "B",
     "event_type": "position",
-    "target_id": "Q11394656",
-    "target_label": "Deputy Chief Cabinet Secretary",
-    "text": "began serving as Deputy Chief Cabinet Secretary",
+    "target_id": "Q623279",
+    "target_label": "chief operating officer",
+    "text": "began serving as chief operating officer",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
     "event_type": "position",
-    "target_id": "Q135509451",
-    "target_label": "Director de la Real Academia Española",
-    "text": "began serving as Director de la Real Academia Española",
+    "target_id": "Q3477306",
+    "target_label": "Secretary of State for Education",
+    "text": "began serving as Secretary of State for Education",
     "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "D",
     "event_type": "position",
-    "target_id": "Q11547841",
-    "target_label": "Leader of the Democratic Party",
-    "text": "began serving as Leader of the Democratic Party",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q25358560",
+    "target_label": "Minister of State for Farming and the Environment",
+    "text": "began serving as Minister of State for Farming and the Environment",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "position",
-    "target_id": "Q113714251",
-    "target_label": "Minister of State for Government Policy",
-    "text": "began serving as Minister of State for Government Policy",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q13416334",
+    "target_label": "member of the Provisional Legislative Council",
+    "text": "began serving as member of the Provisional Legislative Council",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "F",
     "event_type": "position",
-    "target_id": "Q27169",
-    "target_label": "Member of the European Parliament",
-    "text": "began serving as Member of the European Parliament",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q10655178",
+    "target_label": "member of the Swedish Riksdag",
+    "text": "began serving as member of the Swedish Riksdag",
+    "distractor_type": "same_type_near_year"
    }
   ],
   "correct_candidate_id": "A",
   "hidden_event_type": "position",
-  "hidden_target_id": "Q15309742",
+  "hidden_target_id": "Q61928772",
   "source": "wikidata",
   "split": "calibration"
  },
  {
-  "question_id": "Q3438627_1933_P39",
-  "person_id": "Q3438627",
-  "person_label": "Ole Monsen Mjelde",
+  "question_id": "Q52717578_2000_P69",
+  "person_id": "Q52717578",
+  "person_label": "Tomoaki Shimada",
   "observed_events": [
    {
-    "year": 1928,
-    "event_type": "position",
-    "target_id": "Q9045502",
-    "target_label": "member of the Parliament of Norway",
-    "text": "1928: began serving as member of the Parliament of Norway"
-   },
-   {
-    "year": 1931,
-    "event_type": "position",
-    "target_id": "Q9045502",
-    "target_label": "member of the Parliament of Norway",
-    "text": "1931: began serving as member of the Parliament of Norway"
-   },
-   {
-    "year": 1934,
-    "event_type": "position",
-    "target_id": "Q9045502",
-    "target_label": "member of the Parliament of Norway",
-    "text": "1934: began serving as member of the Parliament of Norway"
-   }
-  ],
-  "missing_year": 1933,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "position",
-    "target_id": "Q583809",
-    "target_label": "Solicitor General for England and Wales",
-    "text": "began serving as Solicitor General for England and Wales",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "position",
-    "target_id": "Q7371319",
-    "target_label": "Rouse Ball Professor of Mathematics",
-    "text": "began serving as Rouse Ball Professor of Mathematics",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "position",
-    "target_id": "Q27479703",
-    "target_label": "Minister of Labour and Social Affairs",
-    "text": "began serving as Minister of Labour and Social Affairs",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "position",
-    "target_id": "Q11984312",
-    "target_label": "Minister of Labour and Social Inclusion",
-    "text": "began serving as Minister of Labour and Social Inclusion",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "position",
-    "target_id": "Q16159375",
-    "target_label": "deputy member of the Parliament of Norway",
-    "text": "began serving as deputy member of the Parliament of Norway",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "position",
-    "target_id": "Q41582591",
-    "target_label": "member of the 36th Parliament of the United Kingdom",
-    "text": "began serving as member of the 36th Parliament of the United Kingdom",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "D",
-  "hidden_event_type": "position",
-  "hidden_target_id": "Q11984312",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q11637002_1984_P69",
-  "person_id": "Q11637002",
-  "person_label": "Yasushi Adachi",
-  "observed_events": [
-   {
-    "year": 1981,
+    "year": 1993,
     "event_type": "education",
-    "target_id": "Q11441161",
-    "target_label": "Osaka Ibaraki High School",
-    "text": "1981: began studying at Osaka Ibaraki High School"
+    "target_id": "Q7842",
+    "target_label": "University of Tokyo",
+    "text": "1993: began studying at University of Tokyo"
    },
    {
-    "year": 1990,
-    "event_type": "employment",
-    "target_id": "Q6867297",
-    "target_label": "Ministry of International Trade and Industry",
-    "text": "1990: began working for Ministry of International Trade and Industry"
-   },
-   {
-    "year": 2001,
-    "event_type": "employment",
-    "target_id": "Q1197264",
-    "target_label": "Ministry of Economy, Trade and Industry",
-    "text": "2001: began working for Ministry of Economy, Trade and Industry"
-   }
-  ],
-  "missing_year": 1984,
-  "candidates": [
-   {
-    "candidate_id": "A",
+    "year": 1996,
     "event_type": "education",
-    "target_id": "Q1193155",
-    "target_label": "Koç University",
-    "text": "began studying at Koç University",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q738236",
+    "target_label": "National University of Singapore",
+    "text": "1996: began studying at National University of Singapore"
    },
    {
-    "candidate_id": "B",
-    "event_type": "education",
-    "target_id": "Q336264",
-    "target_label": "Kyoto University",
-    "text": "began studying at Kyoto University",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "education",
-    "target_id": "Q230492",
-    "target_label": "University of Michigan",
-    "text": "began studying at University of Michigan",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "education",
-    "target_id": "Q741082",
-    "target_label": "Macquarie University",
-    "text": "began studying at Macquarie University",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "position",
-    "target_id": "Q14552828",
-    "target_label": "member of the House of Councillors",
-    "text": "began serving as member of the House of Councillors",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "education",
-    "target_id": "Q495015",
-    "target_label": "Fudan University",
-    "text": "began studying at Fudan University",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "B",
-  "hidden_event_type": "education",
-  "hidden_target_id": "Q336264",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q61694671_2011_P69",
-  "person_id": "Q61694671",
-  "person_label": "Nana Ayew Afriye",
-  "observed_events": [
-   {
-    "year": 2004,
-    "event_type": "education",
-    "target_id": "Q34433",
-    "target_label": "University of Oxford",
-    "text": "2004: began studying at University of Oxford"
-   },
-   {
-    "year": 2009,
-    "event_type": "education",
-    "target_id": "Q2303765",
-    "target_label": "University of Ghana",
-    "text": "2009: began studying at University of Ghana"
-   },
-   {
-    "year": 2017,
-    "event_type": "position",
-    "target_id": "Q61659845",
-    "target_label": "Member of the 7th Parliament of the 4th Republic of Ghana",
-    "text": "2017: began serving as Member of the 7th Parliament of the 4th Republic of Ghana"
-   },
-   {
-    "year": 2021,
-    "event_type": "position",
-    "target_id": "Q107585189",
-    "target_label": "Member of the 8th Parliament of the 4th Republic of Ghana",
-    "text": "2021: began serving as Member of the 8th Parliament of the 4th Republic of Ghana"
-   }
-  ],
-  "missing_year": 2011,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "education",
-    "target_id": "Q503424",
-    "target_label": "University of Leeds",
-    "text": "began studying at University of Leeds",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "education",
-    "target_id": "Q6806451",
-    "target_label": "Medical University of South Carolina",
-    "text": "began studying at Medical University of South Carolina",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "education",
-    "target_id": "Q1072029",
-    "target_label": "University of Wales",
-    "text": "began studying at University of Wales",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "education",
-    "target_id": "Q575662",
-    "target_label": "Naval War College",
-    "text": "began studying at Naval War College",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "education",
-    "target_id": "Q54096",
-    "target_label": "University of Cologne",
-    "text": "began studying at University of Cologne",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "education",
-    "target_id": "Q204457",
-    "target_label": "University of Bergen",
-    "text": "began studying at University of Bergen",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "A",
-  "hidden_event_type": "education",
-  "hidden_target_id": "Q503424",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q168041_1953_P108",
-  "person_id": "Q168041",
-  "person_label": "Zbigniew Brzezinski",
-  "observed_events": [
-   {
-    "year": 1945,
-    "event_type": "education",
-    "target_id": "Q201492",
-    "target_label": "McGill University",
-    "text": "1945: began studying at McGill University"
-   },
-   {
-    "year": 1950,
-    "event_type": "education",
-    "target_id": "Q49122",
-    "target_label": "Harvard Law School",
-    "text": "1950: began studying at Harvard Law School"
-   },
-   {
-    "year": 1960,
+    "year": 2007,
     "event_type": "employment",
-    "target_id": "Q49088",
-    "target_label": "Columbia University",
-    "text": "1960: began working for Columbia University"
+    "target_id": "Q1192597",
+    "target_label": "Kobe University",
+    "text": "2007: began working for Kobe University"
    },
    {
-    "year": 1960,
-    "event_type": "award",
-    "target_id": "Q1316544",
-    "target_label": "Guggenheim Fellowship",
-    "text": "1960: received Guggenheim Fellowship"
-   }
-  ],
-  "missing_year": 1953,
-  "candidates": [
-   {
-    "candidate_id": "A",
+    "year": 2010,
     "event_type": "employment",
-    "target_id": "Q1068752",
-    "target_label": "Howard University",
-    "text": "began working for Howard University",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "employment",
-    "target_id": "Q1206658",
-    "target_label": "University of Colorado",
-    "text": "began working for University of Colorado",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "employment",
-    "target_id": "Q20791505",
-    "target_label": "University of Bordeaux",
-    "text": "began working for University of Bordeaux",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "employment",
-    "target_id": "Q6329080",
-    "target_label": "KFMB-TV",
-    "text": "began working for KFMB-TV",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "employment",
-    "target_id": "Q13371",
-    "target_label": "Harvard University",
-    "text": "began working for Harvard University",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q20853550",
-    "target_label": "honorary doctor of the Jagiellonian University of Krakow",
-    "text": "received honorary doctor of the Jagiellonian University of Krakow",
-    "distractor_type": "same_person_wrong_time"
-   }
-  ],
-  "correct_candidate_id": "E",
-  "hidden_event_type": "employment",
-  "hidden_target_id": "Q13371",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q95424_1963_P108",
-  "person_id": "Q95424",
-  "person_label": "Wilhelm Klingenberg",
-  "observed_events": [
-   {
-    "year": 1954,
-    "event_type": "employment",
-    "target_id": "Q1079140",
-    "target_label": "Indiana University Bloomington",
-    "text": "1954: began working for Indiana University Bloomington"
-   },
-   {
-    "year": 1956,
-    "event_type": "employment",
-    "target_id": "Q635642",
-    "target_label": "Institute for Advanced Study",
-    "text": "1956: began working for Institute for Advanced Study"
-   },
-   {
-    "year": 1966,
-    "event_type": "employment",
-    "target_id": "Q152171",
-    "target_label": "University of Bonn",
-    "text": "1966: began working for University of Bonn"
-   }
-  ],
-  "missing_year": 1963,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "employment",
-    "target_id": "Q161562",
-    "target_label": "California Institute of Technology",
-    "text": "began working for California Institute of Technology",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "employment",
-    "target_id": "Q156737",
-    "target_label": "Kiel University",
-    "text": "began working for Kiel University",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "employment",
-    "target_id": "Q161982",
-    "target_label": "Johannes Gutenberg University Mainz",
-    "text": "began working for Johannes Gutenberg University Mainz",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "employment",
-    "target_id": "Q682739",
-    "target_label": "Johannes Kepler University Linz",
-    "text": "began working for Johannes Kepler University Linz",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "employment",
-    "target_id": "Q223429",
-    "target_label": "University of Birmingham",
-    "text": "began working for University of Birmingham",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "employment",
-    "target_id": "Q7913804",
-    "target_label": "Van de Kamp's Holland Dutch Bakeries",
-    "text": "began working for Van de Kamp's Holland Dutch Bakeries",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "C",
-  "hidden_event_type": "employment",
-  "hidden_target_id": "Q161982",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q23418884_1997_P108",
-  "person_id": "Q23418884",
-  "person_label": "Nani A. Coloretti",
-  "observed_events": [
-   {
-    "year": 1991,
-    "event_type": "employment",
-    "target_id": "Q16200831",
-    "target_label": "Hawaii Department of Public Safety",
-    "text": "1991: began working for Hawaii Department of Public Safety"
-   },
-   {
-    "year": 1994,
-    "event_type": "employment",
-    "target_id": "Q284392",
-    "target_label": "Office of Management and Budget",
-    "text": "1994: began working for Office of Management and Budget"
-   },
-   {
-    "year": 2005,
-    "event_type": "employment",
-    "target_id": "Q795295",
-    "target_label": "mayor of San Francisco",
-    "text": "2005: began working for mayor of San Francisco"
-   },
-   {
-    "year": 2011,
-    "event_type": "employment",
-    "target_id": "Q1091543",
-    "target_label": "Consumer Financial Protection Bureau",
-    "text": "2011: began working for Consumer Financial Protection Bureau"
-   }
-  ],
-  "missing_year": 1997,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "employment",
-    "target_id": "Q338645",
-    "target_label": "University of Nicosia",
-    "text": "began working for University of Nicosia",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "employment",
-    "target_id": "Q1587129",
-    "target_label": "LSI Corporation",
-    "text": "began working for LSI Corporation",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "employment",
-    "target_id": "Q506330",
-    "target_label": "Bangladesh University of Engineering and Technology",
-    "text": "began working for Bangladesh University of Engineering and Technology",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "employment",
-    "target_id": "Q6457585",
-    "target_label": "LECG Corporation",
-    "text": "began working for LECG Corporation",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "employment",
-    "target_id": "Q7899935",
-    "target_label": "Urban Institute",
-    "text": "began working for Urban Institute",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "employment",
-    "target_id": "Q3049360",
-    "target_label": "Ràdio Televisió Valenciana",
-    "text": "began working for Ràdio Televisió Valenciana",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "D",
-  "hidden_event_type": "employment",
-  "hidden_target_id": "Q6457585",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q263398_1983_P166",
-  "person_id": "Q263398",
-  "person_label": "Sarah Kirsch",
-  "observed_events": [
-   {
-    "year": 1978,
-    "event_type": "award",
-    "target_id": "Q131237471",
-    "target_label": "Rome Prize of the German Academy Villa Massimo",
-    "text": "1978: received Rome Prize of the German Academy Villa Massimo"
-   },
-   {
-    "year": 1980,
-    "event_type": "award",
-    "target_id": "Q698647",
-    "target_label": "Austrian State Prize for European Literature",
-    "text": "1980: received Austrian State Prize for European Literature"
-   },
-   {
-    "year": 1984,
-    "event_type": "award",
-    "target_id": "Q314183",
-    "target_label": "Friedrich-Hölderlin-Preis",
-    "text": "1984: received Friedrich-Hölderlin-Preis"
-   },
-   {
-    "year": 1988,
-    "event_type": "award",
-    "target_id": "Q1885769",
-    "target_label": "Mainz resident writer",
-    "text": "1988: received Mainz resident writer"
-   }
-  ],
-  "missing_year": 1983,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "award",
-    "target_id": "Q2440493",
-    "target_label": "Order of the Victory of Socialism",
-    "text": "received Order of the Victory of Socialism",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q103134739",
-    "target_label": "Rossi Prize",
-    "text": "received Rossi Prize",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "award",
-    "target_id": "Q50618211",
-    "target_label": "honorary doctor of the University of Valencia",
-    "text": "received honorary doctor of the University of Valencia",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q2167934",
-    "target_label": "Roswitha Prize",
-    "text": "received Roswitha Prize",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q473292",
-    "target_label": "Marconi Prize",
-    "text": "received Marconi Prize",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q2640154",
-    "target_label": "Georg Büchner Prize",
-    "text": "received Georg Büchner Prize",
-    "distractor_type": "same_person_wrong_time"
-   }
-  ],
-  "correct_candidate_id": "D",
-  "hidden_event_type": "award",
-  "hidden_target_id": "Q2167934",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q44537450_2007_P69",
-  "person_id": "Q44537450",
-  "person_label": "Jean Adams",
-  "observed_events": [
-   {
-    "year": 1995,
-    "event_type": "education",
-    "target_id": "Q837164",
-    "target_label": "Newcastle University",
-    "text": "1995: began studying at Newcastle University"
-   },
-   {
-    "year": 2001,
-    "event_type": "education",
-    "target_id": "Q837164",
-    "target_label": "Newcastle University",
-    "text": "2001: began studying at Newcastle University"
-   },
-   {
-    "year": 2008,
-    "event_type": "employment",
-    "target_id": "Q837164",
-    "target_label": "Newcastle University",
-    "text": "2008: began working for Newcastle University"
-   },
-   {
-    "year": 2011,
-    "event_type": "education",
-    "target_id": "Q2002520",
-    "target_label": "University of the West of England",
-    "text": "2011: began studying at University of the West of England"
-   }
-  ],
-  "missing_year": 2007,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "education",
-    "target_id": "Q7369079",
-    "target_label": "Rosmini College",
-    "text": "began studying at Rosmini College",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "education",
-    "target_id": "Q170027",
-    "target_label": "University of London",
-    "text": "began studying at University of London",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "education",
-    "target_id": "Q1094046",
-    "target_label": "City, University of London",
-    "text": "began studying at City, University of London",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "education",
-    "target_id": "Q230492",
-    "target_label": "University of Michigan",
-    "text": "began studying at University of Michigan",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "employment",
-    "target_id": "Q35794",
-    "target_label": "University of Cambridge",
-    "text": "began working for University of Cambridge",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "education",
-    "target_id": "Q1480643",
-    "target_label": "University of Paris-Sud",
-    "text": "began studying at University of Paris-Sud",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "C",
-  "hidden_event_type": "education",
-  "hidden_target_id": "Q1094046",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q46056359_2000_P108",
-  "person_id": "Q46056359",
-  "person_label": "Jose L. Jimenez",
-  "observed_events": [
-   {
-    "year": 1999,
-    "event_type": "employment",
-    "target_id": "Q30279667",
-    "target_label": "Aerodyne Research",
-    "text": "1999: began working for Aerodyne Research"
-   },
-   {
-    "year": 1999,
-    "event_type": "employment",
-    "target_id": "Q49108",
-    "target_label": "Massachusetts Institute of Technology",
-    "text": "1999: began working for Massachusetts Institute of Technology"
-   },
-   {
-    "year": 2002,
-    "event_type": "employment",
-    "target_id": "Q736674",
-    "target_label": "University of Colorado Boulder",
-    "text": "2002: began working for University of Colorado Boulder"
-   },
-   {
-    "year": 2008,
-    "event_type": "employment",
-    "target_id": "Q736674",
-    "target_label": "University of Colorado Boulder",
-    "text": "2008: began working for University of Colorado Boulder"
+    "target_id": "Q6959003",
+    "target_label": "Nagoya University of Commerce & Business",
+    "text": "2010: began working for Nagoya University of Commerce & Business"
    }
   ],
   "missing_year": 2000,
   "candidates": [
    {
     "candidate_id": "A",
-    "event_type": "employment",
-    "target_id": "Q158085",
-    "target_label": "Max Planck Society",
-    "text": "began working for Max Planck Society",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "employment",
-    "target_id": "Q161562",
-    "target_label": "California Institute of Technology",
-    "text": "began working for California Institute of Technology",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "employment",
-    "target_id": "Q55044",
-    "target_label": "Ludwig-Maximilians-Universität München",
-    "text": "began working for Ludwig-Maximilians-Universität München",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "employment",
-    "target_id": "Q4483567",
-    "target_label": "B Verkin Institute for Low Temperature Physics and Engineering",
-    "text": "began working for B Verkin Institute for Low Temperature Physics and Engineering",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "employment",
-    "target_id": "Q1798169",
-    "target_label": "University Hospital Graz",
-    "text": "began working for University Hospital Graz",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "employment",
-    "target_id": "Q4697913",
-    "target_label": "Air Force Institute of Technology",
-    "text": "began working for Air Force Institute of Technology",
-    "distractor_type": "label_similar_same_type"
-   }
-  ],
-  "correct_candidate_id": "B",
-  "hidden_event_type": "employment",
-  "hidden_target_id": "Q161562",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q5558699_1994_P108",
-  "person_id": "Q5558699",
-  "person_label": "Marilo Montero",
-  "observed_events": [
-   {
-    "year": 1990,
-    "event_type": "employment",
-    "target_id": "Q6456761",
-    "target_label": "Radio Televisión Madrid",
-    "text": "1990: began working for Radio Televisión Madrid"
-   },
-   {
-    "year": 1993,
-    "event_type": "employment",
-    "target_id": "Q6456761",
-    "target_label": "Radio Televisión Madrid",
-    "text": "1993: began working for Radio Televisión Madrid"
-   },
-   {
-    "year": 1995,
-    "event_type": "employment",
-    "target_id": "Q2712921",
-    "target_label": "Radio Televisión de Andalucía",
-    "text": "1995: began working for Radio Televisión de Andalucía"
-   },
-   {
-    "year": 2001,
-    "event_type": "employment",
-    "target_id": "Q2712921",
-    "target_label": "Radio Televisión de Andalucía",
-    "text": "2001: began working for Radio Televisión de Andalucía"
-   }
-  ],
-  "missing_year": 1994,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "employment",
-    "target_id": "Q30283431",
-    "target_label": "Weatherall Institute of Molecular Medicine",
-    "text": "began working for Weatherall Institute of Molecular Medicine",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "employment",
-    "target_id": "Q3118227",
-    "target_label": "Atresmedia",
-    "text": "began working for Atresmedia",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "employment",
-    "target_id": "Q1656840",
-    "target_label": "National Severe Storms Laboratory",
-    "text": "began working for National Severe Storms Laboratory",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "employment",
-    "target_id": "Q108872274",
-    "target_label": "NSW National Parks and Wildlife Service",
-    "text": "began working for NSW National Parks and Wildlife Service",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "employment",
-    "target_id": "Q54829",
-    "target_label": "RTVE",
-    "text": "began working for RTVE",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "employment",
-    "target_id": "Q3527695",
-    "target_label": "Teatr Komedia",
-    "text": "began working for Teatr Komedia",
-    "distractor_type": "label_similar_same_type"
-   }
-  ],
-  "correct_candidate_id": "B",
-  "hidden_event_type": "employment",
-  "hidden_target_id": "Q3118227",
-  "source": "wikidata",
-  "split": "calibration"
- },
- {
-  "question_id": "Q1333582_1987_P166",
-  "person_id": "Q1333582",
-  "person_label": "Richard Wilbur",
-  "observed_events": [
-   {
-    "year": 1983,
-    "event_type": "award",
-    "target_id": "Q5305730",
-    "target_label": "Drama Desk Special Award",
-    "text": "1983: received Drama Desk Special Award"
-   },
-   {
-    "year": 1983,
-    "event_type": "award",
-    "target_id": "Q7118983",
-    "target_label": "PEN Translation Prize",
-    "text": "1983: received PEN Translation Prize"
-   },
-   {
-    "year": 1988,
-    "event_type": "award",
-    "target_id": "Q6500795",
-    "target_label": "Laurence Olivier Award for Best New Musical",
-    "text": "1988: received Laurence Olivier Award for Best New Musical"
-   },
-   {
-    "year": 1989,
-    "event_type": "award",
-    "target_id": "Q2117891",
-    "target_label": "Pulitzer Prize for Poetry",
-    "text": "1989: received Pulitzer Prize for Poetry"
-   }
-  ],
-  "missing_year": 1987,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "award",
-    "target_id": "Q1366948",
-    "target_label": "Silver Slugger Award",
-    "text": "received Silver Slugger Award",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q1316544",
-    "target_label": "Guggenheim Fellowship",
-    "text": "received Guggenheim Fellowship",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "award",
-    "target_id": "Q10855216",
-    "target_label": "Grand Officer of the Legion of Honour",
-    "text": "received Grand Officer of the Legion of Honour",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q981258",
-    "target_label": "United States Poet Laureate",
-    "text": "received United States Poet Laureate",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q60750929",
-    "target_label": "Young People's Poet Laureate",
-    "text": "received Young People's Poet Laureate",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q826100",
-    "target_label": "Priestley Medal",
-    "text": "received Priestley Medal",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "D",
-  "hidden_event_type": "award",
-  "hidden_target_id": "Q981258",
-  "source": "wikidata",
-  "split": "test"
- },
- {
-  "question_id": "Q47755_2006_P166",
-  "person_id": "Q47755",
-  "person_label": "Imre Kertész",
-  "observed_events": [
-   {
-    "year": 2005,
-    "event_type": "award",
-    "target_id": "Q113532584",
-    "target_label": "honorary doctor of the Sorbonne Nouvelle University",
-    "text": "2005: received honorary doctor of the Sorbonne Nouvelle University"
-   },
-   {
-    "year": 2005,
-    "event_type": "award",
-    "target_id": "Q32331664",
-    "target_label": "Honorary doctor of the Free University of Berlin",
-    "text": "2005: received Honorary doctor of the Free University of Berlin"
-   },
-   {
-    "year": 2007,
-    "event_type": "award",
-    "target_id": "Q1275525",
-    "target_label": "Marion Samuel Prize",
-    "text": "2007: received Marion Samuel Prize"
-   },
-   {
-    "year": 2009,
-    "event_type": "award",
-    "target_id": "Q876110",
-    "target_label": "Jean Améry award",
-    "text": "2009: received Jean Améry award"
-   }
-  ],
-  "missing_year": 2006,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "award",
-    "target_id": "Q3494048",
-    "target_label": "BBC World Sport Star of the Year",
-    "text": "received BBC World Sport Star of the Year",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q1351451",
-    "target_label": "Oersted Medal",
-    "text": "received Oersted Medal",
-    "distractor_type": "label_similar_same_type"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "award",
-    "target_id": "Q1357178",
-    "target_label": "Ernst Reuter Medal",
-    "text": "received Ernst Reuter Medal",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q6500767",
-    "target_label": "Laurence Olivier Award for Best Actor",
-    "text": "received Laurence Olivier Award for Best Actor",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q637399",
-    "target_label": "Kossuth Prize",
-    "text": "received Kossuth Prize",
-    "distractor_type": "same_person_wrong_time"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q6812094",
-    "target_label": "Meldola Medal and Prize",
-    "text": "received Meldola Medal and Prize",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "C",
-  "hidden_event_type": "award",
-  "hidden_target_id": "Q1357178",
-  "source": "wikidata",
-  "split": "test"
- },
- {
-  "question_id": "Q983528_1972_P39",
-  "person_id": "Q983528",
-  "person_label": "Louis Stokes",
-  "observed_events": [
-   {
-    "year": 1969,
-    "event_type": "position",
-    "target_id": "Q13218630",
-    "target_label": "United States representative",
-    "text": "1969: began serving as United States representative"
-   },
-   {
-    "year": 1971,
-    "event_type": "position",
-    "target_id": "Q13218630",
-    "target_label": "United States representative",
-    "text": "1971: began serving as United States representative"
-   },
-   {
-    "year": 1973,
-    "event_type": "position",
-    "target_id": "Q13218630",
-    "target_label": "United States representative",
-    "text": "1973: began serving as United States representative"
-   },
-   {
-    "year": 1975,
-    "event_type": "position",
-    "target_id": "Q13218630",
-    "target_label": "United States representative",
-    "text": "1975: began serving as United States representative"
-   }
-  ],
-  "missing_year": 1972,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "position",
-    "target_id": "Q96807115",
-    "target_label": "Chair of the Congressional Black Caucus",
-    "text": "began serving as Chair of the Congressional Black Caucus",
+    "event_type": "education",
+    "target_id": "Q1136829",
+    "target_label": "INSEAD",
+    "text": "began studying at INSEAD",
     "distractor_type": "correct"
    },
    {
     "candidate_id": "B",
-    "event_type": "position",
-    "target_id": "Q97670197",
-    "target_label": "Chair of the Committee on Cultural Affairs",
-    "text": "began serving as Chair of the Committee on Cultural Affairs",
+    "event_type": "education",
+    "target_id": "Q6386777",
+    "target_label": "Kelvinside Academy",
+    "text": "began studying at Kelvinside Academy",
     "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "C",
-    "event_type": "position",
-    "target_id": "Q20203208",
-    "target_label": "Minister of Foreign Affairs",
-    "text": "began serving as Minister of Foreign Affairs",
-    "distractor_type": "same_type_random"
+    "event_type": "education",
+    "target_id": "Q49205",
+    "target_label": "Wellesley College",
+    "text": "began studying at Wellesley College",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
-    "event_type": "position",
-    "target_id": "Q1939555",
-    "target_label": "member of the German Bundestag",
-    "text": "began serving as member of the German Bundestag",
+    "event_type": "education",
+    "target_id": "Q194223",
+    "target_label": "University of Buenos Aires",
+    "text": "began studying at University of Buenos Aires",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "education",
-    "target_id": "Q1047060",
-    "target_label": "Case Western Reserve University",
-    "text": "began studying at Case Western Reserve University",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q131262",
+    "target_label": "University of Bologna",
+    "text": "began studying at University of Bologna",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "F",
-    "event_type": "position",
-    "target_id": "Q3154693",
-    "target_label": "city council",
-    "text": "began serving as city council",
-    "distractor_type": "same_type_near_year"
+    "event_type": "education",
+    "target_id": "Q336264",
+    "target_label": "Kyoto University",
+    "text": "began studying at Kyoto University",
+    "distractor_type": "same_person_wrong_time"
    }
   ],
   "correct_candidate_id": "A",
-  "hidden_event_type": "position",
-  "hidden_target_id": "Q96807115",
+  "hidden_event_type": "education",
+  "hidden_target_id": "Q1136829",
   "source": "wikidata",
-  "split": "test"
+  "split": "calibration"
  },
  {
-  "question_id": "Q1387262_1947_P39",
-  "person_id": "Q1387262",
-  "person_label": "Joseph William Martin Jr.",
+  "question_id": "Q14946814_1947_P108",
+  "person_id": "Q14946814",
+  "person_label": "John Aitchison",
   "observed_events": [
    {
-    "year": 1940,
-    "event_type": "position",
-    "target_id": "Q140686",
-    "target_label": "chairperson",
-    "text": "1940: began serving as chairperson"
+    "year": 1943,
+    "event_type": "education",
+    "target_id": "Q160302",
+    "target_label": "University of Edinburgh",
+    "text": "1943: began studying at University of Edinburgh"
    },
    {
-    "year": 1940,
-    "event_type": "position",
-    "target_id": "Q994779",
-    "target_label": "delegate",
-    "text": "1940: began serving as delegate"
-   },
-   {
-    "year": 1948,
-    "event_type": "position",
-    "target_id": "Q994779",
-    "target_label": "delegate",
-    "text": "1948: began serving as delegate"
+    "year": 1949,
+    "event_type": "education",
+    "target_id": "Q35794",
+    "target_label": "University of Cambridge",
+    "text": "1949: began studying at University of Cambridge"
    },
    {
     "year": 1952,
-    "event_type": "position",
-    "target_id": "Q994779",
-    "target_label": "delegate",
-    "text": "1952: began serving as delegate"
+    "event_type": "employment",
+    "target_id": "Q35794",
+    "target_label": "University of Cambridge",
+    "text": "1952: began working for University of Cambridge"
    }
   ],
   "missing_year": 1947,
   "candidates": [
    {
     "candidate_id": "A",
-    "event_type": "position",
-    "target_id": "Q5452917",
-    "target_label": "First Deputy Premier of the Soviet Union",
-    "text": "began serving as First Deputy Premier of the Soviet Union",
-    "distractor_type": "same_type_near_year"
+    "event_type": "employment",
+    "target_id": "Q9287183",
+    "target_label": "White House Office",
+    "text": "began working for White House Office",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "B",
-    "event_type": "position",
-    "target_id": "Q4416090",
-    "target_label": "United States senator",
-    "text": "began serving as United States senator",
+    "event_type": "employment",
+    "target_id": "Q34433",
+    "target_label": "University of Oxford",
+    "text": "began working for University of Oxford",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
-    "event_type": "position",
-    "target_id": "Q20058776",
-    "target_label": "member of the State Senate of Massachusetts",
-    "text": "began serving as member of the State Senate of Massachusetts",
+    "event_type": "award",
+    "target_id": "Q63164861",
+    "target_label": "Guy Medal in Silver",
+    "text": "received Guy Medal in Silver",
     "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "D",
-    "event_type": "position",
-    "target_id": "Q5246680",
-    "target_label": "Dean of the United States House of Representatives",
-    "text": "began serving as Dean of the United States House of Representatives",
-    "distractor_type": "label_similar_same_type"
+    "event_type": "employment",
+    "target_id": "Q471958",
+    "target_label": "Standard Life",
+    "text": "began working for Standard Life",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "E",
-    "event_type": "position",
-    "target_id": "Q20064926",
-    "target_label": "member of the State Senate of Maryland",
-    "text": "began serving as member of the State Senate of Maryland",
-    "distractor_type": "same_type_random"
+    "event_type": "employment",
+    "target_id": "Q1472245",
+    "target_label": "Bauman Moscow State Technical University",
+    "text": "began working for Bauman Moscow State Technical University",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
-    "event_type": "position",
-    "target_id": "Q912994",
-    "target_label": "Speaker of the United States House of Representatives",
-    "text": "began serving as Speaker of the United States House of Representatives",
-    "distractor_type": "correct"
+    "event_type": "employment",
+    "target_id": "Q3015700",
+    "target_label": "Dansk Standard",
+    "text": "began working for Dansk Standard",
+    "distractor_type": "label_similar_same_type"
    }
   ],
-  "correct_candidate_id": "F",
-  "hidden_event_type": "position",
-  "hidden_target_id": "Q912994",
+  "correct_candidate_id": "D",
+  "hidden_event_type": "employment",
+  "hidden_target_id": "Q471958",
   "source": "wikidata",
-  "split": "test"
+  "split": "calibration"
  },
  {
-  "question_id": "Q103917_1990_P166",
-  "person_id": "Q103917",
-  "person_label": "Steven Soderbergh",
+  "question_id": "Q36878_1960_P166",
+  "person_id": "Q36878",
+  "person_label": "Rasul Gamzatov",
+  "observed_events": [
+   {
+    "year": 1950,
+    "event_type": "award",
+    "target_id": "Q478850",
+    "target_label": "Order of the Red Banner of Labour",
+    "text": "1950: received Order of the Red Banner of Labour"
+   },
+   {
+    "year": 1952,
+    "event_type": "award",
+    "target_id": "Q56669016",
+    "target_label": "Stalin Prize, 3rd degree",
+    "text": "1952: received Stalin Prize, 3rd degree"
+   },
+   {
+    "year": 1963,
+    "event_type": "award",
+    "target_id": "Q51067",
+    "target_label": "Lenin Prize",
+    "text": "1963: received Lenin Prize"
+   },
+   {
+    "year": 1965,
+    "event_type": "award",
+    "target_id": "Q478850",
+    "target_label": "Order of the Red Banner of Labour",
+    "text": "1965: received Order of the Red Banner of Labour"
+   }
+  ],
+  "missing_year": 1960,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "award",
+    "target_id": "Q7793410",
+    "target_label": "Thomas Ranken Lyle Medal",
+    "text": "received Thomas Ranken Lyle Medal",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q185493",
+    "target_label": "Order of Lenin",
+    "text": "received Order of Lenin",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q103982340",
+    "target_label": "honorary doctor of Erasmus University Rotterdam",
+    "text": "received honorary doctor of Erasmus University Rotterdam",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "award",
+    "target_id": "Q208167",
+    "target_label": "Hero of Socialist Labour",
+    "text": "received Hero of Socialist Labour",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "award",
+    "target_id": "Q1714745",
+    "target_label": "Order of Merit",
+    "text": "received Order of Merit",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q1371319",
+    "target_label": "Medal for Excellence in the Armed Organs of the Interior Ministry",
+    "text": "received Medal for Excellence in the Armed Organs of the Interior Ministry",
+    "distractor_type": "same_type_near_year"
+   }
+  ],
+  "correct_candidate_id": "B",
+  "hidden_event_type": "award",
+  "hidden_target_id": "Q185493",
+  "source": "wikidata",
+  "split": "calibration"
+ },
+ {
+  "question_id": "Q361149_1990_P166",
+  "person_id": "Q361149",
+  "person_label": "Gene Wolfe",
   "observed_events": [
    {
     "year": 1989,
     "event_type": "award",
-    "target_id": "Q179808",
-    "target_label": "Palme d'Or",
-    "text": "1989: received Palme d'Or"
+    "target_id": "Q3405405",
+    "target_label": "World Fantasy Award for Best Collection",
+    "text": "1989: received World Fantasy Award for Best Collection"
    },
    {
-    "year": 1998,
+    "year": 1989,
     "event_type": "award",
-    "target_id": "Q1315008",
-    "target_label": "National Society of Film Critics Award for Best Director",
-    "text": "1998: received National Society of Film Critics Award for Best Director"
+    "target_id": "Q987744",
+    "target_label": "Edward E. Smith Memorial Award",
+    "text": "1989: received Edward E. Smith Memorial Award"
    },
    {
-    "year": 2000,
+    "year": 1996,
     "event_type": "award",
-    "target_id": "Q1315008",
-    "target_label": "National Society of Film Critics Award for Best Director",
-    "text": "2000: received National Society of Film Critics Award for Best Director"
+    "target_id": "Q3625727",
+    "target_label": "World Fantasy Award for Life Achievement",
+    "text": "1996: received World Fantasy Award for Life Achievement"
+   },
+   {
+    "year": 2005,
+    "event_type": "award",
+    "target_id": "Q17008972",
+    "target_label": "Locus Award for Best Novella",
+    "text": "2005: received Locus Award for Best Novella"
    }
   ],
   "missing_year": 1990,
@@ -4042,412 +2943,1462 @@
    {
     "candidate_id": "A",
     "event_type": "award",
-    "target_id": "Q1170507",
-    "target_label": "Independent Spirit Award for Best Screenplay",
-    "text": "received Independent Spirit Award for Best Screenplay",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q24137",
+    "target_label": "César Award for Best Director",
+    "text": "received César Award for Best Director",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q3403229",
-    "target_label": "Primetime Emmy Award for Outstanding Directing for a Limited Series, Movie, or Dramatic Special",
-    "text": "received Primetime Emmy Award for Outstanding Directing for a Limited Series, Movie, or Dramatic Special",
+    "target_id": "Q1030402",
+    "target_label": "John W. Campbell Memorial Award for Best Science Fiction Novel",
+    "text": "received John W. Campbell Memorial Award for Best Science Fiction Novel",
     "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q2295041",
-    "target_label": "Independent Spirit Award for Best Director",
-    "text": "received Independent Spirit Award for Best Director",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "D",
-    "event_type": "award",
-    "target_id": "Q338737",
-    "target_label": "Swiss Sports Personality of the Year",
-    "text": "received Swiss Sports Personality of the Year",
-    "distractor_type": "same_type_random"
-   },
-   {
-    "candidate_id": "E",
-    "event_type": "award",
-    "target_id": "Q4375449",
-    "target_label": "Honorary Certificate of the Presidium of the Supreme Soviet of the Russian Federation",
-    "text": "received Honorary Certificate of the Presidium of the Supreme Soviet of the Russian Federation",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "F",
-    "event_type": "award",
-    "target_id": "Q67504641",
-    "target_label": "honorary doctorate from the Catholic University of Lublin",
-    "text": "received honorary doctorate from the Catholic University of Lublin",
-    "distractor_type": "same_type_near_year"
-   }
-  ],
-  "correct_candidate_id": "C",
-  "hidden_event_type": "award",
-  "hidden_target_id": "Q2295041",
-  "source": "wikidata",
-  "split": "test"
- },
- {
-  "question_id": "Q548112_2008_P166",
-  "person_id": "Q548112",
-  "person_label": "Christiane Hörbiger",
-  "observed_events": [
-   {
-    "year": 2003,
-    "event_type": "award",
-    "target_id": "Q873842",
-    "target_label": "Romy",
-    "text": "2003: received Romy"
-   },
-   {
-    "year": 2005,
-    "event_type": "award",
-    "target_id": "Q1535117",
-    "target_label": "Golden Feather",
-    "text": "2005: received Golden Feather"
-   },
-   {
-    "year": 2009,
-    "event_type": "award",
-    "target_id": "Q812332",
-    "target_label": "Bavarian TV Awards",
-    "text": "2009: received Bavarian TV Awards"
-   },
-   {
-    "year": 2009,
-    "event_type": "award",
-    "target_id": "Q873842",
-    "target_label": "Romy",
-    "text": "2009: received Romy"
-   }
-  ],
-  "missing_year": 2008,
-  "candidates": [
-   {
-    "candidate_id": "A",
-    "event_type": "award",
-    "target_id": "Q6496398",
-    "target_label": "Latin Grammy Award for Best Tropical Song",
-    "text": "received Latin Grammy Award for Best Tropical Song",
-    "distractor_type": "same_type_near_year"
-   },
-   {
-    "candidate_id": "B",
-    "event_type": "award",
-    "target_id": "Q1205485",
-    "target_label": "Deutscher Vorlesepreis",
-    "text": "received Deutscher Vorlesepreis",
-    "distractor_type": "correct"
-   },
-   {
-    "candidate_id": "C",
-    "event_type": "award",
-    "target_id": "Q678413",
-    "target_label": "Deutscher Fernsehpreis",
-    "text": "received Deutscher Fernsehpreis",
+    "target_id": "Q28534251",
+    "target_label": "Premio Prismas",
+    "text": "received Premio Prismas",
     "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q622813",
-    "target_label": "Newbery Medal",
-    "text": "received Newbery Medal",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q16583682",
+    "target_label": "Badge of the 1000th Anniversary of the Polish State",
+    "text": "received Badge of the 1000th Anniversary of the Polish State",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q1596394",
-    "target_label": "Honorary Award of the Heinrich Heine Society",
-    "text": "received Honorary Award of the Heinrich Heine Society",
-    "distractor_type": "same_type_random"
+    "target_id": "Q47035321",
+    "target_label": "Forder Lectureship",
+    "text": "received Forder Lectureship",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q2887379",
+    "target_label": "Premio Gigamesh",
+    "text": "received Premio Gigamesh",
+    "distractor_type": "correct"
+   }
+  ],
+  "correct_candidate_id": "F",
+  "hidden_event_type": "award",
+  "hidden_target_id": "Q2887379",
+  "source": "wikidata",
+  "split": "calibration"
+ },
+ {
+  "question_id": "Q67641_2009_P166",
+  "person_id": "Q67641",
+  "person_label": "Michael Verhoeven",
+  "observed_events": [
+   {
+    "year": 2005,
+    "event_type": "award",
+    "target_id": "Q1419630",
+    "target_label": "Goldener Ochse",
+    "text": "2005: received Goldener Ochse"
+   },
+   {
+    "year": 2007,
+    "event_type": "award",
+    "target_id": "Q4873660",
+    "target_label": "Bavarian Film Awards (Honorary Award)",
+    "text": "2007: received Bavarian Film Awards (Honorary Award)"
+   },
+   {
+    "year": 2012,
+    "event_type": "award",
+    "target_id": "Q824667",
+    "target_label": "Bernhard Wicki Award",
+    "text": "2012: received Bernhard Wicki Award"
+   },
+   {
+    "year": 2013,
+    "event_type": "award",
+    "target_id": "Q1415202",
+    "target_label": "Film Award of the City of Munich",
+    "text": "2013: received Film Award of the City of Munich"
+   }
+  ],
+  "missing_year": 2009,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "award",
+    "target_id": "Q687123",
+    "target_label": "BAFTA Award for Best Actress in a Leading Role",
+    "text": "received BAFTA Award for Best Actress in a Leading Role",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q15815187",
+    "target_label": "Herbert Strate Award",
+    "text": "received Herbert Strate Award",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q1781888",
+    "target_label": "Adamson Awards",
+    "text": "received Adamson Awards",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "award",
+    "target_id": "Q1418009",
+    "target_label": "NBA All-Rookie Team",
+    "text": "received NBA All-Rookie Team",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "E",
     "event_type": "award",
     "target_id": "Q10905334",
     "target_label": "Officer's Cross of the Order of Merit of the Federal Republic of Germany",
     "text": "received Officer's Cross of the Order of Merit of the Federal Republic of Germany",
     "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q1534911",
+    "target_label": "Henrietta Award",
+    "text": "received Henrietta Award",
+    "distractor_type": "label_similar_same_type"
    }
   ],
   "correct_candidate_id": "B",
   "hidden_event_type": "award",
-  "hidden_target_id": "Q1205485",
+  "hidden_target_id": "Q15815187",
   "source": "wikidata",
-  "split": "test"
+  "split": "calibration"
  },
  {
-  "question_id": "Q350843_1996_P39",
-  "person_id": "Q350843",
-  "person_label": "Adam Schiff",
+  "question_id": "Q389189_2015_P39",
+  "person_id": "Q389189",
+  "person_label": "Mark Spencer",
   "observed_events": [
    {
-    "year": 1987,
+    "year": 2010,
     "event_type": "position",
-    "target_id": "Q600751",
-    "target_label": "prosecutor",
-    "text": "1987: began serving as prosecutor"
+    "target_id": "Q35494253",
+    "target_label": "member of the 55th Parliament of the United Kingdom",
+    "text": "2010: began serving as member of the 55th Parliament of the United Kingdom"
    },
    {
-    "year": 2001,
+    "year": 2016,
     "event_type": "position",
-    "target_id": "Q13218630",
-    "target_label": "United States representative",
-    "text": "2001: began serving as United States representative"
+    "target_id": "Q115325171",
+    "target_label": "Assistant Whip",
+    "text": "2016: began serving as Assistant Whip"
    },
    {
-    "year": 2003,
+    "year": 2017,
     "event_type": "position",
-    "target_id": "Q13218630",
-    "target_label": "United States representative",
-    "text": "2003: began serving as United States representative"
+    "target_id": "Q30524710",
+    "target_label": "member of the 57th Parliament of the United Kingdom",
+    "text": "2017: began serving as member of the 57th Parliament of the United Kingdom"
    }
   ],
-  "missing_year": 1996,
+  "missing_year": 2015,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "position",
-    "target_id": "Q26268315",
-    "target_label": "member of the Consitutional council",
-    "text": "began serving as member of the Consitutional council",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q41582555",
+    "target_label": "member of the 15th Parliament of the United Kingdom",
+    "text": "began serving as member of the 15th Parliament of the United Kingdom",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "B",
     "event_type": "position",
-    "target_id": "Q19690441",
-    "target_label": "member of the State Senate of California",
-    "text": "began serving as member of the State Senate of California",
-    "distractor_type": "correct"
+    "target_id": "Q28331905",
+    "target_label": "Member of the Parliament of Gibraltar",
+    "text": "began serving as Member of the Parliament of Gibraltar",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
     "event_type": "position",
-    "target_id": "Q21360913",
-    "target_label": "member of the State Senate of Arizona",
-    "text": "began serving as member of the State Senate of Arizona",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q115299002",
+    "target_label": "Minister of State for Food, Farming and Fisheries",
+    "text": "began serving as Minister of State for Food, Farming and Fisheries",
+    "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "D",
     "event_type": "position",
-    "target_id": "Q110463754",
-    "target_label": "mayor of Košice",
-    "text": "began serving as mayor of Košice",
+    "target_id": "Q1578065",
+    "target_label": "Minister of Internal Affairs and Communications",
+    "text": "began serving as Minister of Internal Affairs and Communications",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "position",
-    "target_id": "Q136544431",
-    "target_label": "chairperson of US House Intelligence committee",
-    "text": "began serving as chairperson of US House Intelligence committee",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q20058770",
+    "target_label": "member of the New York State Assembly",
+    "text": "began serving as member of the New York State Assembly",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "F",
     "event_type": "position",
-    "target_id": "Q10686041",
-    "target_label": "Minister for Housing",
-    "text": "began serving as Minister for Housing",
+    "target_id": "Q30524718",
+    "target_label": "member of the 56th Parliament of the United Kingdom",
+    "text": "began serving as member of the 56th Parliament of the United Kingdom",
+    "distractor_type": "correct"
+   }
+  ],
+  "correct_candidate_id": "F",
+  "hidden_event_type": "position",
+  "hidden_target_id": "Q30524718",
+  "source": "wikidata",
+  "split": "calibration"
+ },
+ {
+  "question_id": "Q40640_1977_P166",
+  "person_id": "Q40640",
+  "person_label": "Ray Bradbury",
+  "observed_events": [
+   {
+    "year": 1974,
+    "event_type": "award",
+    "target_id": "Q2687578",
+    "target_label": "Inkpot Award",
+    "text": "1974: received Inkpot Award"
+   },
+   {
+    "year": 1974,
+    "event_type": "award",
+    "target_id": "Q7910957",
+    "target_label": "Valentine Davies Award",
+    "text": "1974: received Valentine Davies Award"
+   },
+   {
+    "year": 1984,
+    "event_type": "award",
+    "target_id": "Q19360203",
+    "target_label": "Prometheus Award - Hall of Fame",
+    "text": "1984: received Prometheus Award - Hall of Fame"
+   },
+   {
+    "year": 1988,
+    "event_type": "award",
+    "target_id": "Q3910469",
+    "target_label": "Bram Stoker Award for Lifetime Achievement",
+    "text": "1988: received Bram Stoker Award for Lifetime Achievement"
+   }
+  ],
+  "missing_year": 1977,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "award",
+    "target_id": "Q4287195",
+    "target_label": "John Torrence Tate Medal",
+    "text": "received John Torrence Tate Medal",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q8035829",
+    "target_label": "World Horror Convention Grand Master Award",
+    "text": "received World Horror Convention Grand Master Award",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q1577949",
+    "target_label": "Rosenstiel Award",
+    "text": "received Rosenstiel Award",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "award",
+    "target_id": "Q3625727",
+    "target_label": "World Fantasy Award for Life Achievement",
+    "text": "received World Fantasy Award for Life Achievement",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "award",
+    "target_id": "Q8035703",
+    "target_label": "World Fantasy Award for Best Anthology",
+    "text": "received World Fantasy Award for Best Anthology",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q430541",
+    "target_label": "Grinzane Cavour Prize",
+    "text": "received Grinzane Cavour Prize",
     "distractor_type": "same_type_random"
    }
   ],
-  "correct_candidate_id": "B",
-  "hidden_event_type": "position",
-  "hidden_target_id": "Q19690441",
+  "correct_candidate_id": "D",
+  "hidden_event_type": "award",
+  "hidden_target_id": "Q3625727",
   "source": "wikidata",
-  "split": "test"
+  "split": "calibration"
  },
  {
-  "question_id": "Q670030_1961_P166",
-  "person_id": "Q670030",
-  "person_label": "Issa Pliyev",
+  "question_id": "Q5866146_1995_P39",
+  "person_id": "Q5866146",
+  "person_label": "Francisco Javier Elorza",
   "observed_events": [
    {
-    "year": 1947,
-    "event_type": "award",
-    "target_id": "Q185493",
-    "target_label": "Order of Lenin",
-    "text": "1947: received Order of Lenin"
+    "year": 1976,
+    "event_type": "position",
+    "target_id": "Q27969744",
+    "target_label": "ambassador of Spain to France",
+    "text": "1976: began serving as ambassador of Spain to France"
    },
    {
-    "year": 1952,
+    "year": 2000,
+    "event_type": "position",
+    "target_id": "Q27969744",
+    "target_label": "ambassador of Spain to France",
+    "text": "2000: began serving as ambassador of Spain to France"
+   },
+   {
+    "year": 2004,
+    "event_type": "position",
+    "target_id": "Q40033530",
+    "target_label": "ambassador of Spain to Russia",
+    "text": "2004: began serving as ambassador of Spain to Russia"
+   }
+  ],
+  "missing_year": 1995,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "position",
+    "target_id": "Q30533368",
+    "target_label": "Federal Minister of Health",
+    "text": "began serving as Federal Minister of Health",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "position",
+    "target_id": "Q107145377",
+    "target_label": "Ambassador of Spain to Bhutan",
+    "text": "began serving as Ambassador of Spain to Bhutan",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "position",
+    "target_id": "Q27169",
+    "target_label": "Member of the European Parliament",
+    "text": "began serving as Member of the European Parliament",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "position",
+    "target_id": "Q113318727",
+    "target_label": "member of the Sejm of the Polish People's Republic",
+    "text": "began serving as member of the Sejm of the Polish People's Republic",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "position",
+    "target_id": "Q43165333",
+    "target_label": "Permanent representative of Spain to the European Union",
+    "text": "began serving as Permanent representative of Spain to the European Union",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "position",
+    "target_id": "Q25294348",
+    "target_label": "Permanent Representative of France to the United Nations",
+    "text": "began serving as Permanent Representative of France to the United Nations",
+    "distractor_type": "label_similar_same_type"
+   }
+  ],
+  "correct_candidate_id": "E",
+  "hidden_event_type": "position",
+  "hidden_target_id": "Q43165333",
+  "source": "wikidata",
+  "split": "calibration"
+ },
+ {
+  "question_id": "Q4422988_1966_P166",
+  "person_id": "Q4422988",
+  "person_label": "Yefim Slavsky",
+  "observed_events": [
+   {
+    "year": 1962,
     "event_type": "award",
-    "target_id": "Q337463",
-    "target_label": "Order of the Red Banner",
-    "text": "1952: received Order of the Red Banner"
+    "target_id": "Q1980962",
+    "target_label": "\"Hammer and Sickle\" gold medal",
+    "text": "1962: received \"Hammer and Sickle\" gold medal"
    },
    {
     "year": 1962,
     "event_type": "award",
-    "target_id": "Q185493",
-    "target_label": "Order of Lenin",
-    "text": "1962: received Order of Lenin"
+    "target_id": "Q208167",
+    "target_label": "Hero of Socialist Labour",
+    "text": "1962: received Hero of Socialist Labour"
    },
    {
-    "year": 1969,
+    "year": 1968,
     "event_type": "award",
-    "target_id": "Q337463",
-    "target_label": "Order of the Red Banner",
-    "text": "1969: received Order of the Red Banner"
+    "target_id": "Q185493",
+    "target_label": "Order of Lenin",
+    "text": "1968: received Order of Lenin"
+   },
+   {
+    "year": 1971,
+    "event_type": "award",
+    "target_id": "Q185493",
+    "target_label": "Order of Lenin",
+    "text": "1971: received Order of Lenin"
    }
   ],
-  "missing_year": 1961,
+  "missing_year": 1966,
   "candidates": [
    {
     "candidate_id": "A",
     "event_type": "award",
-    "target_id": "Q1056251",
-    "target_label": "Hugo Award for Best Short Story",
-    "text": "received Hugo Award for Best Short Story",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q478850",
+    "target_label": "Order of the Red Banner of Labour",
+    "text": "received Order of the Red Banner of Labour",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q34473235",
-    "target_label": "Grand Cross of Naval Merit with white badge",
-    "text": "received Grand Cross of Naval Merit with white badge",
+    "target_id": "Q630018",
+    "target_label": "Bambi Award",
+    "text": "received Bambi Award",
     "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q530008",
-    "target_label": "Order of Sukhbaatar",
-    "text": "received Order of Sukhbaatar",
-    "distractor_type": "correct"
+    "target_id": "Q47338068",
+    "target_label": "Knight First Class of the Order of the Lion of Finland",
+    "text": "received Knight First Class of the Order of the Lion of Finland",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q21292820",
-    "target_label": "Order of Suvorov, 1st class",
-    "text": "received Order of Suvorov, 1st class",
-    "distractor_type": "same_person_wrong_time"
+    "target_id": "Q15042103",
+    "target_label": "Grand Cross of the Military Order of the Tower and Sword",
+    "text": "received Grand Cross of the Military Order of the Tower and Sword",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q980578",
-    "target_label": "Order of Sikatuna",
-    "text": "received Order of Sikatuna",
+    "target_id": "Q2297199",
+    "target_label": "Order of the Red Star of Labour",
+    "text": "received Order of the Red Star of Labour",
     "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q13025963",
-    "target_label": "Victory Medal",
-    "text": "received Victory Medal",
-    "distractor_type": "same_type_random"
+    "target_id": "Q728960",
+    "target_label": "Order of the October Revolution",
+    "text": "received Order of the October Revolution",
+    "distractor_type": "same_person_wrong_time"
    }
   ],
-  "correct_candidate_id": "C",
+  "correct_candidate_id": "A",
   "hidden_event_type": "award",
-  "hidden_target_id": "Q530008",
+  "hidden_target_id": "Q478850",
+  "source": "wikidata",
+  "split": "calibration"
+ },
+ {
+  "question_id": "Q59753255_1991_P69",
+  "person_id": "Q59753255",
+  "person_label": "Jianwei Miao",
+  "observed_events": [
+   {
+    "year": 1987,
+    "event_type": "education",
+    "target_id": "Q197543",
+    "target_label": "Zhejiang University",
+    "text": "1987: began studying at Zhejiang University"
+   },
+   {
+    "year": 1994,
+    "event_type": "education",
+    "target_id": "Q969850",
+    "target_label": "Stony Brook University",
+    "text": "1994: began studying at Stony Brook University"
+   },
+   {
+    "year": 1997,
+    "event_type": "education",
+    "target_id": "Q969850",
+    "target_label": "Stony Brook University",
+    "text": "1997: began studying at Stony Brook University"
+   }
+  ],
+  "missing_year": 1991,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "award",
+    "target_id": "Q55615329",
+    "target_label": "Joseph F. Keithley Award For Advances in Measurement Science",
+    "text": "received Joseph F. Keithley Award For Advances in Measurement Science",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "education",
+    "target_id": "Q530471",
+    "target_label": "Chinese Academy of Sciences",
+    "text": "began studying at Chinese Academy of Sciences",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "education",
+    "target_id": "Q216273",
+    "target_label": "University of St Andrews",
+    "text": "began studying at University of St Andrews",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "education",
+    "target_id": "Q1073828",
+    "target_label": "Chinese Academy of Social Sciences",
+    "text": "began studying at Chinese Academy of Social Sciences",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "education",
+    "target_id": "Q5279923",
+    "target_label": "Diplomatic School of Spain",
+    "text": "began studying at Diplomatic School of Spain",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "education",
+    "target_id": "Q1229996",
+    "target_label": "University of Seville",
+    "text": "began studying at University of Seville",
+    "distractor_type": "same_type_near_year"
+   }
+  ],
+  "correct_candidate_id": "B",
+  "hidden_event_type": "education",
+  "hidden_target_id": "Q530471",
+  "source": "wikidata",
+  "split": "calibration"
+ },
+ {
+  "question_id": "Q2372634_1970_P166",
+  "person_id": "Q2372634",
+  "person_label": "Musa Gareyev",
+  "observed_events": [
+   {
+    "year": 1955,
+    "event_type": "award",
+    "target_id": "Q695106",
+    "target_label": "Order of the Red Star",
+    "text": "1955: received Order of the Red Star"
+   },
+   {
+    "year": 1956,
+    "event_type": "award",
+    "target_id": "Q695106",
+    "target_label": "Order of the Red Star",
+    "text": "1956: received Order of the Red Star"
+   },
+   {
+    "year": 1971,
+    "event_type": "award",
+    "target_id": "Q478850",
+    "target_label": "Order of the Red Banner of Labour",
+    "text": "1971: received Order of the Red Banner of Labour"
+   },
+   {
+    "year": 1985,
+    "event_type": "award",
+    "target_id": "Q18080149",
+    "target_label": "Order of the Patriotic War, 1st class",
+    "text": "1985: received Order of the Patriotic War, 1st class"
+   }
+  ],
+  "missing_year": 1970,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "award",
+    "target_id": "Q59767712",
+    "target_label": "Fellow of the Institute of Mathematical Statistics",
+    "text": "received Fellow of the Institute of Mathematical Statistics",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q178473",
+    "target_label": "Hero of the Soviet Union",
+    "text": "received Hero of the Soviet Union",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q1915989",
+    "target_label": "Jubilee Medal Medal \"In Commemoration of the 250th Anniversary of Leningrad\"",
+    "text": "received Jubilee Medal Medal \"In Commemoration of the 250th Anniversary of Leningrad\"",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "award",
+    "target_id": "Q1710778",
+    "target_label": "Jubilee Medal \"In Commemoration of the 100th Anniversary of the Birth of Vladimir Ilyich Lenin\"",
+    "text": "received Jubilee Medal \"In Commemoration of the 100th Anniversary of the Birth of Vladimir Ilyich Lenin\"",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "award",
+    "target_id": "Q41417",
+    "target_label": "Academy Award for Best Writing, Original Screenplay",
+    "text": "received Academy Award for Best Writing, Original Screenplay",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q487719",
+    "target_label": "Bravo Otto",
+    "text": "received Bravo Otto",
+    "distractor_type": "same_type_near_year"
+   }
+  ],
+  "correct_candidate_id": "D",
+  "hidden_event_type": "award",
+  "hidden_target_id": "Q1710778",
+  "source": "wikidata",
+  "split": "calibration"
+ },
+ {
+  "question_id": "Q1392426_1998_P166",
+  "person_id": "Q1392426",
+  "person_label": "Philaret",
+  "observed_events": [
+   {
+    "year": 1988,
+    "event_type": "award",
+    "target_id": "Q4375448",
+    "target_label": "Honorary Diploma of the Presidium of the Supreme Soviet of the RSFSR",
+    "text": "1988: received Honorary Diploma of the Presidium of the Supreme Soviet of the RSFSR"
+   },
+   {
+    "year": 1995,
+    "event_type": "award",
+    "target_id": "Q4287202",
+    "target_label": "Medal of Francysk Skaryna",
+    "text": "1995: received Medal of Francysk Skaryna"
+   },
+   {
+    "year": 2003,
+    "event_type": "award",
+    "target_id": "Q18080423",
+    "target_label": "Order \"For Merit to the Fatherland\", 4th class",
+    "text": "2003: received Order \"For Merit to the Fatherland\", 4th class"
+   },
+   {
+    "year": 2003,
+    "event_type": "award",
+    "target_id": "Q2446309",
+    "target_label": "Order of Francisc Skorina",
+    "text": "2003: received Order of Francisc Skorina"
+   }
+  ],
+  "missing_year": 1998,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "award",
+    "target_id": "Q104615859",
+    "target_label": "Honorary Knight Grand Cross of the Order of the Bath",
+    "text": "received Honorary Knight Grand Cross of the Order of the Bath",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q1586559",
+    "target_label": "Order of Fatherland",
+    "text": "received Order of Fatherland",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q3449063",
+    "target_label": "FIFA FIFPro World XI",
+    "text": "received FIFA FIFPro World XI",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "award",
+    "target_id": "Q61728558",
+    "target_label": "honorary citizen of Polotsk",
+    "text": "received honorary citizen of Polotsk",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "award",
+    "target_id": "Q36480576",
+    "target_label": "Engler Medal in Gold",
+    "text": "received Engler Medal in Gold",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q42307908",
+    "target_label": "Order of Fatherland 3rd Class",
+    "text": "received Order of Fatherland 3rd Class",
+    "distractor_type": "correct"
+   }
+  ],
+  "correct_candidate_id": "F",
+  "hidden_event_type": "award",
+  "hidden_target_id": "Q42307908",
   "source": "wikidata",
   "split": "test"
  },
  {
-  "question_id": "Q1810264_2006_P166",
-  "person_id": "Q1810264",
-  "person_label": "Ellen Datlow",
+  "question_id": "Q41044400_1990_P69",
+  "person_id": "Q41044400",
+  "person_label": "Christophe Fraser",
   "observed_events": [
    {
-    "year": 2003,
-    "event_type": "award",
-    "target_id": "Q8035703",
-    "target_label": "World Fantasy Award for Best Anthology",
-    "text": "2003: received World Fantasy Award for Best Anthology"
+    "year": 1982,
+    "event_type": "education",
+    "target_id": "Q371797",
+    "target_label": "European School, Culham",
+    "text": "1982: began studying at European School, Culham"
    },
    {
-    "year": 2004,
-    "event_type": "award",
-    "target_id": "Q3910465",
-    "target_label": "Bram Stoker Award for Best Anthology",
-    "text": "2004: received Bram Stoker Award for Best Anthology"
+    "year": 1997,
+    "event_type": "employment",
+    "target_id": "Q3799758",
+    "target_label": "International University College of Turin",
+    "text": "1997: began working for International University College of Turin"
    },
    {
-    "year": 2007,
-    "event_type": "award",
-    "target_id": "Q8035703",
-    "target_label": "World Fantasy Award for Best Anthology",
-    "text": "2007: received World Fantasy Award for Best Anthology"
-   },
-   {
-    "year": 2008,
-    "event_type": "award",
-    "target_id": "Q8035703",
-    "target_label": "World Fantasy Award for Best Anthology",
-    "text": "2008: received World Fantasy Award for Best Anthology"
+    "year": 1998,
+    "event_type": "employment",
+    "target_id": "Q34433",
+    "target_label": "University of Oxford",
+    "text": "1998: began working for University of Oxford"
    }
   ],
-  "missing_year": 2006,
+  "missing_year": 1990,
   "candidates": [
    {
     "candidate_id": "A",
+    "event_type": "education",
+    "target_id": "Q487556",
+    "target_label": "University of Sydney",
+    "text": "began studying at University of Sydney",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "education",
+    "target_id": "Q160302",
+    "target_label": "University of Edinburgh",
+    "text": "began studying at University of Edinburgh",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "education",
+    "target_id": "Q153987",
+    "target_label": "University of Freiburg",
+    "text": "began studying at University of Freiburg",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "education",
+    "target_id": "Q788091",
+    "target_label": "Autonomous University of Madrid",
+    "text": "began studying at Autonomous University of Madrid",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "employment",
+    "target_id": "Q189022",
+    "target_label": "Imperial College London",
+    "text": "began working for Imperial College London",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "education",
+    "target_id": "Q55044",
+    "target_label": "Ludwig-Maximilians-Universität München",
+    "text": "began studying at Ludwig-Maximilians-Universität München",
+    "distractor_type": "same_type_random"
+   }
+  ],
+  "correct_candidate_id": "B",
+  "hidden_event_type": "education",
+  "hidden_target_id": "Q160302",
+  "source": "wikidata",
+  "split": "test"
+ },
+ {
+  "question_id": "Q1399304_1993_P39",
+  "person_id": "Q1399304",
+  "person_label": "Michael O'Kennedy",
+  "observed_events": [
+   {
+    "year": 1989,
+    "event_type": "position",
+    "target_id": "Q654291",
+    "target_label": "Teachta Dála",
+    "text": "1989: began serving as Teachta Dála"
+   },
+   {
+    "year": 1991,
+    "event_type": "position",
+    "target_id": "Q932991",
+    "target_label": "Minister for Labour",
+    "text": "1991: began serving as Minister for Labour"
+   },
+   {
+    "year": 1997,
+    "event_type": "position",
+    "target_id": "Q654291",
+    "target_label": "Teachta Dála",
+    "text": "1997: began serving as Teachta Dála"
+   }
+  ],
+  "missing_year": 1993,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "position",
+    "target_id": "Q7460600",
+    "target_label": "Shadow Secretary of State for Transport",
+    "text": "began serving as Shadow Secretary of State for Transport",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "position",
+    "target_id": "Q26268330",
+    "target_label": "mayor of Zaragoza",
+    "text": "began serving as mayor of Zaragoza",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "position",
+    "target_id": "Q6865750",
+    "target_label": "Minister for Agriculture, Food and the Marine",
+    "text": "began serving as Minister for Agriculture, Food and the Marine",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "position",
+    "target_id": "Q213702",
+    "target_label": "president of Ireland",
+    "text": "began serving as president of Ireland",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "position",
+    "target_id": "Q18043391",
+    "target_label": "senator of Ireland",
+    "text": "began serving as senator of Ireland",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "position",
+    "target_id": "Q62021816",
+    "target_label": "mayor of Troyes",
+    "text": "began serving as mayor of Troyes",
+    "distractor_type": "same_type_random"
+   }
+  ],
+  "correct_candidate_id": "E",
+  "hidden_event_type": "position",
+  "hidden_target_id": "Q18043391",
+  "source": "wikidata",
+  "split": "test"
+ },
+ {
+  "question_id": "Q197996_1947_P69",
+  "person_id": "Q197996",
+  "person_label": "Zhou Mingzhen",
+  "observed_events": [
+   {
+    "year": 1939,
+    "event_type": "education",
+    "target_id": "Q834857",
+    "target_label": "Chongqing University",
+    "text": "1939: began studying at Chongqing University"
+   },
+   {
+    "year": 1943,
+    "event_type": "employment",
+    "target_id": "Q834857",
+    "target_label": "Chongqing University",
+    "text": "1943: began working for Chongqing University"
+   },
+   {
+    "year": 1948,
+    "event_type": "education",
+    "target_id": "Q622137",
+    "target_label": "Lehigh University",
+    "text": "1948: began studying at Lehigh University"
+   },
+   {
+    "year": 1950,
+    "event_type": "education",
+    "target_id": "Q21578",
+    "target_label": "Princeton University",
+    "text": "1950: began studying at Princeton University"
+   }
+  ],
+  "missing_year": 1947,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "education",
+    "target_id": "Q627969",
+    "target_label": "University of Ottawa",
+    "text": "began studying at University of Ottawa",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "education",
+    "target_id": "Q1236345",
+    "target_label": "University of Murcia",
+    "text": "began studying at University of Murcia",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "education",
+    "target_id": "Q738258",
+    "target_label": "University of Miami",
+    "text": "began studying at University of Miami",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "education",
+    "target_id": "Q1519151",
+    "target_label": "Mannes College The New School for Music",
+    "text": "began studying at Mannes College The New School for Music",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "education",
+    "target_id": "Q2383228",
+    "target_label": "Lycée Kléber",
+    "text": "began studying at Lycée Kléber",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q3910469",
-    "target_label": "Bram Stoker Award for Lifetime Achievement",
-    "text": "received Bram Stoker Award for Lifetime Achievement",
+    "target_id": "Q9384263",
+    "target_label": "Academician of the Chinese Academy of Sciences",
+    "text": "received Academician of the Chinese Academy of Sciences",
+    "distractor_type": "same_person_wrong_time"
+   }
+  ],
+  "correct_candidate_id": "C",
+  "hidden_event_type": "education",
+  "hidden_target_id": "Q738258",
+  "source": "wikidata",
+  "split": "test"
+ },
+ {
+  "question_id": "Q56099781_2016_P166",
+  "person_id": "Q56099781",
+  "person_label": "Elisabetta Dejana",
+  "observed_events": [
+   {
+    "year": 2007,
+    "event_type": "employment",
+    "target_id": "Q30262800",
+    "target_label": "European School of Molecular Medicine",
+    "text": "2007: began working for European School of Molecular Medicine"
+   },
+   {
+    "year": 2015,
+    "event_type": "employment",
+    "target_id": "Q185246",
+    "target_label": "Uppsala University",
+    "text": "2015: began working for Uppsala University"
+   },
+   {
+    "year": 2018,
+    "event_type": "award",
+    "target_id": "Q30120368",
+    "target_label": "Prix International de l’INSERM",
+    "text": "2018: received Prix International de l’INSERM"
+   }
+  ],
+  "missing_year": 2016,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "employment",
+    "target_id": "Q30252791",
+    "target_label": "FIRC Institute of Molecular Oncology",
+    "text": "began working for FIRC Institute of Molecular Oncology",
     "distractor_type": "same_person_wrong_time"
    },
    {
     "candidate_id": "B",
     "event_type": "award",
-    "target_id": "Q5019489",
-    "target_label": "Breakthrough Prize in Life Sciences",
-    "text": "received Breakthrough Prize in Life Sciences",
-    "distractor_type": "same_type_random"
+    "target_id": "Q27530629",
+    "target_label": "Scientific Grand Prize of the NRJ Fondation",
+    "text": "received Scientific Grand Prize of the NRJ Fondation",
+    "distractor_type": "label_similar_same_type"
    },
    {
     "candidate_id": "C",
     "event_type": "award",
-    "target_id": "Q78621336",
-    "target_label": "Locus Award for Best Anthology",
-    "text": "received Locus Award for Best Anthology",
-    "distractor_type": "correct"
+    "target_id": "Q5933770",
+    "target_label": "Hugo Award for Best Semiprozine",
+    "text": "received Hugo Award for Best Semiprozine",
+    "distractor_type": "same_type_near_year"
    },
    {
     "candidate_id": "D",
     "event_type": "award",
-    "target_id": "Q928309",
-    "target_label": "Bronze Wolf Award",
-    "text": "received Bronze Wolf Award",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q999734",
+    "target_label": "Albert Lasker Award for Basic Medical Research",
+    "text": "received Albert Lasker Award for Basic Medical Research",
+    "distractor_type": "same_type_random"
    },
    {
     "candidate_id": "E",
     "event_type": "award",
-    "target_id": "Q1907790",
-    "target_label": "Massry Prize",
-    "text": "received Massry Prize",
-    "distractor_type": "same_type_near_year"
+    "target_id": "Q45309809",
+    "target_label": "Scientific Grand Prize of the Lefoulon-Delalande Fondation",
+    "text": "received Scientific Grand Prize of the Lefoulon-Delalande Fondation",
+    "distractor_type": "correct"
    },
    {
     "candidate_id": "F",
     "event_type": "award",
-    "target_id": "Q6359428",
-    "target_label": "Ignotus Award for Best Anthology",
-    "text": "received Ignotus Award for Best Anthology",
-    "distractor_type": "label_similar_same_type"
+    "target_id": "Q6133972",
+    "target_label": "Major League Baseball Player of the Month Award",
+    "text": "received Major League Baseball Player of the Month Award",
+    "distractor_type": "same_type_near_year"
    }
   ],
-  "correct_candidate_id": "C",
+  "correct_candidate_id": "E",
   "hidden_event_type": "award",
-  "hidden_target_id": "Q78621336",
+  "hidden_target_id": "Q45309809",
+  "source": "wikidata",
+  "split": "test"
+ },
+ {
+  "question_id": "Q1655204_2004_P39",
+  "person_id": "Q1655204",
+  "person_label": "Séamus Brennan",
+  "observed_events": [
+   {
+    "year": 2002,
+    "event_type": "position",
+    "target_id": "Q654291",
+    "target_label": "Teachta Dála",
+    "text": "2002: began serving as Teachta Dála"
+   },
+   {
+    "year": 2002,
+    "event_type": "position",
+    "target_id": "Q6865981",
+    "target_label": "Minister for Transport",
+    "text": "2002: began serving as Minister for Transport"
+   },
+   {
+    "year": 2007,
+    "event_type": "position",
+    "target_id": "Q654291",
+    "target_label": "Teachta Dála",
+    "text": "2007: began serving as Teachta Dála"
+   },
+   {
+    "year": 2007,
+    "event_type": "position",
+    "target_id": "Q6865747",
+    "target_label": "Minister for Culture, Communications and Sport",
+    "text": "2007: began serving as Minister for Culture, Communications and Sport"
+   }
+  ],
+  "missing_year": 2004,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "position",
+    "target_id": "Q6866341",
+    "target_label": "Minister of State at the Department of the Taoiseach",
+    "text": "began serving as Minister of State at the Department of the Taoiseach",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "position",
+    "target_id": "Q1850749",
+    "target_label": "Speaker of the Parliament of Sweden",
+    "text": "began serving as Speaker of the Parliament of Sweden",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "position",
+    "target_id": "Q795477",
+    "target_label": "Prime Minister of Denmark",
+    "text": "began serving as Prime Minister of Denmark",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "position",
+    "target_id": "Q1937160",
+    "target_label": "Minister without Portfolio",
+    "text": "began serving as Minister without Portfolio",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "position",
+    "target_id": "Q50807377",
+    "target_label": "Minister for Child Protection Reform",
+    "text": "began serving as Minister for Child Protection Reform",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "position",
+    "target_id": "Q6865958",
+    "target_label": "Minister for Social Protection",
+    "text": "began serving as Minister for Social Protection",
+    "distractor_type": "correct"
+   }
+  ],
+  "correct_candidate_id": "F",
+  "hidden_event_type": "position",
+  "hidden_target_id": "Q6865958",
+  "source": "wikidata",
+  "split": "test"
+ },
+ {
+  "question_id": "Q6709382_2016_P166",
+  "person_id": "Q6709382",
+  "person_label": "Lynne M. Thomas",
+  "observed_events": [
+   {
+    "year": 2012,
+    "event_type": "award",
+    "target_id": "Q5933741",
+    "target_label": "Hugo Award for Best Fancast",
+    "text": "2012: received Hugo Award for Best Fancast"
+   },
+   {
+    "year": 2013,
+    "event_type": "award",
+    "target_id": "Q5933741",
+    "target_label": "Hugo Award for Best Fancast",
+    "text": "2013: received Hugo Award for Best Fancast"
+   },
+   {
+    "year": 2017,
+    "event_type": "employment",
+    "target_id": "Q18749551",
+    "target_label": "Rare Book and Manuscript Library (University of Illinois Urbana-Champaign)",
+    "text": "2017: began working for Rare Book and Manuscript Library (University of Illinois Urbana-Champaign)"
+   },
+   {
+    "year": 2017,
+    "event_type": "employment",
+    "target_id": "Q457281",
+    "target_label": "University of Illinois Urbana-Champaign",
+    "text": "2017: began working for University of Illinois Urbana-Champaign"
+   }
+  ],
+  "missing_year": 2016,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "award",
+    "target_id": "Q1232376",
+    "target_label": "Cross of Recognition",
+    "text": "received Cross of Recognition",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "award",
+    "target_id": "Q29479284",
+    "target_label": "Hugo Award for Best Series",
+    "text": "received Hugo Award for Best Series",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "award",
+    "target_id": "Q26270762",
+    "target_label": "doctor honoris causa from the Pierre and Marie Curie University",
+    "text": "received doctor honoris causa from the Pierre and Marie Curie University",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "award",
+    "target_id": "Q5933770",
+    "target_label": "Hugo Award for Best Semiprozine",
+    "text": "received Hugo Award for Best Semiprozine",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "education",
+    "target_id": "Q49204",
+    "target_label": "Smith College",
+    "text": "began studying at Smith College",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "award",
+    "target_id": "Q23769799",
+    "target_label": "Grand Cross with Collar of the Order of the White Rose of Finland",
+    "text": "received Grand Cross with Collar of the Order of the White Rose of Finland",
+    "distractor_type": "same_type_near_year"
+   }
+  ],
+  "correct_candidate_id": "D",
+  "hidden_event_type": "award",
+  "hidden_target_id": "Q5933770",
+  "source": "wikidata",
+  "split": "test"
+ },
+ {
+  "question_id": "Q64213621_2014_P69",
+  "person_id": "Q64213621",
+  "person_label": "Andrea Fernández Benéitez",
+  "observed_events": [
+   {
+    "year": 2010,
+    "event_type": "education",
+    "target_id": "Q781108",
+    "target_label": "University of León",
+    "text": "2010: began studying at University of León"
+   },
+   {
+    "year": 2015,
+    "event_type": "education",
+    "target_id": "Q781108",
+    "target_label": "University of León",
+    "text": "2015: began studying at University of León"
+   },
+   {
+    "year": 2018,
+    "event_type": "education",
+    "target_id": "Q781108",
+    "target_label": "University of León",
+    "text": "2018: began studying at University of León"
+   }
+  ],
+  "missing_year": 2014,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "education",
+    "target_id": "Q617433",
+    "target_label": "Syracuse University",
+    "text": "began studying at Syracuse University",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "position",
+    "target_id": "Q18171345",
+    "target_label": "Member of the Congress of Deputies",
+    "text": "began serving as Member of the Congress of Deputies",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "education",
+    "target_id": "Q6978824",
+    "target_label": "National Taipei University of Education",
+    "text": "began studying at National Taipei University of Education",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "education",
+    "target_id": "Q13026935",
+    "target_label": "Chitralada School",
+    "text": "began studying at Chitralada School",
+    "distractor_type": "same_type_random"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "education",
+    "target_id": "Q421739",
+    "target_label": "National University of Distance Education",
+    "text": "began studying at National University of Distance Education",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "education",
+    "target_id": "Q736674",
+    "target_label": "University of Colorado Boulder",
+    "text": "began studying at University of Colorado Boulder",
+    "distractor_type": "same_type_near_year"
+   }
+  ],
+  "correct_candidate_id": "E",
+  "hidden_event_type": "education",
+  "hidden_target_id": "Q421739",
+  "source": "wikidata",
+  "split": "test"
+ },
+ {
+  "question_id": "Q49823_1992_P108",
+  "person_id": "Q49823",
+  "person_label": "Dana Scott",
+  "observed_events": [
+   {
+    "year": 1990,
+    "event_type": "award",
+    "target_id": "Q10354962",
+    "target_label": "Harold Pender Award",
+    "text": "1990: received Harold Pender Award"
+   },
+   {
+    "year": 1991,
+    "event_type": "award",
+    "target_id": "Q1559188",
+    "target_label": "Gödel Lecturer",
+    "text": "1991: received Gödel Lecturer"
+   },
+   {
+    "year": 1994,
+    "event_type": "award",
+    "target_id": "Q18748039",
+    "target_label": "ACM Fellow",
+    "text": "1994: received ACM Fellow"
+   },
+   {
+    "year": 1995,
+    "event_type": "award",
+    "target_id": "Q21476518",
+    "target_label": "honorary doctor of the University of Edinburgh",
+    "text": "1995: received honorary doctor of the University of Edinburgh"
+   }
+  ],
+  "missing_year": 1992,
+  "candidates": [
+   {
+    "candidate_id": "A",
+    "event_type": "employment",
+    "target_id": "Q1134606",
+    "target_label": "Massey University",
+    "text": "began working for Massey University",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "B",
+    "event_type": "employment",
+    "target_id": "Q503224",
+    "target_label": "United States Secret Service",
+    "text": "began working for United States Secret Service",
+    "distractor_type": "same_type_near_year"
+   },
+   {
+    "candidate_id": "C",
+    "event_type": "employment",
+    "target_id": "Q161982",
+    "target_label": "Johannes Gutenberg University Mainz",
+    "text": "began working for Johannes Gutenberg University Mainz",
+    "distractor_type": "label_similar_same_type"
+   },
+   {
+    "candidate_id": "D",
+    "event_type": "employment",
+    "target_id": "Q682739",
+    "target_label": "Johannes Kepler University Linz",
+    "text": "began working for Johannes Kepler University Linz",
+    "distractor_type": "correct"
+   },
+   {
+    "candidate_id": "E",
+    "event_type": "employment",
+    "target_id": "Q168756",
+    "target_label": "University of California, Berkeley",
+    "text": "began working for University of California, Berkeley",
+    "distractor_type": "same_person_wrong_time"
+   },
+   {
+    "candidate_id": "F",
+    "event_type": "employment",
+    "target_id": "Q127990",
+    "target_label": "Australian National University",
+    "text": "began working for Australian National University",
+    "distractor_type": "same_type_random"
+   }
+  ],
+  "correct_candidate_id": "D",
+  "hidden_event_type": "employment",
+  "hidden_target_id": "Q682739",
   "source": "wikidata",
   "split": "test"
  }

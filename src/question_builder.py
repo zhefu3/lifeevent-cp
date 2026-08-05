@@ -43,9 +43,15 @@ class CandidatePools:
     """Per-event-type pools over the full event table, plus per-person target sets.
     Generic bare labels are excluded from distractor pools (not from person timelines)."""
 
-    def __init__(self, events: list[dict[str, Any]]) -> None:
+    def __init__(self, events: list[dict[str, Any]],
+                 extra_targets: dict[str, list[str]] | None = None) -> None:
         self.by_type: dict[str, list[dict[str, Any]]] = defaultdict(list)
         self.person_targets: dict[str, set[str]] = defaultdict(set)
+        # TGB 2.0 lesson: undated true statements are still true — merge the untimed
+        # all-targets table into negative legality (never into pools/timelines).
+        if extra_targets:
+            for pid, targets in extra_targets.items():
+                self.person_targets[pid].update(targets)
         seen: set[tuple[str, str, int]] = set()
         for ev in sorted(events, key=lambda r: (r["event_type"], r["target_id"], r["year"], r["person_id"])):
             self.person_targets[ev["person_id"]].add(ev["target_id"])
@@ -137,7 +143,11 @@ def _pick_same_person(person_events: list[dict[str, Any]], observed: list[dict[s
     pool = []
     for ev in person_events:
         text = _cand_text(ev, config)
-        if (ev["year"] != missing_year and ev["target_id"] != correct_target
+        # TempLAMA interval rule: an event whose [start, end] interval covers the
+        # missing year is (likely) still true then — illegal as a "wrong-time" negative.
+        covers = (ev.get("end_year") is not None
+                  and ev["year"] <= missing_year <= ev["end_year"])
+        if (ev["year"] != missing_year and not covers and ev["target_id"] != correct_target
                 and ev["target_id"] not in shown_targets and text not in used_texts):
             pool.append(ev)
     if pool:
@@ -227,10 +237,11 @@ def build_question(person_id: str, person_events: list[dict[str, Any]], missing_
 def build_all_questions(grouped: dict[str, list[dict[str, Any]]], assignment: dict[str, str],
                         all_events: list[dict[str, Any]], config: dict[str, Any],
                         rng: np.random.Generator, targets: dict[str, int],
-                        max_per_person: int) -> list[dict[str, Any]]:
+                        max_per_person: int,
+                        extra_targets: dict[str, list[str]] | None = None) -> list[dict[str, Any]]:
     """Generate questions split by split until per-split targets are met (or persons run out).
     Pass 1 takes at most one question per person; pass 2 (if allowed) adds seconds."""
-    pools = CandidatePools(all_events)
+    pools = CandidatePools(all_events, extra_targets)
     questions: list[dict[str, Any]] = []
     for split in ("train", "calibration", "test"):
         split_persons = sorted(pid for pid, s in assignment.items() if s == split)

@@ -1,113 +1,113 @@
 # Example cases (test split)
 
 ## Successes
-### Q61095374_1987_P108 — Cliona O'Farrelly
-- missing year: 1987 (hidden type: employment)
-- context: 1985: began working for University of Sussex | 1990: began working for Trinity College, Dublin | 1991: began working for Scripps Research
-  - [ ] A (same_type_near_year, p=0.153): began working for University of Michigan
-  - [ ] B (same_person_wrong_time, p=0.165): began working for University College Dublin
-  - [ ] C (same_type_near_year, p=0.169): began working for Vatican Museums
-  - [ ] D (label_similar_same_type, p=0.151): began working for Howard University
-  - [✓] E (correct, p=0.198): began working for Harvard University
-  - [ ] F (same_type_random, p=0.164): began working for Arizona State University
-- point: E; sets: 0.80→{B,C,E,F}; 0.90→{B,C,E,F}; 0.95→{A,B,C,D,E,F}
+### Q312495_1950_P166 — Andrei Grechko
+- missing year: 1950 (hidden type: award)
+- context: 1945: received Order of Lenin | 1945: received Order of Suvorov, 1st class | 1957: began serving as Commander-in-Chief of the Russian Ground Forces | 1958: received Hero of the Soviet Union
+  - [ ] A (same_type_near_year, p=0.170): received Order of San Marino
+  - [ ] B (same_type_near_year, p=0.157): received Hughes Medal
+  - [ ] C (same_person_wrong_time, p=0.169): received Hero of the Czechoslovak Socialist Republic
+  - [ ] D (same_type_random, p=0.157): received list of Swimming World Swimmers of the Year
+  - [✓] E (correct, p=0.175): received Order of the Red Banner
+  - [ ] F (label_similar_same_type, p=0.172): received Order the Red Banner
+- point: E; sets: 0.80→{A,C,E,F}; 0.90→{A,C,E,F}; 0.95→{A,B,C,D,E,F}
 
-### Q1004154_1983_P108 — Frédéric Barbier
-- missing year: 1983 (hidden type: employment)
-- context: 1976: began serving as Director of the Municipal Library of Valenciennes | 1982: began working for National Center for Scientific Research | 1991: began working for University Lille-II | 1993: began working for École pratique des hautes études
-  - [✓] A (correct, p=0.178): began working for University of Paris 1 Pantheon-Sorbonne
-  - [ ] B (same_type_near_year, p=0.161): began working for University of California, Santa Cruz
-  - [ ] C (same_person_wrong_time, p=0.161): began studying at École des chartes
-  - [ ] D (same_type_near_year, p=0.167): began working for Mario Negri Institute for Pharmacological Research
-  - [ ] E (same_type_random, p=0.174): began working for Lycée Fustel-de-Coulanges (Strasbourg)
-  - [ ] F (label_similar_same_type, p=0.159): began working for University of Saint Katherine
-- point: A; sets: 0.80→{A,B,C,D,E}; 0.90→{A,B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
+### Q655494_1967_P166 — Yuri Ozerov
+- missing year: 1967 (hidden type: award)
+- context: 1945: received Order of the Red Banner | 1965: received Honored art worker of the Russian Soviet Federative Socialist Republic | 1971: received Order of Lenin | 1972: received Grand Star of People's Friendship
+  - [ ] A (same_type_near_year, p=0.177): received Guggenheim Fellowship
+  - [ ] B (same_person_wrong_time, p=0.173): received Medal "For Battle Merit"
+  - [ ] C (label_similar_same_type, p=0.176): received Commander of the order of Honour
+  - [✓] D (correct, p=0.183): received Order of the Badge of Honour
+  - [ ] E (same_type_random, p=0.157): received Eisner Award for Best Writer
+  - [ ] F (same_type_near_year, p=0.135): received Golden Globe Award for Best Actress in a Motion Picture – Musical or Comedy
+- point: D; sets: 0.80→{A,B,C,D}; 0.90→{A,B,C,D}; 0.95→{A,B,C,D,E}
 
-### Q17714_1981_P166 — Stephen Hawking
-- missing year: 1981 (hidden type: award)
-- context: 1979: received Albert Einstein Medal | 1979: began serving as Lucasian Professor of Mathematics | 1982: received Commander of the Order of the British Empire | 1985: received Gold Medal of the Royal Astronomical Society
-  - [✓] A (correct, p=0.178): received Franklin Medal
-  - [ ] B (same_type_random, p=0.163): received Silver Bear Grand Jury Prize
-  - [ ] C (label_similar_same_type, p=0.168): received Frink Medal
-  - [ ] D (same_type_near_year, p=0.160): received Gold medal with hero rank of GDR
-  - [ ] E (same_person_wrong_time, p=0.175): received Albert Einstein Award
-  - [ ] F (same_type_near_year, p=0.156): received American Music Award for Favorite Pop/Rock Album
-- point: A; sets: 0.80→{A,B,C,D,E}; 0.90→{A,B,C,D,E}; 0.95→{A,B,C,D,E,F}
+### Q974542_1916_P166 — Jan Syrový
+- missing year: 1916 (hidden type: award)
+- context: 1915: received Order of St. George, 4th class | 1915: received Order of Saint Stanislaus, 3rd class | 1917: received Order of Saint Anna, 4th class | 1919: received Knight Commander of the Order of the Bath
+  - [ ] A (same_type_near_year, p=0.171): received Cross of Military Merit with Red Decoration
+  - [✓] B (correct, p=0.171): received Order of St. Vladimir, 4th class
+  - [ ] C (same_person_wrong_time, p=0.165): received Grand Cordon of the order of Nichan Iftikhar
+  - [ ] D (same_type_near_year, p=0.168): received Cross of St. George 2nd class
+  - [ ] E (label_similar_same_type, p=0.160): received Order of St. Vladimir, 1st class
+  - [ ] F (same_type_random, p=0.164): received Grand Cross of the Order of Charles III
+- point: B; sets: 0.80→{A,B,C,D,F}; 0.90→{A,B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
 
-### Q47755_2006_P166 — Imre Kertész
-- missing year: 2006 (hidden type: award)
-- context: 2005: received honorary doctor of the Sorbonne Nouvelle University | 2005: received Honorary doctor of the Free University of Berlin | 2007: received Marion Samuel Prize | 2009: received Jean Améry award
-  - [ ] A (same_type_near_year, p=0.154): received BBC World Sport Star of the Year
-  - [ ] B (label_similar_same_type, p=0.176): received Oersted Medal
-  - [✓] C (correct, p=0.176): received Ernst Reuter Medal
-  - [ ] D (same_type_random, p=0.145): received Laurence Olivier Award for Best Actor
-  - [ ] E (same_person_wrong_time, p=0.175): received Kossuth Prize
-  - [ ] F (same_type_near_year, p=0.173): received Meldola Medal and Prize
-- point: C; sets: 0.80→{B,C,E,F}; 0.90→{B,C,E,F}; 0.95→{A,B,C,E,F}
+### Q229369_2002_P166 — Lois McMaster Bujold
+- missing year: 2002 (hidden type: award)
+- context: 1995: received Hugo Award for Best Novel | 1995: received Locus Award for Best Science Fiction Novel | 2004: received Hugo Award for Best Novel | 2004: received Locus Award for Best Fantasy Novel
+  - [ ] A (same_person_wrong_time, p=0.166): received Edward E. Smith Memorial Award
+  - [ ] B (same_type_random, p=0.171): received Harvey Award for Best Colorist
+  - [✓] C (correct, p=0.174): received Mythopoeic Fantasy Award for Adult Literature
+  - [ ] D (same_type_near_year, p=0.154): received AVN Award Female Foreign Performer of the Year
+  - [ ] E (same_type_near_year, p=0.164): received Coretta Scott King Award
+  - [ ] F (label_similar_same_type, p=0.170): received Mythopoeic Fantasy Award for Children's Literature
+- point: C; sets: 0.80→{A,B,C,E,F}; 0.90→{A,B,C,E,F}; 0.95→{A,B,C,D,E,F}
 
-### Q1679925_1915_P69 — James Emman Kwegyir Aggrey
-- missing year: 1915 (hidden type: education)
-- context: 1912: began studying at Livingstone College | 1914: began studying at Livingstone College | 1924: began working for Achimota School | 1924: began serving as vice-principal
-  - [✓] A (correct, p=0.178): began studying at Columbia University
-  - [ ] B (same_type_near_year, p=0.159): began studying at University of Bologna
-  - [ ] C (same_type_near_year, p=0.166): began studying at Beijing No. 2 Experimental Primary School
-  - [ ] D (same_type_random, p=0.164): began studying at New York Studio School of Drawing, Painting and Sculpture
-  - [ ] E (label_similar_same_type, p=0.165): began studying at Colgate University
-  - [ ] F (same_type_near_year, p=0.167): began studying at Köllnisches Gymnasium
-- point: A; sets: 0.80→{A,C,D,E,F}; 0.90→{A,B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
+### Q6698469_2017_P39 — Lucy Powell
+- missing year: 2017 (hidden type: position)
+- context: 2015: began serving as member of the 56th Parliament of the United Kingdom | 2015: began serving as Shadow Secretary of State for Education | 2019: began serving as member of the 58th Parliament of the United Kingdom | 2020: began serving as Shadow Minister for Business and Consumers
+  - [ ] A (same_type_random, p=0.172): began serving as member of the French National Assembly
+  - [ ] B (same_person_wrong_time, p=0.156): began serving as Shadow Minister for the Cabinet Office
+  - [ ] C (same_type_near_year, p=0.164): began serving as Minister for Sustainability, Environment and Conservation
+  - [ ] D (same_type_near_year, p=0.169): began serving as Minister of Agriculture and Agri-Food
+  - [✓] E (correct, p=0.177): began serving as member of the 57th Parliament of the United Kingdom
+  - [ ] F (label_similar_same_type, p=0.162): began serving as member of the 15th Parliament of the United Kingdom
+- point: E; sets: 0.80→{A,C,D,E}; 0.90→{A,C,D,E,F}; 0.95→{A,B,C,D,E,F}
 
 ## Failures
-### Q441178_1961_P108 — Raymond Smullyan
-- missing year: 1961 (hidden type: employment)
-- context: 1957: began studying at Princeton University | 1958: began working for Princeton University | 1968: began working for City University of New York | 1982: began working for Indiana University
-  - [ ] A (same_type_random, p=0.170): began working for Grupo Salinas
-  - [ ] B (same_type_near_year, p=0.162): began working for Howard School of Academics and Technology
-  - [ ] C (same_person_wrong_time, p=0.165): began studying at University of Chicago
-  - [✓] D (correct, p=0.168): began working for Yeshiva University
-  - [ ] E (label_similar_same_type, p=0.168): began working for Sophia University
-  - [ ] F (same_type_near_year, p=0.167): began working for Krantz Films, Inc.
-- point: A; sets: 0.80→{A,B,C,D,E,F}; 0.90→{A,B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
+### Q18687923_2012_P166 — Ingrid Scheffer
+- missing year: 2012 (hidden type: award)
+- context: 2005: began working for University of Melbourne | 2011: began working for Florey Institute of Neuroscience and Mental Health | 2014: received Prime Minister's Prize for Science | 2014: received Fellow of the Australian Academy of Science
+  - [ ] A (label_similar_same_type, p=0.159): received North Carolina Award for Science
+  - [ ] B (same_type_near_year, p=0.173): received Warren Alpert Foundation Prize
+  - [ ] C (same_person_wrong_time, p=0.177): received Fellow of the Australian Academy of Health and Medical Sciences
+  - [ ] D (same_type_random, p=0.152): received Golden Mask
+  - [ ] E (same_type_near_year, p=0.178): received honorary doctorate of the University of Tirana
+  - [✓] F (correct, p=0.161): received L'Oréal-UNESCO Award For Women in Science
+- point: E; sets: 0.80→{B,C,E}; 0.90→{A,B,C,E,F}; 0.95→{A,B,C,D,E,F}
 
-### Q2093915_2010_P166 — Pierre Rosanvallon
-- missing year: 2010 (hidden type: award)
-- context: 2004: began working for Le Monde | 2008: received honorary doctor of the Queen Mary University of London | 2012: received honorary degree of HEC Paris | 2012: received International Spinoza Prize
-  - [ ] A (label_similar_same_type, p=0.177): received Grand Officer of the Legion of Honour
-  - [ ] B (same_person_wrong_time, p=0.174): received Corresponding Fellow of the British Academy
-  - [ ] C (same_type_random, p=0.142): received Tony Award for Best Actor in a Play
-  - [ ] D (same_type_near_year, p=0.165): received Screen Actors Guild Award for Outstanding Performance by a Female Actor in a Drama Series
-  - [ ] E (same_type_near_year, p=0.169): received Fellow of the Royal Society of Edinburgh
-  - [✓] F (correct, p=0.173): received Officer of the Legion of Honour
-- point: A; sets: 0.80→{A,B,D,E,F}; 0.90→{A,B,D,E,F}; 0.95→{A,B,D,E,F}
+### Q4444966_1917_P108 — Mikhail Subbotin
+- missing year: 1917 (hidden type: employment)
+- context: 1912: began working for University of Warsaw | 1915: began studying at Rostov State University | 1922: began working for Ulugh Beg Astronomical Institute | 1922: began working for National University of Uzbekistan named after Mirzo Ulugbek
+  - [ ] A (same_type_random, p=0.166): began working for Jordanhill College
+  - [ ] B (same_type_near_year, p=0.159): began working for University of Padua
+  - [ ] C (same_person_wrong_time, p=0.184): received Order of the Red Banner of Labour
+  - [ ] D (same_type_near_year, p=0.162): began working for First Australian Imperial Force
+  - [ ] E (label_similar_same_type, p=0.169): began working for California State Polytechnic University, Pomona
+  - [✓] F (correct, p=0.159): began working for Platov South-Russian State Polytechnic University
+- point: C; sets: 0.80→{A,C,E}; 0.90→{A,B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
 
-### Q5548717_1978_P39 — Ger Connolly
-- missing year: 1978 (hidden type: position)
-- context: 1977: began serving as Teachta Dála | 1977: began serving as Representative of the Parliamentary Assembly of the Council of Europe | 1979: began serving as Minister of State at the Department of Housing, Local Government and Heritage | 1981: began serving as Teachta Dála
-  - [✓] A (correct, p=0.169): began serving as substitute member of the Parliamentary Assembly of the Council of Europe
-  - [ ] B (same_type_near_year, p=0.184): began serving as member of the Indiana House of Representatives
-  - [ ] C (same_type_near_year, p=0.154): began serving as Secretary of State for Business, Innovation, Science and Trade
-  - [ ] D (same_type_random, p=0.160): began serving as Minister for Energy
-  - [ ] E (same_type_near_year, p=0.162): began serving as procurador en Cortes
-  - [ ] F (label_similar_same_type, p=0.171): began serving as Observer of the Parliamentary Assembly of the Council of Europe
-- point: B; sets: 0.80→{A,B,E,F}; 0.90→{A,B,D,E,F}; 0.95→{A,B,C,D,E,F}
+### Q6168998_1999_P69 — Jean-Baptiste Soufron
+- missing year: 1999 (hidden type: education)
+- context: 1997: began studying at University of Limoges | 2001: began studying at Robert Schuman University | 2001: began studying at Centre for International Intellectual Property Studies
+  - [ ] A (same_person_wrong_time, p=0.166): began studying at Panthéon-Assas University Paris
+  - [ ] B (same_type_random, p=0.176): began studying at Cégep de Rimouski
+  - [ ] C (same_type_near_year, p=0.170): began studying at University of Rochester
+  - [✓] D (correct, p=0.163): began studying at University of Paris 1 Pantheon-Sorbonne
+  - [ ] E (label_similar_same_type, p=0.166): began studying at University of Paderborn
+  - [ ] F (same_type_near_year, p=0.159): began studying at University of London
+- point: B; sets: 0.80→{A,B,C,D,E}; 0.90→{A,B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
 
-### Q1333582_1987_P166 — Richard Wilbur
+### Q1392426_1998_P166 — Philaret
+- missing year: 1998 (hidden type: award)
+- context: 1988: received Honorary Diploma of the Presidium of the Supreme Soviet of the RSFSR | 1995: received Medal of Francysk Skaryna | 2003: received Order "For Merit to the Fatherland", 4th class | 2003: received Order of Francisc Skorina
+  - [ ] A (same_type_near_year, p=0.166): received Honorary Knight Grand Cross of the Order of the Bath
+  - [ ] B (label_similar_same_type, p=0.170): received Order of Fatherland
+  - [ ] C (same_type_random, p=0.164): received FIFA FIFPro World XI
+  - [ ] D (same_person_wrong_time, p=0.166): received honorary citizen of Polotsk
+  - [ ] E (same_type_near_year, p=0.166): received Engler Medal in Gold
+  - [✓] F (correct, p=0.168): received Order of Fatherland 3rd Class
+- point: B; sets: 0.80→{A,B,C,D,E,F}; 0.90→{A,B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
+
+### Q42786_1987_P166 — Audrey Hepburn
 - missing year: 1987 (hidden type: award)
-- context: 1983: received Drama Desk Special Award | 1983: received PEN Translation Prize | 1988: received Laurence Olivier Award for Best New Musical | 1989: received Pulitzer Prize for Poetry
-  - [ ] A (same_type_random, p=0.153): received Silver Slugger Award
-  - [ ] B (same_person_wrong_time, p=0.167): received Guggenheim Fellowship
-  - [ ] C (same_type_near_year, p=0.184): received Grand Officer of the Legion of Honour
-  - [✓] D (correct, p=0.164): received United States Poet Laureate
-  - [ ] E (label_similar_same_type, p=0.169): received Young People's Poet Laureate
-  - [ ] F (same_type_near_year, p=0.163): received Priestley Medal
-- point: C; sets: 0.80→{B,C,D,E,F}; 0.90→{B,C,D,E,F}; 0.95→{A,B,C,D,E,F}
-
-### Q1251707_1975_P39 — Doug Bereuter
-- missing year: 1975 (hidden type: position)
-- context: 1967: began serving as director | 1968: began serving as bureaucrat | 1979: began serving as United States representative | 1981: began serving as United States representative
-  - [ ] A (same_type_near_year, p=0.163): began serving as Secretary of State for Business, Innovation, Science and Trade
-  - [✓] B (correct, p=0.169): began serving as Nebraska Legislature
-  - [ ] C (same_person_wrong_time, p=0.171): began serving as urban planner
-  - [ ] D (same_type_near_year, p=0.169): began serving as ambassador of Spain to France
-  - [ ] E (label_similar_same_type, p=0.184): began serving as Member of the Legislative Yuan
-  - [ ] F (same_type_random, p=0.143): began serving as Secretary of State for Health and Social Care
-- point: E; sets: 0.80→{A,B,C,D,E}; 0.90→{A,B,C,D,E}; 0.95→{A,B,C,D,E}
+- context: 1968: received Special Tony Award | 1980: received star on Hollywood Walk of Fame | 1988: began serving as UNICEF Goodwill Ambassador | 1989: received Golden Globe Cecil B. DeMille Award
+  - [ ] A (same_person_wrong_time, p=0.140): received Presidential Medal of Freedom
+  - [ ] B (same_type_near_year, p=0.174): received Prix Laure Bataillon
+  - [ ] C (same_type_near_year, p=0.177): received honorary doctorate from Princeton University
+  - [✓] D (correct, p=0.176): received Commandeur des Arts et des Lettres
+  - [ ] E (same_type_random, p=0.158): received Golden Mask
+  - [ ] F (label_similar_same_type, p=0.176): received Chevalier des Arts et des Lettres
+- point: C; sets: 0.80→{B,C,D,F}; 0.90→{B,C,D,E,F}; 0.95→{B,C,D,E,F}

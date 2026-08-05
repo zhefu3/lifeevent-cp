@@ -48,14 +48,26 @@ LIMIT {row_cap}
 """
 
 PHASE2_TEMPLATE = PREFIXES + """
-SELECT ?person ?personLabel ?target ?targetLabel ?start ?point ?statement WHERE {{
+SELECT ?person ?personLabel ?target ?targetLabel ?start ?point ?end ?statement WHERE {{
   VALUES ?person {{ {values} }}
   ?person p:{prop} ?statement .
   ?statement ps:{prop} ?target .
   OPTIONAL {{ ?statement pq:P580 ?start . }}
   OPTIONAL {{ ?statement pq:P585 ?point . }}
+  OPTIONAL {{ ?statement pq:P582 ?end . }}
   FILTER(BOUND(?start) || BOUND(?point))
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en" . }}
+}}
+"""
+
+# All statements of a property regardless of time qualifiers — feeds the negative-
+# legality table only (TGB 2.0 lesson: an undated true statement must not become a
+# "legal" negative). Never used to build questions or timelines.
+ALL_TARGETS_TEMPLATE = PREFIXES + """
+SELECT ?person ?target WHERE {{
+  VALUES ?person {{ {values} }}
+  ?person p:{prop} ?statement .
+  ?statement ps:{prop} ?target .
 }}
 """
 
@@ -199,8 +211,31 @@ class WikidataClient:
                         "target_label": b.get("targetLabel", {}).get("value", ""),
                         "start": b.get("start", {}).get("value"),
                         "point": b.get("point", {}).get("value"),
+                        "end": b.get("end", {}).get("value"),
                         "statement_uri": b.get("statement", {}).get("value", ""),
                     })
             if (bi + 1) % 10 == 0:
                 LOG.info("phase2 progress: %d/%d batches, %d raw rows", bi + 1, len(batches), len(raw_rows))
         return raw_rows
+
+    def fetch_all_targets(self, person_qids: list[str], event_types: dict[str, dict[str, Any]]) -> dict[str, list[str]]:
+        """person_qid -> ALL target qids of enabled properties, timed or not (negative-
+        legality table only)."""
+        batch_size = int(self.config["phase2"]["batch_size"])
+        out: dict[str, set] = {}
+        batches = [person_qids[i:i + batch_size] for i in range(0, len(person_qids), batch_size)]
+        for bi, batch in enumerate(batches):
+            values = " ".join(f"wd:{qid}" for qid in batch)
+            for _etype, spec in sorted(event_types.items()):
+                query = ALL_TARGETS_TEMPLATE.format(values=values, prop=spec["property"])
+                try:
+                    bindings = self.run_query(query)
+                except QueryTooBig as err:
+                    LOG.warning("all-targets batch %d prop %s failed: %s", bi, spec["property"], err)
+                    continue
+                for b in bindings:
+                    pid = b["person"]["value"].rsplit("/", 1)[-1]
+                    out.setdefault(pid, set()).add(b["target"]["value"].rsplit("/", 1)[-1])
+            if (bi + 1) % 20 == 0:
+                LOG.info("all-targets progress: %d/%d batches", bi + 1, len(batches))
+        return {pid: sorted(ts) for pid, ts in out.items()}

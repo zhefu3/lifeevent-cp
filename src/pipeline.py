@@ -66,7 +66,10 @@ def stage_fetch(config: dict[str, Any], profile: str) -> None:
              len(counts), len(pool_list), per_type)
     raw = client.fetch_person_events(pool_list, etypes)
     write_json(paths["raw_events"], raw)
-    LOG.info("phase2: %d raw rows; %d network calls total", len(raw), client.n_network_calls)
+    all_targets = client.fetch_all_targets(pool_list, etypes)
+    write_json(paths["raw_events"].with_name(f"phase2_all_targets_{profile}.json"), all_targets)
+    LOG.info("phase2: %d raw rows; all-targets for %d persons; %d network calls total",
+             len(raw), len(all_targets), client.n_network_calls)
 
 
 def stage_normalize(config: dict[str, Any], profile: str) -> None:
@@ -93,10 +96,12 @@ def stage_questions(config: dict[str, Any], profile: str) -> None:
     events = list(read_jsonl(paths["events"]))
     grouped = events_by_person(events)
     assignment = read_json(paths["person_split"])
+    at_path = paths["raw_events"].with_name(f"phase2_all_targets_{profile}.json")
+    extra_targets = read_json(at_path) if at_path.exists() else None
     rng = get_rng(config)  # fresh seeded stream; question stage is self-contained
     questions = build_all_questions(grouped, assignment, events, config, rng,
                                     {k: int(v) for k, v in prof["question_targets"].items()},
-                                    int(prof["max_questions_per_person"]))
+                                    int(prof["max_questions_per_person"]), extra_targets)
     write_json(paths["questions"], questions)
     for split in ("train", "calibration", "test"):
         write_jsonl(paths["splits_dir"] / f"{split}.jsonl", [q for q in questions if q["split"] == split])

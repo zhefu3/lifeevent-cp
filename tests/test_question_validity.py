@@ -112,6 +112,34 @@ def test_seed_reproducibility(config, synthetic_events, built):  # spec test 9
     assert json.dumps(questions, sort_keys=True) == json.dumps(built["questions"], sort_keys=True)
 
 
+def test_same_person_interval_rule(config):  # dataset 0.4: TempLAMA interval constraint
+    from src.question_builder import _pick_same_person
+    person_events = [
+        {"person_id": "QX", "event_type": "position", "property_id": "P39", "target_id": "T1",
+         "target_label": "Mayor of Testville", "year": 1990, "end_year": 2000,
+         "event_text": "1990: began serving as Mayor of Testville"},
+        {"person_id": "QX", "event_type": "award", "property_id": "P166", "target_id": "T2",
+         "target_label": "Test Prize", "year": 1980, "end_year": None,
+         "event_text": "1980: received Test Prize"},
+    ]
+    import numpy as np
+    rng = np.random.default_rng(0)
+    # missing_year 1995 lies inside T1's [1990, 2000] interval -> only T2 is legal
+    for _ in range(5):
+        cand = _pick_same_person(person_events, [], 1995, "TC", set(), config, rng)
+        assert cand is not None and cand["target_id"] == "T2"
+
+
+def test_untimed_targets_block_negatives(config, synthetic_events):  # dataset 0.4: TGB 2.0 rule
+    from src.question_builder import CandidatePools
+    pools_plain = CandidatePools(synthetic_events)
+    pid = synthetic_events[0]["person_id"]
+    foreign = sorted({e["target_id"] for e in synthetic_events if e["person_id"] != pid})[0]
+    assert foreign not in pools_plain.person_targets[pid]
+    pools = CandidatePools(synthetic_events, {pid: [foreign]})
+    assert foreign in pools.person_targets[pid]  # now illegal as a negative for pid
+
+
 def test_canary_present_in_published_docs():
     """BIG-bench convention: the canary GUID must appear in every published data doc."""
     canary = "98669f31-33e2-4591-8cc9-96ac3b1afa16"

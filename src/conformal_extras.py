@@ -127,8 +127,10 @@ def run() -> None:
         lines.append(f"## {sname}")
         lines.append("| 档 | LAC 覆盖/平均集合（参照） | APS 覆盖/平均集合 | Mondrian 覆盖/平均集合 |")
         lines.append("|---|---|---|---|")
-        ref = {"tfidf": {"0.80": (0.83, 4.42), "0.90": (0.91, 4.86), "0.95": (0.97, 5.53)},
-               "llm": {"0.80": (0.78, 1.45), "0.90": (0.93, 2.35), "0.95": (0.97, 3.67)}}[sname]
+        import csv as _csv
+        ref_path = PROJECT_ROOT / ("outputs" if sname == "tfidf" else "outputs/llm") / "coverage_table.csv"
+        ref = {r["coverage_target"]: (float(r["empirical_coverage"]), float(r["avg_set_size"]))
+               for r in _csv.DictReader(open(ref_path)) if r["group"] == "overall"}
         for cov in ("0.80", "0.90", "0.95"):
             a, m = r["aps"][cov], r["mondrian"]["levels"][cov]["overall"]
             lines.append(f"| {cov} | {ref[cov][0]:.2f} / {ref[cov][1]:.2f} | "

@@ -78,7 +78,10 @@ convention — detection aid for benchmark contamination, not a defense).
 **Changelog**: 0.1 dry-run (2026-08-03) → 0.2 full 500 questions (2026-08-03; audit
 caught Wikidata genid unknown-value labels, 21/500 affected) → **0.3 rebuild**
 (2026-08-04; genid/URL filter, label-echo rule, generic-label filter, era band,
-path isolation; implausible-distractor share 42%→18% across three audit rounds).
+path isolation; implausible-distractor share 42%→18% across three audit rounds) → **0.4
+rebuild** (2026-08-05; P582 end-times harvested — interval-covering same-person
+distractors illegal, untimed all-targets table closes the negative-legality gap; audit
+round 4 cuts the second-plausible-answer rate from 25+2/50 to 6+0/50).
 
 **Evaluation-setting note** (temporal-KG terminology): our negative legality is
 stricter than a static filter, and the same-person wrong-time distractor is a legal

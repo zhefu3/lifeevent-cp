@@ -1,38 +1,36 @@
 # LifeEvent-CP: Conformal Prediction over Masked Wikidata Life Events
 
-*One-page summary. Code & data: https://github.com/zhefu3/lifeevent-cp (CC0 Wikidata source data; fully reproducible on a laptop CPU, all randomness seeded).*
+*One-page summary, dataset v0.4. Code & data: https://github.com/zhefu3/lifeevent-cp (MIT code / CC0 data; reproducible on a laptop CPU, all randomness seeded, SPARQL responses cached).*
 
 ## Task
 
-Following your advice, I shrank the open-ended "life modeling" idea into a sharply defined prediction task: given a partial, year-stamped timeline of a public figure from Wikidata (person name removed, at most 2 events before and 2 after), one middle-year event is hidden; the model scores 6 candidates (1 correct + 5 typed distractors) and outputs split conformal prediction sets at 80/90/95% target coverage. Ground truth is the held-out Wikidata statement — no claim about "the only event a real life could contain".
+A sharply defined slice of the "life modeling" idea: given a partial, year-stamped timeline of a public figure from Wikidata (name removed, ≤2 events before + ≤2 after), one middle-year event is hidden; models score 6 candidates and output split conformal prediction sets at 80/90/95% target coverage. Ground truth is the held-out Wikidata statement.
 
-**Dataset**: 345,778 timed persons discovered → 500 questions (300 train / 100 calibration / 100 test), person-disjoint splits, seed-fixed. Three manual audit rounds (150 questions total) caught and fixed real defects (Wikidata unknown-value genid labels; era-mismatched distractors — implausible distractor share cut from 42% to 18%).
+**Dataset v0.4** (four audit rounds, 200 questions reviewed in total): 345,778 timed persons discovered → 500 questions, person-disjoint splits. v0.4 adopts TempLAMA-style interval facts (P582 end-times; a same-person distractor whose tenure covers the missing year is illegal) and TGB-2.0-style negative legality (undated true statements cannot serve as negatives) — cutting the audited second-plausible-answer rate from 25+2/50 to **6+0/50**. The benchmark got harder *and* cleaner: the LLM dropped from 0.68 (v0.3) to 0.57 — measurement got more accurate, not the model worse.
 
-## Results
+## Results (test = 100)
 
-| test = 100 | TF-IDF + LogReg | LLM (6-way scoring) |
-|---|---|---|
-| Point accuracy (random = 0.167) | 0.14 | **0.68** |
-| Empirical coverage @0.80/0.90/0.95 | 0.83 / 0.91 / 0.97 | 0.78 / 0.93 / 0.97 |
-| Avg. set size @0.80/0.90/0.95 | 4.42 / 4.86 / 5.53 | **1.45 / 2.35 / 3.67** |
-| Singleton rate @0.80 | 0.00 | 0.54 |
-| ECE (10-bin) | 0.043 | 0.185 (overconfident) |
+| | TF-IDF | LLM (verbalized 6-way) | frequency prior |
+|---|---|---|---|
+| Point accuracy (random .167) | 0.14 | **0.57** | 0.20 |
+| Top-2 accuracy | 0.38 | **0.82** | — |
+| Coverage @.80/.90/.95 | .72/.87/.98 | .81/.93/.93 | — |
+| Avg set size @.80/.90/.95 | 3.80/4.87/5.54 | **1.75/2.54/2.71** | — |
+| Singleton rate (hit-rate) @.90 | 0 (—) | **.18 (.94)** | — |
+| UAcc @.90 / PRR | .070 / −.07 | **.550 / .66** | — |
 
-1. **Coverage holds for both models** — all six empirical coverages fall inside their Wilson 95% intervals. **Set size is an honest ruler of discriminative power**: the same 90% guarantee costs a near-random model 4.86 candidates but the LLM only 2.35.
-2. **Contamination is quantified, not hand-waved**: a name-cloze-style probe (cf. Chang et al. 2023) over all 100 test questions identifies the person 31% of the time (accuracy 0.742 identified vs 0.652 unidentified); a **guided ablation** (same questions with the name revealed, cf. Time-Travel ICLR 2024) lifts accuracy 0.68 → 0.78 (McNemar p = 0.064) — causal evidence that the memorization channel is worth ~10 points, while the unidentified-subset 0.652 stays ~4x random. Half of the LLM's errors pick the *same-person wrong-time* distractor (~4x other types): it wins on knowing the person and loses on the temporal boundary of that knowledge. Elicitation follows the verbalized-probability recommendation for RLHF models (Tian et al. 2023; text-answer parsing per Wang et al. 2024); a letter-consistency audit gives 0.70 overall / 0.82 on high-margin questions.
-3. **Shift breaks the guarantee in both directions** (deliberate exchangeability violations, reusing existing scores): era-shifted calibration under-covers (TF-IDF @0.95 drops to 0.80, Wilson interval excludes the target), while calibrating on a harder subgroup wastes efficiency (sets inflate to near-full at unchanged nominal level). Mondrian (per-type) calibration evens group coverage at a set-size cost driven by small per-group calibration n.
-4. **Self-reflection makes the LLM more confident, not more accurate** (v2): accuracy 0.68 → 0.67 while mean max-probability rises 0.498 → 0.539 and 46/200 answers switch. The sharpened scores do buy conformal efficiency (avg set @0.95: 3.67 → 2.86 at unchanged coverage) — confidence without accuracy is not entirely wasted, but it is not understanding either.
+1. **Coverage holds and survives theory-checking**: across R = 100 person-level resplits, mean empirical coverage falls inside the analytic Beta(n+1−l, l) band at every level for both models (one raw draw shows TF-IDF @.80 marginally under; the resplit protocol is the stable read).
+2. **Set size is an honest ruler**: the same 90% guarantee costs the near-random model 4.87 candidates and the LLM 2.54; singleton sets are right 94% of the time; rejecting the most-uncertain half lifts LLM accuracy 0.57 → 0.80.
+3. **Contamination is pinned down by a three-layer evidence chain**: name-cloze probe identifies 41% of persons from nameless timelines; identified vs unidentified accuracy 0.707 vs 0.475; guided ablation (name revealed) lifts accuracy +0.16 (McNemar p = 0.009); and the conformal p-value distributions of identified vs unidentified questions differ significantly (two-sample KS p = 0.0007) — **contamination distorts the uncertainty structure itself, not just accuracy**. Consistently, LLM errors concentrate 5x on same-person wrong-time distractors: it wins on knowing the person, loses on the temporal boundary of that knowledge.
+4. **Self-reflection (v0.3-era experiment)** made the model more confident (0.498→0.539), not more accurate (0.68→0.67), though sharper scores bought set-size efficiency at 95%.
+5. **Method extras**: randomized APS removes the conservative variant's over-coverage; Mondrian equalizes per-type coverage at a set-size cost; a frequency-prior baseline scores 0.20 ≈ random (the answer prior gives nothing away); answer-letter chi-square is uniform for TF-IDF but flags mild E/F selection bias for the LLM on v0.4 (p = 0.010; uniform on v0.3 — reported, debiasing left as future work); with n_cal = 20 the "90%" guarantee spans empirical coverage up to [0.81, 1.00].
 
-5. **Method extras** (same scores, no new calls): randomized APS matches LAC tightly (0.90 coverage, 2.32 avg set for the LLM) where the conservative variant degenerates; Mondrian per-type calibration equalizes group coverage at a set-size cost; a calibration-size study shows the 90% guarantee spans [0.86, 1.00] (TF-IDF) / [0.85, 1.00] (LLM) empirical coverage when n_cal = 20.
+Elicitation follows verbalized-probability practice for RLHF models (Tian et al. 2023; text answers per Wang et al. 2024); letter-consistency audit 0.66 reported as an interpretive bound. Min-K%-style logprob detectors are unavailable over the CLI channel (disclosed).
 
-6. **Standard-practice alignment** (adopted from a survey of MAPIE/TorchCP/crepes/A&B, LLM-Uncertainty-Bench, TKG benchmarks, and benchmark-engineering conventions): SSC + singleton-hit-rate + UAcc + popularity-stratified reporting; a frequency-prior baseline scores 0.18 ≈ random (the answer prior gives nothing away); conformal p-value KS uniformity passes for TF-IDF (p = 0.097) but flags the LLM channel (p = 0.003) despite nominal coverage holding — an honest open diagnostic; across R = 100 person-level resplits the mean empirical coverage falls inside the analytic Beta(n+1−l, l) band at every level (the empirical 5–95 bands run slightly wider than theory at both ends); PRR 0.54 (rejecting the most-uncertain half lifts accuracy 0.68 → 0.84); answer-letter chi-square shows no selection bias; dataset card, versioning + changelog, and a BIG-bench canary GUID ship with the repo.
+## Scope & limitations
 
-## Scope & limitations (highlights)
-
-Marginal coverage only, under person-level exchangeability; public-figure skew (positions/awards dominate); Wikidata incompleteness (absence of a statement is not absence of an event — audited "second plausible answer" rate disclosed); n=100 calibration/test noise quantified throughout; LAC quantile uses the standard tutorial recipe (conservative by ≤1 order statistic).
-
-
+Marginal coverage under person-level exchangeability; public-figure skew; Wikidata incompleteness (residual multi-answer rate audited and disclosed); n = 100 noise quantified throughout; KS-uniformity diagnostics drift across dataset versions at this n (reported as open diagnostics); LLM outputs cached for reproducibility.
 
 ## Next
 
-Larger calibration/test sets to tighten intervals, model-tier comparison under the identical harness, and method work targeted at the observed failure modes (temporal-boundary errors, contamination-aware evaluation) rather than a priori algorithm design.
+Method work grows out of the observed failure modes: temporal-boundary errors, contamination-stratified evaluation, larger calibration sets, model-tier comparison under the identical harness.

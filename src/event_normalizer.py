@@ -72,7 +72,9 @@ def normalize_events(raw_rows: list[dict[str, Any]], config: dict[str, Any]) -> 
             continue
         seen.add(key)
         template = etypes[row["event_type"]]["template"]
+        end_year = _year_from_iso(row.get("end"))
         out.append({
+            "end_year": end_year if (end_year is not None and end_year >= year) else None,
             "person_id": row["person_id"],
             "person_label": person_label,
             "property_id": row["property_id"],
