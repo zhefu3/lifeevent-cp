@@ -68,9 +68,26 @@ See the spec in the project archive; notebooks (`notebooks/dataset_builder.ipynb
 `data/demo/` contains placeholder personal demo cases (display only, never in any
 split, never published).
 
+## Dataset card & versioning
+
+See `DATASET_CARD.md` (fields, collection, audits, maintenance policy) and
+`data/processed/DATASET_META.json` (version + changelog + canary GUID).
+Canary: `lifeevent-cp CANARY 98669f31-33e2-4591-8cc9-96ac3b1afa16` (BIG-bench
+convention — detection aid for benchmark contamination, not a defense).
+
+**Changelog**: 0.1 dry-run (2026-08-03) → 0.2 full 500 questions (2026-08-03; audit
+caught Wikidata genid unknown-value labels, 21/500 affected) → **0.3 rebuild**
+(2026-08-04; genid/URL filter, label-echo rule, generic-label filter, era band,
+path isolation; implausible-distractor share 42%→18% across three audit rounds).
+
+**Evaluation-setting note** (temporal-KG terminology): our negative legality is
+stricter than a static filter, and the same-person wrong-time distractor is a legal
+negative under time-aware filtering conventions — scores are not comparable to
+raw-setting KG leaderboards.
+
 ## Limitations
 
 See `reports/中文结果报告.md` (Chinese result report) — includes dataset skew
 (position-holders dominate timed statements), entity-level candidate-pool sharing
-across splits, correlation from up to 2 questions per person, small-n coverage noise,
-and the conservative quantile implementation note.
+across splits, small-n coverage noise, contamination quantification (nameless-timeline
+name-cloze probe + guided ablation), and the conservative quantile implementation note.

@@ -174,6 +174,81 @@ def _name_hit(guess: Any, truth: str) -> bool:
     return ratio >= 0.85
 
 
+def consistency_audit(n: int, model: str, timeout_s: int, workers: int) -> dict[str, Any]:
+    """'My Answer is C' (ACL Findings 2024) style audit: ask for a bare letter and
+    compare with the verbalized-distribution argmax — proves the elicited distribution
+    reflects the model's actual choice."""
+    outdir = PROJECT_ROOT / "outputs" / "llm"
+    preds = {p["question_id"]: p for p in read_jsonl(outdir / "predictions_llm.jsonl") if p["split"] == "test"}
+    test_qs = list(read_jsonl(PROJECT_ROOT / "data" / "splits" / "test.jsonl"))[: n]
+
+    def _one(q: dict[str, Any]) -> dict[str, Any]:
+        prompt = render_score_prompt(q) + "\n\nAnswer with ONLY the single letter (A-F) of your chosen candidate, nothing else."
+        raw = call_claude(prompt, model, timeout_s, "letter", f"{q['question_id']}_{sha1_of(prompt)[:12]}")
+        m = re.search(r"\b([A-F])\b", raw or "")
+        letter = m.group(1) if m else None
+        return {"question_id": q["question_id"], "letter": letter,
+                "argmax": preds[q["question_id"]]["point_prediction"],
+                "match": letter == preds[q["question_id"]]["point_prediction"]}
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        rows = list(ex.map(_one, test_qs))
+    ok = [r for r in rows if r["letter"] is not None]
+    rate = sum(r["match"] for r in ok) / len(ok) if ok else None
+    result = {"n": len(rows), "n_parsed": len(ok), "consistency_rate": rate, "rows": rows}
+    write_json(outdir / "consistency_audit.json", result)
+    LOG.info("consistency: %s/%s match (rate %.2f)", sum(r["match"] for r in ok), len(ok), rate or -1)
+    return result
+
+
+def guided_ablation(model: str, timeout_s: int, workers: int) -> dict[str, Any]:
+    """Guided-prompting contamination ablation (Time Travel, ICLR 2024): same question
+    WITH the person's name revealed; the accuracy delta vs the anonymous run is causal
+    evidence for the memorization channel (the probe alone is only correlational)."""
+    outdir = PROJECT_ROOT / "outputs" / "llm"
+    anon = {p["question_id"]: p for p in read_jsonl(outdir / "predictions_llm.jsonl") if p["split"] == "test"}
+    test_qs = list(read_jsonl(PROJECT_ROOT / "data" / "splits" / "test.jsonl"))
+
+    def _one(q: dict[str, Any]) -> dict[str, Any]:
+        prompt = (f"The person in this timeline is {q['person_label']}.\n\n"
+                  + render_score_prompt(q))
+        raw = call_claude(prompt, model, timeout_s, "guided", f"{q['question_id']}_{sha1_of(prompt)[:12]}")
+        scores, ok = None, False
+        if raw is not None:
+            obj = _extract_json(raw)
+            if obj:
+                try:
+                    vals = {c: max(float(obj.get(c, 0.0)), 0.0) for c in LETTERS}
+                    total = sum(vals.values())
+                    if total > 0:
+                        scores, ok = {c: v / total for c, v in vals.items()}, True
+                except (TypeError, ValueError):
+                    pass
+        if scores is None:
+            scores = {c: 1.0 / 6.0 for c in LETTERS}
+        point = max(scores, key=lambda c: (scores[c], c))
+        return {"question_id": q["question_id"], "point_guided": point, "parse_ok": ok,
+                "correct": q["correct_candidate_id"],
+                "point_anon": anon[q["question_id"]]["point_prediction"]}
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        rows = list(ex.map(_one, test_qs))
+    acc_a = sum(r["point_anon"] == r["correct"] for r in rows) / len(rows)
+    acc_g = sum(r["point_guided"] == r["correct"] for r in rows) / len(rows)
+    b = sum(1 for r in rows if r["point_guided"] == r["correct"] and r["point_anon"] != r["correct"])
+    c = sum(1 for r in rows if r["point_guided"] != r["correct"] and r["point_anon"] == r["correct"])
+    from scipy import stats as _st
+    mcnemar_p = float(_st.binomtest(b, b + c, 0.5).pvalue) if (b + c) > 0 else None
+    result = {"n": len(rows), "acc_anonymous": round(acc_a, 4), "acc_guided": round(acc_g, 4),
+              "delta": round(acc_g - acc_a, 4), "discordant_guided_only": b,
+              "discordant_anon_only": c, "mcnemar_pvalue": round(mcnemar_p, 4) if mcnemar_p is not None else None,
+              "n_parse_fail": sum(1 for r in rows if not r["parse_ok"]), "rows": rows}
+    write_json(outdir / "guided_ablation.json", result)
+    LOG.info("guided ablation: anon %.2f -> guided %.2f (delta %+.2f, McNemar p=%s)",
+             acc_a, acc_g, acc_g - acc_a, result["mcnemar_pvalue"])
+    return result
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="LLM baseline over membership CLI")
     ap.add_argument("--split", choices=["train_dev", "calibration", "test", "eval"], default="eval",
@@ -183,7 +258,16 @@ def main() -> None:
     ap.add_argument("--timeout", type=int, default=180)
     ap.add_argument("--workers", type=int, default=3)
     ap.add_argument("--probe", action="store_true", help="run contamination probe on test sample")
+    ap.add_argument("--consistency", action="store_true", help="letter-answer consistency audit")
+    ap.add_argument("--guided", action="store_true", help="guided (named) contamination ablation on full test")
     args = ap.parse_args()
+
+    if args.consistency:
+        consistency_audit(args.n, args.model, args.timeout, args.workers)
+        return
+    if args.guided:
+        guided_ablation(args.model, args.timeout, args.workers)
+        return
 
     splits_dir = PROJECT_ROOT / "data" / "splits"
     outdir = PROJECT_ROOT / "outputs" / "llm"

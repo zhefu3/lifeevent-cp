@@ -1,5 +1,6 @@
 # LifeEvent-CP v0 configuration. All randomness flows from random_seed.
 random_seed: 42
+dataset_version: "0.3"   # bump on any breaking dataset rebuild; changelog in data/processed/DATASET_META.json
 
 sparql_endpoint: "https://query.wikidata.org/sparql"
 user_agent: "LifeEventCP/0.1 (research prototype; contact: zhefu2@outlook.com)"

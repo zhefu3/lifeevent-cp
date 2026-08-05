@@ -112,6 +112,15 @@ def test_seed_reproducibility(config, synthetic_events, built):  # spec test 9
     assert json.dumps(questions, sort_keys=True) == json.dumps(built["questions"], sort_keys=True)
 
 
+def test_canary_present_in_published_docs():
+    """BIG-bench convention: the canary GUID must appear in every published data doc."""
+    canary = "98669f31-33e2-4591-8cc9-96ac3b1afa16"
+    for rel in ("data/processed/DATASET_META.json", "DATASET_CARD.md", "README.md"):
+        path = PROJECT_ROOT / rel
+        if path.exists():
+            assert canary in path.read_text(encoding="utf-8"), rel
+
+
 def test_distractor_recipe_counts(built):
     """Composition sanity: >=5 negatives incl. the mandated types when available."""
     for questions, _ in _datasets(built):

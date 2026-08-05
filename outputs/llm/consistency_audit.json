@@ -1,0 +1,307 @@
+{
+ "n": 50,
+ "n_parsed": 50,
+ "consistency_rate": 0.7,
+ "rows": [
+  {
+   "question_id": "Q441178_1961_P108",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q2093915_2010_P166",
+   "letter": "F",
+   "argmax": "B",
+   "match": false
+  },
+  {
+   "question_id": "Q5548717_1978_P39",
+   "letter": "A",
+   "argmax": "A",
+   "match": true
+  },
+  {
+   "question_id": "Q1333582_1987_P166",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q1251707_1975_P39",
+   "letter": "B",
+   "argmax": "B",
+   "match": true
+  },
+  {
+   "question_id": "Q1687846_1975_P39",
+   "letter": "A",
+   "argmax": "A",
+   "match": true
+  },
+  {
+   "question_id": "Q234909_1961_P166",
+   "letter": "B",
+   "argmax": "B",
+   "match": true
+  },
+  {
+   "question_id": "Q70377150_1998_P108",
+   "letter": "B",
+   "argmax": "B",
+   "match": true
+  },
+  {
+   "question_id": "Q7789484_2007_P108",
+   "letter": "C",
+   "argmax": "F",
+   "match": false
+  },
+  {
+   "question_id": "Q119796829_2011_P166",
+   "letter": "E",
+   "argmax": "E",
+   "match": true
+  },
+  {
+   "question_id": "Q61095374_1987_P108",
+   "letter": "B",
+   "argmax": "B",
+   "match": true
+  },
+  {
+   "question_id": "Q2685_2023_P166",
+   "letter": "A",
+   "argmax": "B",
+   "match": false
+  },
+  {
+   "question_id": "Q1722334_1980_P166",
+   "letter": "B",
+   "argmax": "B",
+   "match": true
+  },
+  {
+   "question_id": "Q1004154_1983_P108",
+   "letter": "A",
+   "argmax": "A",
+   "match": true
+  },
+  {
+   "question_id": "Q115913982_2013_P108",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q76357_1997_P166",
+   "letter": "E",
+   "argmax": "B",
+   "match": false
+  },
+  {
+   "question_id": "Q17714_1981_P166",
+   "letter": "A",
+   "argmax": "A",
+   "match": true
+  },
+  {
+   "question_id": "Q47755_2006_P166",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q468049_2022_P166",
+   "letter": "A",
+   "argmax": "A",
+   "match": true
+  },
+  {
+   "question_id": "Q8743_1973_P166",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q34004355_1997_P108",
+   "letter": "E",
+   "argmax": "B",
+   "match": false
+  },
+  {
+   "question_id": "Q65199_1929_P69",
+   "letter": "F",
+   "argmax": "B",
+   "match": false
+  },
+  {
+   "question_id": "Q91636_1960_P108",
+   "letter": "E",
+   "argmax": "A",
+   "match": false
+  },
+  {
+   "question_id": "Q894948_2011_P166",
+   "letter": "E",
+   "argmax": "F",
+   "match": false
+  },
+  {
+   "question_id": "Q91635_1921_P69",
+   "letter": "F",
+   "argmax": "F",
+   "match": true
+  },
+  {
+   "question_id": "Q1285801_1982_P166",
+   "letter": "E",
+   "argmax": "E",
+   "match": true
+  },
+  {
+   "question_id": "Q6247957_2019_P39",
+   "letter": "B",
+   "argmax": "B",
+   "match": true
+  },
+  {
+   "question_id": "Q4394078_1999_P166",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q17008733_1937_P69",
+   "letter": "B",
+   "argmax": "B",
+   "match": true
+  },
+  {
+   "question_id": "Q22276965_2014_P166",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q983528_1972_P39",
+   "letter": "A",
+   "argmax": "A",
+   "match": true
+  },
+  {
+   "question_id": "Q1679925_1915_P69",
+   "letter": "A",
+   "argmax": "A",
+   "match": true
+  },
+  {
+   "question_id": "Q3772_1996_P166",
+   "letter": "C",
+   "argmax": "F",
+   "match": false
+  },
+  {
+   "question_id": "Q333841_2003_P39",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q19848_2016_P166",
+   "letter": "E",
+   "argmax": "B",
+   "match": false
+  },
+  {
+   "question_id": "Q981132_1970_P166",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q9391_1908_P69",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q4402585_1970_P166",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q21264546_2010_P166",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q1387262_1947_P39",
+   "letter": "A",
+   "argmax": "F",
+   "match": false
+  },
+  {
+   "question_id": "Q1229886_1869_P39",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q1392426_1998_P166",
+   "letter": "E",
+   "argmax": "A",
+   "match": false
+  },
+  {
+   "question_id": "Q2704774_1967_P166",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q59709352_2011_P69",
+   "letter": "C",
+   "argmax": "E",
+   "match": false
+  },
+  {
+   "question_id": "Q103917_1990_P166",
+   "letter": "C",
+   "argmax": "C",
+   "match": true
+  },
+  {
+   "question_id": "Q18242588_2010_P69",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q93570553_2005_P108",
+   "letter": "C",
+   "argmax": "D",
+   "match": false
+  },
+  {
+   "question_id": "Q3888783_2003_P108",
+   "letter": "E",
+   "argmax": "E",
+   "match": true
+  },
+  {
+   "question_id": "Q2392075_1971_P166",
+   "letter": "D",
+   "argmax": "D",
+   "match": true
+  },
+  {
+   "question_id": "Q56603914_2007_P108",
+   "letter": "E",
+   "argmax": "F",
+   "match": false
+  }
+ ]
+}

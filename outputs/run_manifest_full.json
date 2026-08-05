@@ -24,12 +24,19 @@
    "same_type_near_year": 29,
    "same_person_wrong_time": 24
   },
+  "ssc_0.80": 0.0,
+  "sscv_0.80": 0.8,
+  "ssc_0.90": 0.0,
+  "sscv_0.90": 0.9,
+  "ssc_0.95": 0.875,
+  "sscv_0.95": 0.075,
   "coverage_overall": [
    {
     "coverage_target": "0.80",
     "group": "overall",
     "value": "all",
     "n": 100,
+    "singleton_hit_rate": null,
     "empirical_coverage": 0.83,
     "coverage_gap": 0.03,
     "wilson_lo": 0.7445,
@@ -38,13 +45,15 @@
     "median_set_size": 4.0,
     "singleton_rate": 0.0,
     "empty_set_rate": 0.0,
-    "full_set_rate": 0.12
+    "full_set_rate": 0.12,
+    "uacc": 0.0776
    },
    {
     "coverage_target": "0.90",
     "group": "overall",
     "value": "all",
     "n": 100,
+    "singleton_hit_rate": null,
     "empirical_coverage": 0.91,
     "coverage_gap": 0.01,
     "wilson_lo": 0.8377,
@@ -53,13 +62,15 @@
     "median_set_size": 5.0,
     "singleton_rate": 0.0,
     "empty_set_rate": 0.0,
-    "full_set_rate": 0.26
+    "full_set_rate": 0.26,
+    "uacc": 0.0706
    },
    {
     "coverage_target": "0.95",
     "group": "overall",
     "value": "all",
     "n": 100,
+    "singleton_hit_rate": null,
     "empirical_coverage": 0.97,
     "coverage_gap": 0.02,
     "wilson_lo": 0.9155,
@@ -68,7 +79,8 @@
     "median_set_size": 6.0,
     "singleton_rate": 0.0,
     "empty_set_rate": 0.0,
-    "full_set_rate": 0.61
+    "full_set_rate": 0.61,
+    "uacc": 0.062
    }
   ]
  }

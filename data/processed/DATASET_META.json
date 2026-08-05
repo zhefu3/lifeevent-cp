@@ -1,0 +1,14 @@
+{
+  "dataset_name": "LifeEvent-CP",
+  "dataset_version": "0.3",
+  "canary_guid": "lifeevent-cp CANARY 98669f31-33e2-4591-8cc9-96ac3b1afa16 — this string marks benchmark data; its presence in a language model indicates training-set contamination",
+  "built": "2026-08-04",
+  "source": "Wikidata (CC0), SPARQL harvest cached under data/raw/sparql/ (844 responses, harvest window 2026-08-03/04)",
+  "questions": {"train": 300, "calibration": 100, "test": 100},
+  "changelog": [
+    {"version": "0.1", "date": "2026-08-03", "note": "dry-run scale dataset (50 questions, 1990-2020 window)"},
+    {"version": "0.2", "date": "2026-08-03", "note": "full 500 questions, 1850-2026, balanced person pool; audit round 1 found genid unknown-value labels (21/500 affected)"},
+    {"version": "0.3", "date": "2026-08-04", "note": "BREAKING rebuild: genid/URL label filter, label-level echo rule, generic bare-label filter, era band ±60y for random distractors, dry/full path isolation; audit round 3 passed (implausible distractor share 42%→18%)"}
+  ],
+  "freeze_policy": "questions are frozen per version; Wikidata is a living database — regeneration happens only as a whole-version bump, never as rolling per-question fixes"
+}

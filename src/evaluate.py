@@ -38,8 +38,33 @@ def _year_bucket(year: int) -> str:
     return "2010+"
 
 
+def _person_popularity() -> dict[str, int]:
+    """Timed-statement count per person as a popularity proxy (Kandpal et al. 2023:
+    stratify by entity popularity or you misread corpus saturation as reasoning)."""
+    try:
+        from .utils import PROJECT_ROOT, read_jsonl
+        counts: dict[str, int] = defaultdict(int)
+        for ev in read_jsonl(PROJECT_ROOT / "data" / "processed" / "person_events.jsonl"):
+            counts[ev["person_id"]] += 1
+        return dict(counts)
+    except (OSError, FileNotFoundError):
+        return {}
+
+
 def _question_meta(questions: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
     meta = {}
+    pop = _person_popularity()
+    known = sorted(pop.get(q["person_id"], 0) for q in questions if q["person_id"] in pop)
+    quart = ([known[len(known) // 4], known[len(known) // 2], known[3 * len(known) // 4]]
+             if len(known) >= 8 else None)
+
+    def _pop_bucket(pid: str) -> str:
+        if quart is None or pid not in pop:
+            return "unknown"
+        c = pop[pid]
+        return ("Q1_low" if c <= quart[0] else "Q2" if c <= quart[1]
+                else "Q3" if c <= quart[2] else "Q4_high")
+
     for q in questions:
         dtypes = {c["candidate_id"]: c["distractor_type"] for c in q["candidates"]}
         meta[q["question_id"]] = {
@@ -48,6 +73,7 @@ def _question_meta(questions: list[dict[str, Any]]) -> dict[str, dict[str, Any]]
             "missing_year": q["missing_year"],
             "year_bucket": _year_bucket(q["missing_year"]),
             "has_same_person": "same_person_wrong_time" in dtypes.values(),
+            "popularity_bucket": _pop_bucket(q["person_id"]),
             "dtype_of": dtypes,
         }
     return meta
@@ -59,7 +85,13 @@ def _coverage_row(rows: list[dict[str, Any]], cov: str, group: str, value: str) 
     sizes = sorted(r[f"size_{cov}"] for r in rows)
     lo, hi = wilson_ci(covered, n)
     med = sizes[n // 2] if n % 2 else (sizes[n // 2 - 1] + sizes[n // 2]) / 2 if n else 0
+    singles = [r for r in rows if r[f"size_{cov}"] == 1]
+    # singleton_hit_rate (TorchCP practice): when the set shrinks to one candidate,
+    # how often is it the right one — the direct "can I act on it" number.
+    singleton_hit = (round(sum(1 for r in singles if r[f"cover_{cov}"]) / len(singles), 4)
+                     if singles else None)
     return {"coverage_target": cov, "group": group, "value": value, "n": n,
+            "singleton_hit_rate": singleton_hit,
             "empirical_coverage": round(covered / n, 4) if n else None,
             "coverage_gap": round(covered / n - float(cov), 4) if n else None,
             "wilson_lo": round(lo, 4), "wilson_hi": round(hi, 4),
@@ -89,6 +121,7 @@ def evaluate(test_questions: list[dict[str, Any]], test_predictions: list[dict[s
             "question_id": p["question_id"], "event_type": m["event_type"],
             "missing_year": m["missing_year"], "year_bucket": m["year_bucket"],
             "n_context": m["n_context"], "has_same_person": m["has_same_person"],
+            "popularity_bucket": m["popularity_bucket"],
             "correct_candidate_id": correct, "point_prediction": p["point_prediction"],
             "is_correct": p["point_prediction"] == correct,
             "in_top2": correct in ranked[:2],
@@ -116,7 +149,8 @@ def evaluate(test_questions: list[dict[str, Any]], test_predictions: list[dict[s
     groupings: dict[str, Any] = {"overall": lambda r: "all", "event_type": lambda r: r["event_type"],
                                  "has_same_person": lambda r: str(r["has_same_person"]),
                                  "n_context": lambda r: str(r["n_context"]),
-                                 "year_bucket": lambda r: r["year_bucket"]}
+                                 "year_bucket": lambda r: r["year_bucket"],
+                                 "popularity_bucket": lambda r: r["popularity_bucket"]}
     cov_rows: list[dict[str, Any]] = []
     for cov in covs:
         for gname, fn in groupings.items():
@@ -125,7 +159,25 @@ def evaluate(test_questions: list[dict[str, Any]], test_predictions: list[dict[s
                 buckets[fn(r)].append(r)
             for value in sorted(buckets):
                 cov_rows.append(_coverage_row(buckets[value], cov, gname, value))
+        # SSC/SSCV (MAPIE / A&B adaptivity check): coverage stratified by SET SIZE —
+        # is total coverage propped up by big sets while small sets under-cover?
+        size_buckets: dict[str, list[dict[str, Any]]] = defaultdict(list)
+        for r in rows:
+            size_buckets[str(r[f"size_{cov}"])].append(r)
+        strat = []
+        for value in sorted(size_buckets, key=int):
+            row_ = _coverage_row(size_buckets[value], cov, "set_size", value)
+            cov_rows.append(row_)
+            if int(value) > 0:
+                strat.append(row_["empirical_coverage"])
+        if strat:
+            summary[f"ssc_{cov}"] = round(min(strat), 4)
+            summary[f"sscv_{cov}"] = round(max(abs(c - float(cov)) for c in strat), 4)
     summary["coverage_overall"] = [r for r in cov_rows if r["group"] == "overall"]
+    # UAcc (LLM-Uncertainty-Bench): accuracy / avg set size * sqrt(|Y|) — one citable number.
+    for r in summary["coverage_overall"]:
+        r["uacc"] = (round(summary["point_accuracy"] / r["avg_set_size"] * math.sqrt(6), 4)
+                     if r["avg_set_size"] else None)
 
     if rows:
         with open(outdir / "results.csv", "w", newline="", encoding="utf-8") as fh:
